@@ -330,7 +330,7 @@
             <div class="container px-4" id="custom-cards">
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                     <div class="col col-lg-4">
-                        <a href="" class="text-decoration-none ">
+                        <a href="content/place/north_of_madagascar.html" class="text-decoration-none ">
                             <div class="card card-cover h-100 text-bg-dark  image-hover"
                                 style="background-image: url('assets/images/north.jpg'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
@@ -341,7 +341,7 @@
                     </div>
 
                     <div class="col col-lg-4">
-                        <a href="" class="text-decoration-none ">
+                        <a href="content/place/south_of_madagascar.html" class="text-decoration-none ">
                             <div class="card card-cover h-100 text-bg-dark image-hover"
                                 style="background-image: url('assets/images/city/toliara.jpg'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
