@@ -113,7 +113,7 @@ try {
 
     <!-------------------home---------------->
 
-    <main class="container shadow bg-white rounded p-3">
+    <main class=" shadow bg-white rounded p-3">
 
         <div class="mx-4">
             <div class="text-start p-4 mt-4 bg-info bg-opacity-10 shadow-sm">

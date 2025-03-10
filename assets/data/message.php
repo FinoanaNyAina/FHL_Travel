@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-------------------home---------------->
 
-    <main class="container shadow-sm bg-white shadow px-0">
+    <main class=" shadow-sm bg-white shadow px-0">
         <div style="height: 100vh; display: flex; justify-content: center; align-items: center;">
 
             <div class="col-12 col-md-8 col-lg-6 mx-auto g-0 p-5 bg-light rounded-4 shadow-lg">

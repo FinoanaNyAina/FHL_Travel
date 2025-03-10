@@ -101,7 +101,7 @@
 
      <!-------------------home---------------->
 
-     <main class="container shadow bg-white rounded p-3">
+     <main class=" shadow bg-white rounded p-3">
 
          <div id="perso" class="p-5 mb-2 text-white ">
              <div class="col-md-6 px-5 text-center txt">

@@ -131,7 +131,7 @@ try {
 
     <!-------------------home---------------->
 
-    <main class="container shadow-sm bg-white shadow px-0">
+    <main class=" shadow-sm bg-white shadow px-0">
         <div style="height: 100vh; display: flex; justify-content: center; align-items: center;">
 
             <div class="col col-md-8 col-lg-8 mx-auto  p-5 bg-light rounded-4 shadow-lg">

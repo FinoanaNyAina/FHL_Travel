@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-------------------home---------------->
 
-    <main class="container shadow-sm bg-white shadow px-0">
+    <main class=" shadow-sm bg-white shadow px-0">
         <div class="row">
             <div class="col-8 col-lg-4 bg-light shadow-lg m-5 p-5 mx-auto rounded-5">
                 <form action="" method="post">

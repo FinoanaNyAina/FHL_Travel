@@ -8,9 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Special+Elite&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/globalcss.css">
     <title>FHLTravel</title>
     <link rel="icon" href="assets/images/logo.jpeg" type="image/x-icon">
@@ -18,10 +16,10 @@
 
 </head>
 
-<body class="bg-dark  f">
+<body class="bg  f">
 
     <!--Navbar -->
-    <header id="" class="header d-flex align-items-center sticky-top  bg-dark rounded shadow">
+    <header id="" class="header d-flex align-items-center sticky-top bg rounded shadow">
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center justify-content-md-between py-1 mt-2">
                 <a href="index.php"
@@ -60,11 +58,12 @@
 
     <!-------------------home---------------->
 
-    <main class="container shadow-sm bg-white shadow p-0">
-        <div id="divbody" class="p-5 mb-2 text-white ">
+    <main class=" shadow-sm bg-white shadow p-0">
+        <div id="divbody" class=" mb-2 text-white ">
             <div class="row text-center txt">
-                <div class=" col-12 col-lg-8  mx-auto mainty p-3 ">
-                    <h1 class="fw-bold titre fs-4 mt-0 mb-0 pt-0 text-start">
+                <div class=" col-12 col-lg-9 mx-auto  mainty p-5 ">
+
+                    <h1 class="fs-4 mt-0 mb-0 pt-0 text-start">
 
                         <p class="m-0 p-0 text-center  ">Tongasoa! 🇲🇬</p>
                         <div class="row g-0">
@@ -72,7 +71,7 @@
                                 <p class="m-0 p-0 text-start ">Bienvenue! 🇫🇷
                             </div>
                             <div class="col">
-                                <p class="m-0 p-0 pt-2 text-center f border-top border-2" id="nav">A Unique Island in
+                                <p class="m-0 p-0 pt-2 text-center f border-top fw-bold" id="">A Unique Island in
                                     the World</p>
                             </div>
                             <div class="col">
@@ -81,21 +80,28 @@
                         </div>
                         </p>
                     </h1>
-                    <p class="text-center fw-bold bg-opacity-50 text-light fs-2 my-0 txt titre " id="">
-                        KEEP YOUR
-                        CAMERA READY
-                        ! </p>
-                    <p class=" text-center bg-opacity-50 py-2 px-3 my-0 f"> Discover the untamed beauty of Madagascar –
+                    <p class="text-center fw-bold my-4 txt bd" id="">
+                        BE READY TO SNAP A PHOTO! </p>
+                    <p class=" text-center bg-opacity-50 py-2 px-3 mb-4 fw-bold f"> Discover the untamed beauty of Madagascar –
                         where
                         breathtaking
                         landscapes, unique wildlife, and warm hospitality await.
                         Your adventure starts here!</p>
 
-                    <a href="content/ourstours.html" class="btn fw-bold text-white mt-2 karla rounded-pill" id="colorButton1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                    <a href="content/ourstours.html" class="btn fw-bold text-white mt-2 karla rounded-pill whatsapp"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
                             <path d="M7.5 1v7h1V1z" />
                             <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
                         </svg> Check all our
                         Tours </a>
+                    <a href="content/personal_adventure.html" class="btn fw-bold text-white mt-2 karla rounded-pill" id="colorButton1"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
+                            <path
+                                d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                        </svg> Create your personal Adventure</a>
+
+
+
+
                 </div>
             </div>
 
@@ -294,8 +300,7 @@
 
             <div class="row p-3">
                 <div class="col-lg-5 mx-auto mb-4 text-center ">
-                    <a href="content/ourstours.html" class="btn fw-bold btn-lg text-white text-decoration-none karla rounded-pill"
-                        id="colorButton1">
+                    <a href="content/ourstours.html" class="btn whatsapp fw-bold btn-lg text-white text-decoration-none karla rounded-pill">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
                             <path d="M7.5 1v7h1V1z" />
                             <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
@@ -352,7 +357,7 @@
                     </div>
 
                     <div class="col col-lg-4">
-                        <a href="" class="text-decoration-none ">
+                        <a href="content/place/east_of_madagascar.html" class="text-decoration-none ">
                             <div class="card card-cover h-100 text-bg-dark   image-hover"
                                 style="background-image: url('assets/images/andasibe.jpg'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
@@ -363,7 +368,7 @@
 
                     </div>
                     <div class="col col-lg-4 ">
-                        <a href="" class="text-decoration-none ">
+                        <a href="content/place/west_of_madagascar.html" class="text-decoration-none ">
                             <div class="card card-cover h-100 text-bg-dark   image-hover"
                                 style="background-image: url('assets/images/tsingy.webp'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
@@ -373,7 +378,7 @@
                         </a>
                     </div>
                     <div class="col col-lg-4">
-                        <a href="" class="text-decoration-none ">
+                        <a href="content/place/southWest_of_Madgascar.html" class="text-decoration-none ">
                             <div class="card card-cover h-100 text-bg-dark  image-hover"
                                 style="background-image: url('assets/images/city/aller.jpg'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
@@ -383,7 +388,7 @@
                         </a>
                     </div>
                     <div class="col col-lg-4">
-                        <a href="" class="text-decoration-none ">
+                        <a href="content/place/center_of_Madagascar.html" class="text-decoration-none ">
                             <div class="card card-cover h-100 text-bg-dark  image-hover"
                                 style="background-image: url('assets/images/antananarivo.webp'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
@@ -460,7 +465,7 @@
 
 
     <!------------------------- FOOTER --------------------------------------------------------->
-    <div class="container bg-dark text-white rounded">
+    <div class="container bg text-white rounded">
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3  ">
