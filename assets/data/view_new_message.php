@@ -64,10 +64,10 @@ try {
 
 </head>
 
-<body class="bg-dark f">
+<body class="bg f">
 
     <!--Navbar -->
-    <header id="" class="header d-flex align-items-center sticky-top  bg-dark rounded shadow">
+    <header id="" class="header d-flex align-items-center sticky-top  bg rounded shadow">
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center justify-content-md-between py-1 mt-2">
                 <a href="/"
@@ -85,7 +85,7 @@ try {
                     <li><a href="../../content/ourstours.html" class="nav-link px-2 text-white">Our Tours</a></li>
                     <li><a href="../../content/Rental_car.html" class="nav-link px-2 text-white">Car Rental</a></li>
                     <li><a href="../../content/contact.html" class="nav-link px-2 text-white">Contact Us</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-power text-success" viewBox="0 0 16 16">
+                    <li><a href="#" class="nav-link px-2 text-white"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-power text-warning" viewBox="0 0 16 16">
                                 <path d="M7.5 1v7h1V1z" />
                                 <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
                             </svg> </a></li>
@@ -96,7 +96,7 @@ try {
                 <div class="col-auto col-md-3 text-end pt-2">
                     <div class="row">
 
-                        <div class="col g-0"><a class="btn text-white f fw-bold g-0 " id="colorButton"
+                        <div class="col g-0"><a class="btn text-white f fw-bold g-0 rounded-pill " id="colorButton"
                                 style="font-size: smaller;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
                                     height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
                                     <path
@@ -171,7 +171,7 @@ try {
 
 
     <!------------------------- FOOTER --------------------------------------------------------->
-    <div class="container bg-dark text-white rounded">
+    <div class="container bg text-white rounded">
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3  ">

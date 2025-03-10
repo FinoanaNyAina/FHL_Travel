@@ -39,10 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </head>
 
-<body class="bg-dark f">
+<body class="bg f">
 
     <!--Navbar -->
-    <header id="" class="header d-flex align-items-center sticky-top  bg-dark rounded shadow">
+    <header id="" class="header d-flex align-items-center sticky-top  bg rounded shadow">
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center justify-content-md-between py-1 mt-2">
                 <a href="../../index.php"
@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="col-auto col-md-3 text-end pt-2">
                     <div class="row">
 
-                        <div class="col g-0"><a class="btn text-white f fw-bold g-0 " id="colorButton"
+                        <div class="col g-0"><a class="btn text-white f fw-bold g-0 rounded-pill" id="colorButton"
                                 style="font-size: smaller;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
                                     height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
                                     <path
@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     <!------------------------- FOOTER --------------------------------------------------------->
-    <div class="container bg-dark text-white rounded">
+    <div class="container bg text-white rounded">
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3  ">

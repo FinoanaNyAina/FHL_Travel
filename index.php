@@ -131,7 +131,7 @@
 
         </div>
         <!----------------------------------------- best bookes tour --------------------------------------------->
-        <div class="text-center mb-4 mt-3 ">
+        <div class="text-center mb-4 mt-3 mx-5 ">
             <h2 class="d-inline-block mt-4 fw-bold text-uppercase titre color rounded border-bottom ">
                 Best
                 selling tours

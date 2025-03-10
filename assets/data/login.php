@@ -45,10 +45,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </head>
 
-<body class="bg-dark f">
+<body class="bg f">
 
     <!--Navbar -->
-    <header id="" class="header d-flex align-items-center sticky-top  bg-dark rounded shadow">
+    <header id="" class="header d-flex align-items-center sticky-top  bg rounded shadow">
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center justify-content-md-between py-1 mt-2">
                 <a href="/"
@@ -125,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     <!------------------------- FOOTER --------------------------------------------------------->
-    <div class="container bg-dark text-white rounded">
+    <div class="container bg text-white rounded">
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3  ">
