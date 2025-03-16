@@ -1,3 +1,9 @@
+<?php
+// Récupération des données envoyées par le formulaire
+$titre = $_POST['tour'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +15,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Special+Elite&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/globalcss.css">
-    <title>The North of Madagascar</title>
-    <link rel="icon" href="../../assets/images/logo.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="../css/globalcss.css">
+    <title>FHLTravel</title>
+    <link rel="icon" href="../images/logo.jpeg" type="image/x-icon">
 
 </head>
 
@@ -33,7 +39,7 @@
                                         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                                 </svg> +261 32 95 720 20 |</a>
                         </li>
-                        <li><a href="../contact.html" class="nav-link px-2 text-white a"><svg
+                        <li><a href="../../content/contact.html" class="nav-link px-2 text-white a"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-envelope" viewBox="0 0 16 16">
                                     <path
@@ -79,7 +85,6 @@
                                 </svg> Admin</a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
@@ -92,7 +97,7 @@
 
 
 
-                <a href="../index.php"
+                <a href="../../index.php"
                     class="d-flex align-items-center col-auto col-md-2 col-lg-3 mb-2 mb-md-0 text-white text-decoration-none titre fw-bold">
                     <img src="../../assets/images/logo.png" width="50px" style="border-radius: 5%;"
                         alt="FHL Madagascar ">FHL
@@ -102,24 +107,24 @@
                 <ul class="nav col-auto col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
                     <li><a href="../../index.php" class="nav-link px-2 text-white a ">Home</a>
                     </li>
-                    <li><a href="../madagascar.html"
-                            class="nav-link px-2 text-white navcolor  rounded-pill  ">Madagascar</a></li>
-                    <li><a href="../about.html" class="nav-link px-2 text-white a ">About
+                    <li><a href="../../content/madagascar.html"
+                            class="nav-link px-2 text-white   ">Madagascar</a></li>
+                    <li><a href="../../content/about.html" class="nav-link px-2 text-white a ">About
                             Us</a></li>
-                    <li><a href="../ourstours.html" class="nav-link px-2 text-white  a ">Our
+                    <li><a href="../../content/ourstours.html" class="nav-link px-2 text-white  a ">Our
                             Tours</a></li>
-                    <li><a href="../Rental_car.html" class="nav-link px-2 text-white a">Car Rental</a></li>
-                    <li><a href="../assets/data/new/Madagascar_tourism_new.php"
+                    <li><a href="../../content/Rental_car.html" class="nav-link px-2 text-white a">Car Rental</a></li>
+                    <li><a href="new/Madagascar_tourism_new.php"
                             class="nav-link px-2 text-white a">News</a>
                     </li>
-                    <li><a href="../contact.html" class="nav-link px-2 text-white   a">Contact
+                    <li><a href="../../content/contact.html" class="nav-link px-2 text-white   a">Contact
                             Us</a></li>
                 </ul>
 
                 <div class="col-auto col-md-2 col-lg-3 text-end pt-2">
                     <div class="row">
 
-                        <div class="col g-0"><a href="../personal_adventure.html"
+                        <div class="col g-0"><a href="../../content/personal_adventure.html"
                                 class="btn rounded-pill text-white f fw-bold g-0 " id="colorButton"
                                 style="font-size: smaller;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
                                     height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
@@ -134,223 +139,177 @@
             </header>
         </div>
     </header>
-
     <!-------------------home---------------->
 
-    <main class=" shadow-sm bg-white rounded p-3 shadow">
-
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../../assets/images/nosybe.jpg.jpg" class=" w-100 h-100 car" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/images/north.jpg" class=" w-100 h-100 car" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/images/nosybe.jpg" class=" w-100 h-100 car" alt="...">
-                </div>
-
-                <div class="carousel-caption">
-                    <h1>Northern Madagascar </h1>
-                    <p class="fw-bold">A Must-Visit Destination</p>
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+    <main class=" shadow-sm bg-white shadow px-0">
+        <div class="text-center bg shadow-sm py-3 ">
+            <h2 class="text-white">You are choosing</h2>
+            <p class="fw-bold fs-2 text-warning bd " id="send">
+                <?php echo $titre; ?>
+            </p>
         </div>
 
-
-
-        <div class="col-lg-7 mx-auto">
-            <div class="text-center py-3">
-
-                <p>Northern Madagascar is a region of stunning landscapes, from paradise beaches and lush forests to
-                    unique rock
-                    formations. It’s an ideal destination for nature lovers, adventure seekers, and those looking for
-                    relaxation. Here’s a
-                    detailed guide to the must-see places:</p> <br>
-                <h4>Why Choose Northern Madagascar?</h4>
-                <p class="shadow-sm p-3 text-start bg-light ">
-                    - A diverse landscape combining beaches, forests, and rock formations <br>
-                    - Pleasant weather all year round <br>
-                    - Incredible biodiversity with rare wildlife <br>
-                    - Activities for all types of travelers: relaxation, adventure, hiking, and cultural discovery
-                </p>
-
-            </div>
-            <div class="accordion " id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                            aria-controls="flush-collapseOne">
-                            Nosy BE
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Nosy Be is Madagascar’s most popular tourist island, known for its white sandy beaches,
-                                turquoise waters, and
-                                ylang-ylang plantations. <br><br>
-
-                                <b>Top Activities</b>: <br><br>
-                                - Scuba diving and snorkeling at Nosy Tanikely <br>
-                                - Visiting Nosy Komba, famous for its lemurs <br>
-                                - Exploring Nosy Sakatia and swimming with sea turtles <br>
-                                - Watching the sunset from Mont Passot
-                            </p>
-                            <img src="../../assets/images/bajaj.jpeg" class="rounded" alt="Nosy be" width="50%">
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3 " type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                            aria-controls="flush-collapseTwo">
-                            Nosy Iranja
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Nosy Iranja consists of two small islands connected by a sandbank. It’s a dream
-                                destination for a day trip or an
-                                overnight stay under the stars. <br><br>
-
-                                <b>Why Visit?</b> <br><br>
-                                - Postcard-perfect scenery with crystal-clear waters <br>
-                                - Watching sea turtles in their natural habitat <br>
-                                - A peaceful "Robinson Crusoe" experience
-                            </p>
-                            <img src="../../assets/images/nosyiranja.jpeg" alt="Nosy Iranja" width="100%">
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Ankarana The land of Tsingy
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Ankarana National Park is famous for its spectacular Tsingy, sharp limestone formations
-                                that create a breathtaking
-                                landscape. <br><br>
-
-                                What to Discover: <br><br>
-                                - Underground caves and rivers <br>
-                                - Suspended bridges with incredible views <br>
-                                - Unique wildlife, including lemurs, crocodiles, and chameleons <br>
-                            </p>
-                            <img src="../../assets/images/tsingy-rouge.jpeg" alt="Tsingy rouge" width="100%">
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false"
-                            aria-controls="flush-collapse1">
-                            Diego Suarez (Antsiranana)
-                        </button>
-                    </h2>
-                    <div id="flush-collapse1" class="accordion-collapse collapse show "
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Diego Suarez is a lively coastal city surrounded by breathtaking landscapes. <br><br>
-
-                                Must-See Places: <br><br>
-                                - Diego Bay, one of the most beautiful bays in the world <br>
-                                - The Sugar Loaf, an iconic mountain <br>
-                                - The Three Bays (Sakalava, Pigeons, Dunes), perfect for kitesurfing <br>
-                                - A mix of cultures and a vibrant local atmosphere
-                            </p>
-                            <img src="../../assets/images/city/diego.avif" alt="diego" width="100%">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <div class=" row ">
+            <div class="col-2 col-lg-1 py-2 text-center bg-info bg-opacity-10 shadow-sm" style="border-radius: 5px 0 0 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="text-primary bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+                </svg></div>
+            <div class="col-10  col-lg-11 py-2 bg-white shadow-sm " style="border-radius: 0 10px 10px 0;"><a href="../../../index.php" style="text-decoration: none;">Home</a> | <a href="Madagascar_tourism_new.php" style="text-decoration: none;">News</a> | <?= $new["titre"] ?> </div>
         </div>
 
-        <div class="text-center mt-5">
-            <h1 class="titre">Choose another destination below. </h1>
-        </div>
-        <div class="container px-4" id="custom-cards">
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                <div class="col col-lg-4">
-                    <a href="south_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark image-hover"
-                            style="background-image: url('../../assets/images/city/toliara.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5 fw-bold">SOUTH</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+        <div class="row py-4 px-5 ">
 
-                <div class="col col-lg-4">
-                    <a href="../place/east_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark   image-hover"
-                            style="background-image: url('../../assets/images/andasibe.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">EAST</h3>
-                            </div>
-                        </div>
-                    </a>
+            <div class="col-8 col-lg-6 mx-auto">
+
+                <div class="bg-success bg-opacity-10 p-3 rounded">
+                    <p class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-shield-lock text-success" viewBox="0 0 16 16">
+                            <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+                            <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415" />
+                        </svg></p>
+                    <p> Your personal information is 100% secure with us. We use advanced encryption and data protection measures to ensure your privacy.
+                        Your details will only be used to plan your trip and will never be shared with third parties without your consent.</p>
+
+                    <p class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-currency-dollar text-success" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z" />
+                        </svg> </p>
+                    <p> <b class="text-success fs-5">Flexible Payment :</b> We will contact you by email after your booking to discuss the payment options that suit you best.</p>
 
                 </div>
-                <div class="col col-lg-4 ">
-                    <a href="../place/west_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark   image-hover"
-                            style="background-image: url('../../assets/images/tsingy.webp'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">WEST</h3>
-                            </div>
+
+                <br>
+
+                <!------------------------------------------------  FORM   ------------------------------------------------------>
+
+                <form action="send_custome_tours.php" method="post">
+                    <div class="" style="display: none;">
+                        <input type="text" class="form-control f" id="tour" name="tour" value="" placeholder=" ... ">
+
+
+                    </div>
+                    <div class="row g-3 pb-3 mb-5  border shadow-sm px-3 rounded">
+
+                        <p> <b class="fs-3 color">Travel Dates</b> <br> Select your preferred travel dates. If you are not
+                            sure yet, an
+                            estimated date is fine. This
+                            helps us check availability
+                            and plan your itinerary accordingly.</p>
+                        <div class="col-12 shadow-sm p-3 bg-light">
+                            <label for="arrival" class="form-label"> <b>Arrival</b>. <br>Possible Arrival Date
+                                (your best guess is fine)
+                            </label>
+                            <input type="date" class="form-control f" id="arrival" name="arrival" placeholder=" ">
+
                         </div>
-                    </a>
-                </div>
-                <div class="col col-lg-4">
-                    <a href="../place/southWest_of_Madgascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark  image-hover"
-                            style="background-image: url('../../assets/images/city/aller.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">SOUTH WEST</h3>
-                            </div>
+
+                        <div class="col-12 shadow-sm p-3 bg-light">
+                            <label for="departure" class="form-label"> <b>Departure</b>. <br>Possible Departure Date
+                                (your best guess is fine)
+                            </label>
+                            <input type="date" class="form-control f" id="departure" name="departure" placeholder=" ">
+
                         </div>
-                    </a>
-                </div>
-                <div class="col col-lg-4">
-                    <a href="center_of_Madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark  image-hover"
-                            style="background-image: url('../../assets/images/antananarivo.webp'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5 d  fw-bold">THE CENTRAL</h3>
-                            </div>
+                    </div>
+
+
+                    <div class="row g-3 pb-3 mb-5 border shadow-sm px-3 rounded">
+
+                        <p> <b class="fs-3 color">Number of Travelers</b> <br> Let us know how many people will be traveling
+                            with you. This
+                            helps us arrange accommodations,
+                            transport, and activities.</p>
+                        <div class="col-12 shadow-sm p-3 bg-light">
+                            <label for="adults" class="form-label"> <b>Number of adults in your party</b>. <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-asterisk text-danger" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
+                                </svg>
+                                <br>Please indicate number of adults in your party.
+                            </label>
+                            <input type="text" class="form-control f" id="adults" name="adults" placeholder=" ... "
+                                required>
+
                         </div>
-                    </a>
-                </div>
+
+                        <div class="col-12 shadow-sm p-3 bg-light">
+                            <label for="children" class="form-label"> <b>Number of Children in your party</b>. <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-asterisk text-danger" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
+                                </svg>
+                                <br>Please indicate number of children, and please tell us their ages.
+                            </label>
+                            <input type="text" class="form-control f" id="children" name="children" placeholder=" ..."
+                                required>
+
+                        </div>
+                    </div>
+
+                    <div class="row g-3 pb-3 mb-5 border shadow-sm px-3 rounded" style="display: none;">
+
+                        <input type="text" name="message" value="BOOK NOW ">
+                    </div>
+
+                    <div class="row g-3 pb-3 mb-5 border shadow-sm px-3 rounded">
+
+                        <p> <b class="fs-3 color">Contact Information</b> <br> Please provide your contact details so we can
+                            send you the itinerary and discuss any modifications. WhatsApp is
+                            recommended for quick communication.</p>
+
+                        <div class="col-12 shadow-sm p-3 bg-light">
+                            <label for="name" class="form-label"> <b>Name of the principal contact. <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                        class="bi bi-asterisk text-danger" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
+                                    </svg></b> <br>
+                                Please note that we prefer it if you would please give us both your FAMILY and First
+                                names, to help us save and search
+                                for your itinerary in our system. </label>
+                            <input type="text" class="form-control f" id="name" name="name" placeholder="Your name"
+                                required>
+
+                        </div>
+
+                        <div class="col-12 shadow-sm p-3 bg-light ">
+                            <label for="email" class="form-label"><b>Adresse e-mail</b> <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-asterisk text-danger" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
+                                </svg></label>
+                            <input type="email" class="form-control f" id="email" name="email"
+                                placeholder="you@example.com" value="" required>
+                        </div>
+
+                        <div class="col-12 shadow-sm p-3 bg-light">
+                            <label for="phone" class="form-label"> <b>Phone number (WhatsApp, ...)</b>. <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-asterisk text-danger" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
+                                </svg> <br>Please give us a verifiable
+                                number
+                            </label>
+                            <input type="tel" class="form-control f" id="phone" name="phone" placeholder="Phone number"
+                                required>
+
+                        </div>
+                    </div>
+
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" required>
+                        <label class="form-check-label" for="flexSwitchCheckDefault">I have reviewed my details and agree to the terms of service and privacy policy.</label>
+                    </div> <br>
+                    <div class="text-center">
+                        <button class="btn text-white btn-lg fw-bold f rounded-pill whatsapp" type="submit" onclick="envoyerContenu()">BOOK NOW
+                        </button>
+                    </div>
+
+
+                </form>
             </div>
         </div>
-
 
 
     </main>
@@ -361,7 +320,7 @@
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3  ">
-                    <img src="../../assets/images/logo.png" class="rounded-3" width="200px" height="200px" alt="">
+                    <img src="../images/logo.jpeg" class="rounded-3" width="200px" height="200px" alt="">
                 </div>
                 <div class="col-6 col-md-2 mb-3 ">
                     <h4 class="titre">FHL Travel</h4>
@@ -435,7 +394,7 @@
                                     class="bi bi-whatsapp" viewBox="0 0 16 16">
                                     <path
                                         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                                </svg> +261 34 04 140 40
+                                </svg> +261 32 95 720 20
                                 (Whatsapp)</a>
                         </li>
                     </ul>
@@ -449,7 +408,14 @@
     </div>
 </body>
 
-
+<script>
+    function envoyerContenu() {
+        // Récupérer le texte du paragraphe
+        let contenu = document.getElementById("send").innerText;
+        // L'ajouter dans l'input caché
+        document.getElementById("tour").value = contenu;
+    }
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

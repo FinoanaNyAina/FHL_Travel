@@ -17,8 +17,8 @@
         $tours = $stmt_createTours->fetchAll(PDO::FETCH_ASSOC);
 
         // Récupérer les données de `classeur`
-        $stmt_classeur = $pdo->query("SELECT * FROM classeur");
-        $archives = $stmt_classeur->fetchAll(PDO::FETCH_ASSOC);
+        $stmt_classeur = $pdo->query("SELECT * FROM booking");
+        $booking = $stmt_classeur->fetchAll(PDO::FETCH_ASSOC);
 
         // Récupérer les données de `contact`
         $stmt_contact = $pdo->query("SELECT * FROM contact");
@@ -42,9 +42,8 @@
          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link
-         href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-         rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Special+Elite&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
      <link rel="stylesheet" href="../css/globalcss.css">
      <title>FHLTravel</title>
      <link rel="icon" href="../images/logo.jpeg" type="image/x-icon">
@@ -55,36 +54,105 @@
  <body class="bg f">
 
      <!--Navbar -->
-     <header id="" class="header d-flex align-items-center sticky-top  bg rounded shadow">
+     <div class="container bg-black bg-opacity-25 rounded">
+         <div class="pb-1" id=" ">
+             <div class="row ">
+                 <div class=" col col-lg-8">
+                     <ul class="nav">
+                         <li><a href="https://wa.me/261329572020" class="nav-link px-2 text-white " target="_blank"><svg
+                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                     <path
+                                         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                 </svg> +261 32 95 720 20 |</a>
+                         </li>
+                         <li><a href="../../content/contact.html" class="nav-link px-2 text-white a"><svg
+                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-envelope" viewBox="0 0 16 16">
+                                     <path
+                                         d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                 </svg></a></li>
+                         <li><a href="https://www.facebook.com/profile.php?id=100081146902072" target="_blank"
+                                 class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                     height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                     <path
+                                         d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                 </svg></a></li>
+                         <li><a href="https://www.instagram.com/fhltours?igsh=amR1NnowZHV4c2di" target="_blank"
+                                 class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                     height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                     <path
+                                         d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                 </svg></a></li>
+                         <li><a href="https://www.tiktok.com/@fhl.travel.madaga?_t=ZM-8ucli1tHKYo&_r=1" target="_blank"
+                                 class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                     height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                     <path
+                                         d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                                 </svg></a></li>
+                         <li><a href="https://g.co/kgs/zcTmM6A" target="_blank" class="nav-link px-2 text-white a"><svg
+                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-google" viewBox="0 0 16 16">
+                                     <path
+                                         d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+                                 </svg></a></li>
+
+                     </ul>
+                 </div>
+                 <div class=" col col-lg-4  ">
+                     <ul class="nav justify-content-end">
+                         <li class="justify-content-end">
+                             <a href="../../assets/data/login.php" class="nav-link px-2 text-white"><svg
+                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-person-workspace" viewBox="0 0 16 16">
+                                     <path
+                                         d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                                     <path
+                                         d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z" />
+                                 </svg> Admin</a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+
+     </div>
+
+     <header id="" class="header d-flex align-items-center sticky-top bg shadow ">
          <div class="container">
-             <header class="d-flex flex-wrap justify-content-center justify-content-md-between py-1 mt-2">
-                 <a href="/"
-                     class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none titre fw-bold">
-                     <img src="../images/logo.jpeg" width="50px" style="border-radius: 20%;margin-right: 5px;"
-                         alt="FHL Madagascar ">FHL Travel Madagascar
+             <header class="d-flex flex-wrap justify-content-center justify-content-md-between p-2">
+
+
+
+                 <a href="../../index.php"
+                     class="d-flex align-items-center col-auto col-md-2 col-lg-3 mb-2 mb-md-0 text-white text-decoration-none titre fw-bold">
+                     <img src="../../assets/images/logo.png" width="50px" style="border-radius: 5%;"
+                         alt="FHL Madagascar ">FHL
+                     Travel Madagascar
                  </a>
 
-                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 " id="nav">
-                     <li><a href="../../index.php" class="nav-link px-2 text-white ">Home</a>
+                 <ul class="nav col-auto col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
+                     <li><a href="../../index.php" class="nav-link px-2 text-white a ">Home</a>
                      </li>
-                     <li><a href="../../content/madagascar.html" class="nav-link px-2 text-white">Madagascar</a></li>
-                     <li><a href="../../content/about.html" class="nav-link px-2 text-white  ">About
+                     <li><a href="../../content/madagascar.html"
+                             class="nav-link px-2 text-white   ">Madagascar</a></li>
+                     <li><a href="../../content/about.html" class="nav-link px-2 text-white a ">About
                              Us</a></li>
-                     <li><a href="../../content/ourstours.html" class="nav-link px-2 text-white">Our Tours</a></li>
-                     <li><a href="../../content/Rental_car.html" class="nav-link px-2 text-white">Car Rental</a></li>
-                     <li><a href="../../content/contact.html" class="nav-link px-2 text-white">Contact Us</a></li>
-                     <li><a href="#" class="nav-link px-2 text-white"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-power text-warning" viewBox="0 0 16 16">
-                                 <path d="M7.5 1v7h1V1z" />
-                                 <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
-                             </svg> </a></li>
-
+                     <li><a href="../../content/ourstours.html" class="nav-link px-2 text-white  a ">Our
+                             Tours</a></li>
+                     <li><a href="../../content/Rental_car.html" class="nav-link px-2 text-white a">Car Rental</a></li>
+                     <li><a href="new/Madagascar_tourism_new.php"
+                             class="nav-link px-2 text-white a">News</a>
+                     </li>
+                     <li><a href="../../content/contact.html" class="nav-link px-2 text-white   a">Contact
+                             Us</a></li>
                  </ul>
 
-
-                 <div class="col-auto col-md-3 text-end pt-2">
+                 <div class="col-auto col-md-2 col-lg-3 text-end pt-2">
                      <div class="row">
 
-                         <div class="col g-0"><a class="btn text-white f fw-bold g-0 rounded-pill " id="colorButton"
+                         <div class="col g-0"><a href="../../content/personal_adventure.html"
+                                 class="btn rounded-pill text-white f fw-bold g-0 " id="colorButton"
                                  style="font-size: smaller;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
                                      height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
                                      <path
@@ -109,14 +177,16 @@
              </div>
          </div>
 
+
+
          <!---------------------------------------  donner personalisation tours   -------------------------------------------------------->
          <div class="row">
              <div class="col">
 
 
                  <div class="table-responsive small">
-                     <h2 class=" bg-danger bg-opacity-10 text-center p-2 " id="nav">Nouveau dossier </h2>
-                     <table class="table table-striped table-sm">
+                     <h2 class=" bd text-center p-2 ">Personal Adventure </h2>
+                     <table class="table table-bordered table-warning table-sm">
                          <thead>
                              <tr>
                                  <th scope="col-lg-4">ID</th>
@@ -150,32 +220,32 @@
 
 
                  <div class="table-responsive small mt-5 border shadow-sm ">
-                     <h2 class=" bg-black bg-opacity-10 text-center p-2 " id="nav">Dossier Traiter </h2>
-                     <table class="table table-bordered table-striped table-sm  ">
+                     <h2 class=" bd  text-center p-2 ">Customize Tours </h2>
+                     <table class="table table-bordered table-primary table-sm  ">
                          <thead class="text-center ">
                              <tr class="">
                                  <th scope="col-lg-4 ">ID</th>
-                                 <th scope="col-lg-4">Nom</th>
-                                 <th scope="col-lg-4">Email</th>
-                                 <th scope="col-lg-4">Adresse</th>
-                                 <th scope="col-lg-4">Téléphone</th>
-                                 <th scope="col-lg-4">Arrivée</th>
-                                 <th scope="col-lg-4">Départ</th>
-                                 <th scope="col-lg-4">Avis</th>
+                                 <th scope="col-lg-4">Tour</th>
+                                 <th scope="col-lg-4">Arrival</th>
+                                 <th scope="col-lg-4">Departure</th>
+                                 <th scope="col-lg-4">message</th>
+                                 <th scope="col-lg-4">name</th>
+                                 <th scope="col-lg-4">email</th>
+                                 <th scope="col-lg-4">Phone</th>
                              </tr>
                          </thead>
                          <tbody>
-                             <?php foreach ($archives as $archives): ?>
+                             <?php foreach ($booking as $booking): ?>
                                  <tr>
-                                     <td><?= htmlspecialchars($archives["id"]) ?></td>
-                                     <td><?= htmlspecialchars($archives["name"]) ?></td>
-                                     <td><?= htmlspecialchars($archives["email"]) ?></td>
-                                     <td><?= htmlspecialchars($archives["adresse"]) ?></td>
-                                     <td><?= htmlspecialchars($archives["phone"]) ?></td>
-                                     <td><?= htmlspecialchars($archives["arrival"]) ?></td>
-                                     <td><?= htmlspecialchars($archives["departure"]) ?></td>
-                                     <td><?= htmlspecialchars($archives["avis"]) ?></td>
-                                     <td><a href="view_new_personal_archive.php?id=<?= $archives["id"] ?>">Voir</a></td> <!-- Bouton Voir -->
+                                     <td><?= htmlspecialchars($booking["id"]) ?></td>
+                                     <td><?= htmlspecialchars($booking["tour"]) ?></td>
+                                     <td><?= htmlspecialchars($booking["arrival"]) ?></td>
+                                     <td><?= htmlspecialchars($booking["departure"]) ?></td>
+                                     <td><?= htmlspecialchars($booking["message"]) ?></td>
+                                     <td><?= htmlspecialchars($booking["name"]) ?></td>
+                                     <td><?= htmlspecialchars($booking["email"]) ?></td>
+                                     <td><?= htmlspecialchars($booking["phone"]) ?></td>
+                                     <td><a href="view_new_booking_tours.php?id=<?= intval($booking["id"]) ?>">Voir</a></td> <!-- Bouton Voir -->
                                  </tr>
                              <?php endforeach; ?>
                          </tbody>
@@ -183,13 +253,14 @@
                  </div>
 
                  <div class="table-responsive small mt-5 border shadow-sm ">
-                     <h2 class=" bg-black bg-opacity-10 text-center p-2 " id="nav">New Message </h2>
-                     <table class="table table-bordered table-striped table-sm  ">
+                     <h2 class=" bd text-center p-2 ">New Message </h2>
+                     <table class="table table-bordered table-success table-sm  ">
                          <thead class="text-center ">
                              <tr class="">
                                  <th scope="col-lg-4 ">ID</th>
                                  <th scope="col-lg-4">Nom</th>
                                  <th scope="col-lg-4">Email</th>
+                                 <th scope="col-lg-4">Subject</th>
                                  <th scope="col-lg-4">message</th>
 
                              </tr>
@@ -200,6 +271,7 @@
                                      <td><?= htmlspecialchars($contact["id"]) ?></td>
                                      <td><?= htmlspecialchars($contact["name"]) ?></td>
                                      <td><?= htmlspecialchars($contact["email"]) ?></td>
+                                     <td><?= htmlspecialchars($contact["subject"]) ?></td>
                                      <td><?= htmlspecialchars($contact["message"]) ?></td>
                                      <td><a href="view_new_message.php?id=<?= $contact["id"] ?>">Voir</a></td> <!-- Bouton Voir -->
                                  </tr>
@@ -211,9 +283,60 @@
              </div>
          </div>
 
-         <div class="text-center m-5 ">
-             <a href="logout.php" class="btn btn-danger "> logout</a>
+
+         <div class="row m-5 pb-5 ">
+             <div class="col-8 col-md-7 col-lg-6 mx-auto">
+                 <div class=" col-lg-8 mx-auto bg-warning bg-opacity-10 shadow-sm border-top border-bottom p-3  mb-4">
+                     <h4 class="text-center fs-2 fw-bold titre">POST THE NEW </h4>
+
+                 </div>
+
+                 <form class="f" action="new/send.php" method="POST" enctype="multipart/form-data">
+                     <div class="row g-3 pb-5">
+
+                         <div class="col-12">
+                             <label for="subject" class="form-label fw-bold">Image </label>
+                             <input type="file" class="form-control f" id="subject" name="image" placeholder="subject"
+                                 required>
+                         </div>
+
+                         <div class="col-12">
+                             <label class="form-label fw-bold">Date </label>
+                             <input type="date" class="form-control f" name="date"
+                                 required>
+                         </div>
+
+                         <div class="col-12">
+                             <label for="titre" class="form-label fw-bold">Titre </label>
+                             <input type="text" class="form-control f" id="titre" name="titre" placeholder="your titre "
+                                 required>
+                         </div>
+
+                         <div class="col-12">
+                             <label for="message" class="form-label fw-bold">Message </label>
+                             <textarea name="contenu" id="message" class="form-control f" rows="4"
+                                 placeholder="Your Message"></textarea>
+                         </div>
+                     </div>
+                     <div class="text-center">
+                         <button class="btn text-white rounded-pill fw-bold f " id="colorButton" type="submit"><svg
+                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                 class="bi bi-send" viewBox="0 0 16 16">
+                                 <path
+                                     d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+                             </svg> POST </button>
+                     </div>
+
+                 </form>
+             </div>
          </div>
+         <hr>
+         <div class="text-center  ">
+             <a href="logout.php" class="btn btn-lg mail rounded-pill "> logout</a>
+         </div>
+
+
+
      </main>
 
 
@@ -296,7 +419,7 @@
                                      class="bi bi-whatsapp" viewBox="0 0 16 16">
                                      <path
                                          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                                 </svg> +261 34 04 140 40
+                                 </svg> +261 32 95 720 20
                                  (Whatsapp)</a>
                          </li>
                      </ul>

@@ -1,3 +1,68 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $message = $_POST["contenu"];
+    $titre = $_POST["titre"];
+    $date = $_POST["date"];
+
+    try {
+        // Connexion à la base de données
+        $pdo = new PDO("mysql:host=localhost;dbname=fhltravel", "root", "");
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        // ✅ Utilisation de DateTime au lieu de strftime()
+        $formattedDate = (new DateTime($date))->format('d F Y');
+
+        // 📂 Définir le chemin absolu du dossier
+        $target_dir = __DIR__ . "/image/";
+        if (!file_exists($target_dir)) {
+            mkdir($target_dir, 0777, true); // Création avec permissions
+        }
+
+        $file_path = ""; // Par défaut, pas d'image
+
+        // 📷 Vérifier si un fichier a été soumis
+        if (isset($_FILES["image"]) && $_FILES["image"]["error"] == 0) {
+            $file_name = time() . "_" . basename($_FILES["image"]["name"]); // Nom unique
+            $target_file = $target_dir . $file_name;
+            $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+
+            // Vérifier si c'est bien une image
+            $check = getimagesize($_FILES["image"]["tmp_name"]);
+            if ($check !== false) {
+                // 📥 Déplacement sécurisé du fichier uploadé
+                if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+                    $file_path = "image/" . $file_name; // Chemin relatif pour affichage
+                } else {
+                    echo "Erreur lors de l'upload de l'image.";
+                    exit;
+                }
+            } else {
+                echo "Le fichier n'est pas une image.";
+                exit;
+            }
+        }
+
+        // 🔄 Insérer dans la base de données
+        $stmt = $pdo->prepare("
+            INSERT INTO new (contenu, image, titre, date) 
+            VALUES (:message, :file_path, :titre, :date)
+        ");
+
+        $stmt->execute([
+            "file_path" => $file_path,
+            "message" => $message,
+            "titre" => $titre,
+            "date" => $formattedDate
+        ]);
+    } catch (PDOException $e) {
+        echo "❌ Erreur de base de données : " . $e->getMessage();
+    }
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,10 +76,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/globalcss.css">
-    <title>The North of Madagascar</title>
-    <link rel="icon" href="../../assets/images/logo.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="../../css/globalcss.css">
+    <title>FHLTravel</title>
+    <link rel="icon" href="../../images/logo.jpeg" type="image/x-icon">
 
 </head>
 
@@ -33,7 +97,7 @@
                                         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                                 </svg> +261 32 95 720 20 |</a>
                         </li>
-                        <li><a href="../contact.html" class="nav-link px-2 text-white a"><svg
+                        <li><a href="../../../content/contact.html" class="nav-link px-2 text-white a"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-envelope" viewBox="0 0 16 16">
                                     <path
@@ -69,7 +133,7 @@
                 <div class=" col col-lg-4  ">
                     <ul class="nav justify-content-end">
                         <li class="justify-content-end">
-                            <a href="../../assets/data/login.php" class="nav-link px-2 text-white"><svg
+                            <a href="../../../assets/data/login.php" class="nav-link px-2 text-white"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-person-workspace" viewBox="0 0 16 16">
                                     <path
@@ -79,7 +143,6 @@
                                 </svg> Admin</a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
@@ -92,34 +155,34 @@
 
 
 
-                <a href="../index.php"
+                <a href="../../../index.php"
                     class="d-flex align-items-center col-auto col-md-2 col-lg-3 mb-2 mb-md-0 text-white text-decoration-none titre fw-bold">
-                    <img src="../../assets/images/logo.png" width="50px" style="border-radius: 5%;"
+                    <img src="../../../assets/images/logo.png" width="50px" style="border-radius: 5%;"
                         alt="FHL Madagascar ">FHL
                     Travel Madagascar
                 </a>
 
                 <ul class="nav col-auto col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
-                    <li><a href="../../index.php" class="nav-link px-2 text-white a ">Home</a>
+                    <li><a href="../../../index.php" class="nav-link px-2 text-white a ">Home</a>
                     </li>
-                    <li><a href="../madagascar.html"
-                            class="nav-link px-2 text-white navcolor  rounded-pill  ">Madagascar</a></li>
-                    <li><a href="../about.html" class="nav-link px-2 text-white a ">About
+                    <li><a href="../../../content/madagascar.html"
+                            class="nav-link px-2 text-white   ">Madagascar</a></li>
+                    <li><a href="../../../content/about.html" class="nav-link px-2 text-white a ">About
                             Us</a></li>
-                    <li><a href="../ourstours.html" class="nav-link px-2 text-white  a ">Our
+                    <li><a href="../../../content/ourstours.html" class="nav-link px-2 text-white  a ">Our
                             Tours</a></li>
-                    <li><a href="../Rental_car.html" class="nav-link px-2 text-white a">Car Rental</a></li>
-                    <li><a href="../assets/data/new/Madagascar_tourism_new.php"
+                    <li><a href="../../../content/Rental_car.html" class="nav-link px-2 text-white a">Car Rental</a></li>
+                    <li><a href="Madagascar_tourism_new.php"
                             class="nav-link px-2 text-white a">News</a>
                     </li>
-                    <li><a href="../contact.html" class="nav-link px-2 text-white   a">Contact
+                    <li><a href="../../../content/contact.html" class="nav-link px-2 text-white   a">Contact
                             Us</a></li>
                 </ul>
 
                 <div class="col-auto col-md-2 col-lg-3 text-end pt-2">
                     <div class="row">
 
-                        <div class="col g-0"><a href="../personal_adventure.html"
+                        <div class="col g-0"><a href="../../../content/personal_adventure.html"
                                 class="btn rounded-pill text-white f fw-bold g-0 " id="colorButton"
                                 style="font-size: smaller;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
                                     height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
@@ -137,220 +200,33 @@
 
     <!-------------------home---------------->
 
-    <main class=" shadow-sm bg-white rounded p-3 shadow">
+    <main class=" shadow-sm bg-white shadow px-0">
+        <div style="height: 100vh; display: flex; justify-content: center; align-items: center;">
 
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../../assets/images/nosybe.jpg.jpg" class=" w-100 h-100 car" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/images/north.jpg" class=" w-100 h-100 car" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/images/nosybe.jpg" class=" w-100 h-100 car" alt="...">
-                </div>
+            <div class="col-12 col-md-8 col-lg-6 mx-auto g-0 p-5 bg-light rounded-4 shadow-lg">
+                <div class="row">
+                    <div class="  col-md-6 col-lg-6"><img src="../../images/logo.jpeg" alt="Logo" width="200" height="200"
+                            class="rounded-circle"></div>
+                    <div class="  col-md-6 col-lg-6">
+                        <h3>Succes POST <span class="badge text-bg-light"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="40" height="40" fill="currentColor" class="bi bi-check-all text-success"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z" />
+                                </svg></span>
 
-                <div class="carousel-caption">
-                    <h1>Northern Madagascar </h1>
-                    <p class="fw-bold">A Must-Visit Destination</p>
-                </div>
-            </div>
+                        </h3>
+                        <p><b class="text-primary-emphasis">Thank you "<?php echo $name; ?>" </b> for contacting us. We will respond
+                            as soon as possible via your email. 💙 </p>
+                        <a href="Madagascar_tourism_new.php" class="btn btn-sm whatsapp rounded-pill"> affiche </a>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-
-
-        <div class="col-lg-7 mx-auto">
-            <div class="text-center py-3">
-
-                <p>Northern Madagascar is a region of stunning landscapes, from paradise beaches and lush forests to
-                    unique rock
-                    formations. It’s an ideal destination for nature lovers, adventure seekers, and those looking for
-                    relaxation. Here’s a
-                    detailed guide to the must-see places:</p> <br>
-                <h4>Why Choose Northern Madagascar?</h4>
-                <p class="shadow-sm p-3 text-start bg-light ">
-                    - A diverse landscape combining beaches, forests, and rock formations <br>
-                    - Pleasant weather all year round <br>
-                    - Incredible biodiversity with rare wildlife <br>
-                    - Activities for all types of travelers: relaxation, adventure, hiking, and cultural discovery
-                </p>
-
-            </div>
-            <div class="accordion " id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                            aria-controls="flush-collapseOne">
-                            Nosy BE
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Nosy Be is Madagascar’s most popular tourist island, known for its white sandy beaches,
-                                turquoise waters, and
-                                ylang-ylang plantations. <br><br>
-
-                                <b>Top Activities</b>: <br><br>
-                                - Scuba diving and snorkeling at Nosy Tanikely <br>
-                                - Visiting Nosy Komba, famous for its lemurs <br>
-                                - Exploring Nosy Sakatia and swimming with sea turtles <br>
-                                - Watching the sunset from Mont Passot
-                            </p>
-                            <img src="../../assets/images/bajaj.jpeg" class="rounded" alt="Nosy be" width="50%">
-                        </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3 " type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                            aria-controls="flush-collapseTwo">
-                            Nosy Iranja
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Nosy Iranja consists of two small islands connected by a sandbank. It’s a dream
-                                destination for a day trip or an
-                                overnight stay under the stars. <br><br>
 
-                                <b>Why Visit?</b> <br><br>
-                                - Postcard-perfect scenery with crystal-clear waters <br>
-                                - Watching sea turtles in their natural habitat <br>
-                                - A peaceful "Robinson Crusoe" experience
-                            </p>
-                            <img src="../../assets/images/nosyiranja.jpeg" alt="Nosy Iranja" width="100%">
-                        </div>
-                    </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Ankarana The land of Tsingy
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Ankarana National Park is famous for its spectacular Tsingy, sharp limestone formations
-                                that create a breathtaking
-                                landscape. <br><br>
 
-                                What to Discover: <br><br>
-                                - Underground caves and rivers <br>
-                                - Suspended bridges with incredible views <br>
-                                - Unique wildlife, including lemurs, crocodiles, and chameleons <br>
-                            </p>
-                            <img src="../../assets/images/tsingy-rouge.jpeg" alt="Tsingy rouge" width="100%">
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false"
-                            aria-controls="flush-collapse1">
-                            Diego Suarez (Antsiranana)
-                        </button>
-                    </h2>
-                    <div id="flush-collapse1" class="accordion-collapse collapse show "
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Diego Suarez is a lively coastal city surrounded by breathtaking landscapes. <br><br>
-
-                                Must-See Places: <br><br>
-                                - Diego Bay, one of the most beautiful bays in the world <br>
-                                - The Sugar Loaf, an iconic mountain <br>
-                                - The Three Bays (Sakalava, Pigeons, Dunes), perfect for kitesurfing <br>
-                                - A mix of cultures and a vibrant local atmosphere
-                            </p>
-                            <img src="../../assets/images/city/diego.avif" alt="diego" width="100%">
-                        </div>
-                    </div>
-                </div>
             </div>
 
         </div>
-
-        <div class="text-center mt-5">
-            <h1 class="titre">Choose another destination below. </h1>
-        </div>
-        <div class="container px-4" id="custom-cards">
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                <div class="col col-lg-4">
-                    <a href="south_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark image-hover"
-                            style="background-image: url('../../assets/images/city/toliara.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5 fw-bold">SOUTH</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col col-lg-4">
-                    <a href="../place/east_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark   image-hover"
-                            style="background-image: url('../../assets/images/andasibe.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">EAST</h3>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col col-lg-4 ">
-                    <a href="../place/west_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark   image-hover"
-                            style="background-image: url('../../assets/images/tsingy.webp'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">WEST</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col col-lg-4">
-                    <a href="../place/southWest_of_Madgascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark  image-hover"
-                            style="background-image: url('../../assets/images/city/aller.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">SOUTH WEST</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col col-lg-4">
-                    <a href="center_of_Madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark  image-hover"
-                            style="background-image: url('../../assets/images/antananarivo.webp'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5 d  fw-bold">THE CENTRAL</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
 
 
     </main>
@@ -361,7 +237,7 @@
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3  ">
-                    <img src="../../assets/images/logo.png" class="rounded-3" width="200px" height="200px" alt="">
+                    <img src="../../images/logo.jpeg" class="rounded-3" width="200px" height="200px" alt="">
                 </div>
                 <div class="col-6 col-md-2 mb-3 ">
                     <h4 class="titre">FHL Travel</h4>
@@ -435,7 +311,7 @@
                                     class="bi bi-whatsapp" viewBox="0 0 16 16">
                                     <path
                                         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                                </svg> +261 34 04 140 40
+                                </svg> +261 32 95 720 20
                                 (Whatsapp)</a>
                         </li>
                     </ul>

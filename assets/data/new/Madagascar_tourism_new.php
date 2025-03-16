@@ -1,3 +1,22 @@
+<?php
+// Connexion à la base de données
+try {
+    $pdo = new PDO("mysql:host=localhost;dbname=fhltravel", "root", "");
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // Récupérer les données de `new`
+
+    $bb = $pdo->query("SELECT id, contenu, image, titre, date FROM new ORDER BY id DESC LIMIT 2");
+    $new = $bb->fetchAll(PDO::FETCH_ASSOC);
+
+    // Récupérer toutes les entrées sauf les 2 dernières
+    $stmt = $pdo->query("SELECT id, contenu, image, titre, date FROM new ORDER BY id DESC LIMIT 18446744073709551615 OFFSET 2");
+    $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    die("Erreur de connexion : " . $e->getMessage());
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,17 +27,17 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/globalcss.css">
-    <title>The North of Madagascar</title>
-    <link rel="icon" href="../../assets/images/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Special+Elite&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../assets/css/globalcss.css">
+    <title>FHLTravel</title>
+    <link rel="icon" href="../../../assets/images/logo.jpeg" type="image/x-icon">
 
 
 </head>
 
 <body class="bg f">
+
 
     <!--Navbar -->
     <div class="container bg-black bg-opacity-25 rounded">
@@ -33,7 +52,7 @@
                                         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                                 </svg> +261 32 95 720 20 |</a>
                         </li>
-                        <li><a href="../contact.html" class="nav-link px-2 text-white a"><svg
+                        <li><a href="../../../content/contact.html" class="nav-link px-2 text-white a"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-envelope" viewBox="0 0 16 16">
                                     <path
@@ -69,7 +88,7 @@
                 <div class=" col col-lg-4  ">
                     <ul class="nav justify-content-end">
                         <li class="justify-content-end">
-                            <a href="../../assets/data/login.php" class="nav-link px-2 text-white"><svg
+                            <a href="../../../assets/data/login.php" class="nav-link px-2 text-white"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-person-workspace" viewBox="0 0 16 16">
                                     <path
@@ -79,7 +98,6 @@
                                 </svg> Admin</a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
@@ -92,34 +110,34 @@
 
 
 
-                <a href="../index.php"
+                <a href="../../../index.php"
                     class="d-flex align-items-center col-auto col-md-2 col-lg-3 mb-2 mb-md-0 text-white text-decoration-none titre fw-bold">
-                    <img src="../../assets/images/logo.png" width="50px" style="border-radius: 5%;"
+                    <img src="../../../assets/images/logo.png" width="50px" style="border-radius: 5%;"
                         alt="FHL Madagascar ">FHL
                     Travel Madagascar
                 </a>
 
                 <ul class="nav col-auto col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
-                    <li><a href="../../index.php" class="nav-link px-2 text-white a ">Home</a>
+                    <li><a href="../../../index.php" class="nav-link px-2 text-white a ">Home</a>
                     </li>
-                    <li><a href="../madagascar.html"
-                            class="nav-link px-2 text-white navcolor  rounded-pill  ">Madagascar</a></li>
-                    <li><a href="../about.html" class="nav-link px-2 text-white a ">About
+                    <li><a href="../../../content/madagascar.html"
+                            class="nav-link px-2 text-white   ">Madagascar</a></li>
+                    <li><a href="../../../content/about.html" class="nav-link px-2 text-white a ">About
                             Us</a></li>
-                    <li><a href="../ourstours.html" class="nav-link px-2 text-white  a ">Our
+                    <li><a href="../../../content/ourstours.html" class="nav-link px-2 text-white  a ">Our
                             Tours</a></li>
-                    <li><a href="../Rental_car.html" class="nav-link px-2 text-white a">Car Rental</a></li>
-                    <li><a href="../assets/data/new/Madagascar_tourism_new.php"
-                            class="nav-link px-2 text-white a">News</a>
+                    <li><a href="../../../content/Rental_car.html" class="nav-link px-2 text-white a">Car Rental</a></li>
+                    <li><a href="Madagascar_tourism_new.php"
+                            class="nav-link px-2 text-white navcolor  rounded-pill">News</a>
                     </li>
-                    <li><a href="../contact.html" class="nav-link px-2 text-white   a">Contact
+                    <li><a href="../../../content/contact.html" class="nav-link px-2 text-white   a">Contact
                             Us</a></li>
                 </ul>
 
                 <div class="col-auto col-md-2 col-lg-3 text-end pt-2">
                     <div class="row">
 
-                        <div class="col g-0"><a href="../personal_adventure.html"
+                        <div class="col g-0"><a href="../../../content/personal_adventure.html"
                                 class="btn rounded-pill text-white f fw-bold g-0 " id="colorButton"
                                 style="font-size: smaller;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
                                     height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
@@ -137,223 +155,123 @@
 
     <!-------------------home---------------->
 
-    <main class=" shadow-sm bg-white rounded p-3 shadow">
+    <main class=" shadow bg-light  rounded ">
 
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../../assets/images/nosybe.jpg.jpg" class=" w-100 h-100 car" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/images/north.jpg" class=" w-100 h-100 car" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/images/nosybe.jpg" class=" w-100 h-100 car" alt="...">
-                </div>
 
-                <div class="carousel-caption">
-                    <h1>Northern Madagascar </h1>
-                    <p class="fw-bold">A Must-Visit Destination</p>
-                </div>
-            </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="text-center bg shadow-sm pt-2">
+            <h2 class="text-white">New of tourism </h2>
+            <p class="fw-bold fs-2 text-warning bd " id="send">
+                Recent updates on tourism in Madagascar
+            </p>
         </div>
 
+        <div class="pt-4 px-5 mx-5  rounded-3">
+            <div class="row">
+                <div class="col-lg-11 mx-auto">
+                    <div class="row g-4 px-4 pb-4 rounded bg-white">
+                        <?php foreach ($new as $newsItem): ?>
+                            <div class="col-lg-6">
+                                <a href="news.php?id=<?= htmlspecialchars(intval($newsItem['id'])); ?>">
+                                    <div class="card">
+                                        <?php if (!empty($newsItem["image"])): ?>
+                                            <img src="<?= htmlspecialchars($newsItem["image"]); ?>" class="card-img" alt="Image" style=" height: 500px; object-fit: cover; width: 100%;">
+                                        <?php endif; ?>
+                                        <div class="card-img-overlay text-white">
+                                            <p class="card-text">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    fill="currentColor" class="bi bi-calendar3 text-warning" viewBox="0 0 16 16">
+                                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                                </svg>
+                                                <?= htmlspecialchars($newsItem["date"]); ?>
+                                            </p>
+                                            <h5 class="card-title"><?= htmlspecialchars($newsItem["titre"]); ?></h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
 
+                    <hr class="m-4 border-1">
+                    <div class="row g-3">
+                        <?php foreach ($posts as $post): ?>
+                            <div class="col-lg-4">
 
-        <div class="col-lg-7 mx-auto">
-            <div class="text-center py-3">
+                                <a href="news.php?id=<?= htmlspecialchars(intval($post['id'])); ?>" class="" style="text-decoration: none;">
 
-                <p>Northern Madagascar is a region of stunning landscapes, from paradise beaches and lush forests to
-                    unique rock
-                    formations. It’s an ideal destination for nature lovers, adventure seekers, and those looking for
-                    relaxation. Here’s a
-                    detailed guide to the must-see places:</p> <br>
-                <h4>Why Choose Northern Madagascar?</h4>
-                <p class="shadow-sm p-3 text-start bg-light ">
-                    - A diverse landscape combining beaches, forests, and rock formations <br>
-                    - Pleasant weather all year round <br>
-                    - Incredible biodiversity with rare wildlife <br>
-                    - Activities for all types of travelers: relaxation, adventure, hiking, and cultural discovery
-                </p>
+                                    <div class="card h-100 rounded-2 border-0 shadow-sm">
+                                        <div class="bb">
+                                            <?php if (!empty($post["image"])): ?>
+                                                <img src="<?= $post["image"]; ?>" class="card-img" alt="Image" style=" height: 250px; object-fit: cover; width: 100%;">
+                                            <?php endif; ?>
 
-            </div>
-            <div class="accordion " id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                            aria-controls="flush-collapseOne">
-                            Nosy BE
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Nosy Be is Madagascar’s most popular tourist island, known for its white sandy beaches,
-                                turquoise waters, and
-                                ylang-ylang plantations. <br><br>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    fill="currentColor" class="bi bi-calendar3 text-warning" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                                                    <path
+                                                        d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                                </svg> <?= $post["date"] ?></p>
+                                            <h5 class="card-title"><?= $post["titre"]; ?></h5>
+                                        </div>
+                                    </div>
+                                </a>
 
-                                <b>Top Activities</b>: <br><br>
-                                - Scuba diving and snorkeling at Nosy Tanikely <br>
-                                - Visiting Nosy Komba, famous for its lemurs <br>
-                                - Exploring Nosy Sakatia and swimming with sea turtles <br>
-                                - Watching the sunset from Mont Passot
-                            </p>
-                            <img src="../../assets/images/bajaj.jpeg" class="rounded" alt="Nosy be" width="50%">
-                        </div>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3 " type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                            aria-controls="flush-collapseTwo">
-                            Nosy Iranja
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Nosy Iranja consists of two small islands connected by a sandbank. It’s a dream
-                                destination for a day trip or an
-                                overnight stay under the stars. <br><br>
 
-                                <b>Why Visit?</b> <br><br>
-                                - Postcard-perfect scenery with crystal-clear waters <br>
-                                - Watching sea turtles in their natural habitat <br>
-                                - A peaceful "Robinson Crusoe" experience
-                            </p>
-                            <img src="../../assets/images/nosyiranja.jpeg" alt="Nosy Iranja" width="100%">
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Ankarana The land of Tsingy
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Ankarana National Park is famous for its spectacular Tsingy, sharp limestone formations
-                                that create a breathtaking
-                                landscape. <br><br>
-
-                                What to Discover: <br><br>
-                                - Underground caves and rivers <br>
-                                - Suspended bridges with incredible views <br>
-                                - Unique wildlife, including lemurs, crocodiles, and chameleons <br>
-                            </p>
-                            <img src="../../assets/images/tsingy-rouge.jpeg" alt="Tsingy rouge" width="100%">
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false"
-                            aria-controls="flush-collapse1">
-                            Diego Suarez (Antsiranana)
-                        </button>
-                    </h2>
-                    <div id="flush-collapse1" class="accordion-collapse collapse show "
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                Diego Suarez is a lively coastal city surrounded by breathtaking landscapes. <br><br>
-
-                                Must-See Places: <br><br>
-                                - Diego Bay, one of the most beautiful bays in the world <br>
-                                - The Sugar Loaf, an iconic mountain <br>
-                                - The Three Bays (Sakalava, Pigeons, Dunes), perfect for kitesurfing <br>
-                                - A mix of cultures and a vibrant local atmosphere
-                            </p>
-                            <img src="../../assets/images/city/diego.avif" alt="diego" width="100%">
-                        </div>
-                    </div>
-                </div>
             </div>
 
         </div>
 
-        <div class="text-center mt-5">
-            <h1 class="titre">Choose another destination below. </h1>
-        </div>
-        <div class="container px-4" id="custom-cards">
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                <div class="col col-lg-4">
-                    <a href="south_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark image-hover"
-                            style="background-image: url('../../assets/images/city/toliara.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5 fw-bold">SOUTH</h3>
-                            </div>
-                        </div>
-                    </a>
+        <div class="text-center pt-5 pb-5 bg-light bg-g border-bottom  ">
+            <h2 class="d-inline-block fw-bold titre1 text-uppercase color border-bottom ">
+                Let's build your trip together
+
+            </h2>
+            <p class="">To better assist you, we invite you to contact us so we can discuss and build your travel
+                project to
+                Madagascar with
+                you !!!<br>Feel free to write to us or call us from 9:30 AM to 7:00 PM GMT+3, Monday to Saturday, and
+                Sunday
+                from 1:00 PM
+                to 5:00
+                PM.</p>
+            <div class="row pt-4 g-4 justify-content-center ">
+
+                <div class="col-lg-3">
+                    <a href="https://wa.me/261329572020" target="_blank" class="btn whatsapp fw-bold rounded-pill"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg> +261 32 95 720 20 </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="content/contact.html" class="btn  mail fw-bold rounded-pill"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg> Send email </a>
                 </div>
 
-                <div class="col col-lg-4">
-                    <a href="../place/east_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark   image-hover"
-                            style="background-image: url('../../assets/images/andasibe.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">EAST</h3>
-                            </div>
-                        </div>
-                    </a>
+                <div class="col-lg-4">
+                    <a href="content/personal_adventure.html" class="btn text-white fw-bold rounded-pill" id="colorButton"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
+                            <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                        </svg> Create your personal Adventure</a>
+                </div>
 
-                </div>
-                <div class="col col-lg-4 ">
-                    <a href="../place/west_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark   image-hover"
-                            style="background-image: url('../../assets/images/tsingy.webp'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">WEST</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col col-lg-4">
-                    <a href="../place/southWest_of_Madgascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark  image-hover"
-                            style="background-image: url('../../assets/images/city/aller.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">SOUTH WEST</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col col-lg-4">
-                    <a href="center_of_Madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark  image-hover"
-                            style="background-image: url('../../assets/images/antananarivo.webp'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5 d  fw-bold">THE CENTRAL</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
             </div>
+
         </div>
-
-
-
     </main>
+
+
 
 
     <!------------------------- FOOTER --------------------------------------------------------->
@@ -361,7 +279,7 @@
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3  ">
-                    <img src="../../assets/images/logo.png" class="rounded-3" width="200px" height="200px" alt="">
+                    <img src="../../../assets/images/logo.jpeg" class="rounded-3" width="200px" height="200px" alt="">
                 </div>
                 <div class="col-6 col-md-2 mb-3 ">
                     <h4 class="titre">FHL Travel</h4>
@@ -435,7 +353,7 @@
                                     class="bi bi-whatsapp" viewBox="0 0 16 16">
                                     <path
                                         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                                </svg> +261 34 04 140 40
+                                </svg> +261 32 95 720 20
                                 (Whatsapp)</a>
                         </li>
                     </ul>

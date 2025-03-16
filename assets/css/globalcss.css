@@ -8,10 +8,19 @@
 
 .bg {
 
-    background-color: #7D6757;
+    background-color: #573419;
+
+
 
 }
 
+.follow {
+    background-image: url('../../assets/images/antananarivo_stade.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
 
 .car {
     max-height: 55vh;
@@ -41,7 +50,8 @@
 .mail {
     background-color: #ea4335;
     color: white;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    font-weight: bold;
 }
 
 .mail:hover {
@@ -49,17 +59,18 @@
     color: white;
     /* Rouge plus foncé */
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
-    /* Effet d'ombre */
+    transform: scale(1.1);
 }
 
 
 .whatsapp {
     background-color: #34a853;
     color: white;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .whatsapp:hover {
+    transform: scale(1.1);
     background-color: #2c8c45;
     color: white;
     /* Vert légèrement plus foncé */
@@ -100,7 +111,7 @@
 
 .colorbouton {
     background-color: #4285f4;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
     color: white;
     font-weight: bold;
 }
@@ -108,9 +119,8 @@
 .colorbouton:hover {
     background-color: #3367d6;
     box-shadow: 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.5s ease-in-out;
     color: white;
-
+    transform: scale(1.1);
 }
 
 
@@ -137,11 +147,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-position: center;
     background-size: cover;
-    animation: slide 40s infinite ease-in-out, zoomEffect 40s infinite ease-in-out;
+    background-repeat: no-repeat;
+    animation: slide 40s infinite ease-in-out, zoomEffect 10s infinite ease-in-out;
 
     /* Le background reste derrière le contenu */
 }
@@ -153,12 +164,12 @@
         background-size: 110%;
     }
 
-    20% {
+    30% {
         background-image: url('../images/city/aller.jpg');
         background-size: 100%;
     }
 
-    40% {
+    45% {
         background-image: url('../images/city/aller1.jpg');
         background-size: 110%;
     }
@@ -200,16 +211,17 @@
     align-items: center;
     height: 50vh;
     object-fit: cover;
-    animation: boom 20s infinite ease-in, zoomEffect 20s infinite ease-in-out;
+    animation: boom 20s infinite ease-in;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
 
 @keyframes boom {
     0% {
-        background-image: url('../images/balein.jpeg');
+        background-image: url('../images/antananarivo_stade.jpg');
         background-size: 110%;
     }
 
@@ -228,11 +240,12 @@
     justify-content: center;
     align-items: center;
     height: 25vh;
+    color: white;
     object-fit: cover;
-    animation: zoomEffect 1.5s ease-in-out;
     background-position: center;
     background-size: cover;
-    background-color: #eeeee4;
+    background-image: url('../images/send.png');
+
 
 }
 
@@ -343,13 +356,6 @@
 
 
 
-.sary {
-    height: 200px;
-    width: 350px;
-    object-fit: cover;
-}
-
-
 .f {
     font-size: 14px;
     word-spacing: 3px;
@@ -366,6 +372,13 @@
     font-style: normal;
     color: #fbbc05;
     font-size: 50px;
+}
+
+.corps {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #fbbc05;
 }
 
 .titre {
@@ -391,7 +404,7 @@
 }
 
 .image-hover {
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease-in-out;
 }
 
 .image-hover:hover {
@@ -400,7 +413,7 @@
 
 
 .cardh {
-    transition: transform 0.3s ease;
+    transition: transform 1s ease-in-out;
 }
 
 .cardh:hover {
@@ -408,18 +421,10 @@
     background-color: rgba(0, 0, 0, 0.19);
     backdrop-filter: blur(5px);
     border-radius: 10px;
-}
-
-.hover-card {
-    background-color: rgba(240, 255, 255, 0);
-
 
 }
 
-.hover-card:hover {
-    background-color: #eeeee4;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
-}
+
 
 /* text milatsaka*/
 
@@ -543,4 +548,141 @@
 
     transform: translate(50%) scale(1.5)
         /* Agrandir l'image */
+}
+
+.hover-card {
+    background-color: rgba(240, 255, 255, 0);
+    border-radius: 15px;
+}
+
+.hover-card:hover {
+    background-color: #fff8e1a1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+
+}
+
+.sary {
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.bb {
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    /* Empêche l'image de dépasser */
+    transition: transform 0.3s ease-in-out;
+}
+
+.sary:hover {
+    transform: scale(1.1);
+    /* Zoom de 110% */
+}
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.438) 20%, rgba(0, 0, 0, 0) 80%);
+    padding: 20px;
+}
+
+.card {
+    overflow: hidden;
+    /* Empêche l'image de dépasser */
+}
+
+.card-img {
+
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.card:hover .card-img {
+    transform: scale(1.12);
+    /* Zoom à 110% */
+}
+
+.card-title {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.card-title:hover {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    color: orange;
+
+}
+
+.bd {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: orange;
+    font-size: 50px;
+}
+
+
+.a {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.5s ease;
+}
+
+.a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.titre1 {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+.a:hover::after {
+    transform: scaleX(1);
+}
+
+.ligne {
+    position: relative;
+    text-align: center;
+}
+
+.ligne::after {
+    content: "";
+    display: block;
+    width: 25%;
+    /* 25% de la largeur du texte */
+    height: 5px;
+    /* Hauteur de la ligne */
+    background-color: #ff9900;
+    /* Même couleur que le texte */
+    margin: 8px auto 0;
+    /* Espace au-dessus et centré */
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.t {
+    background-color: darkslategrey;
 }
