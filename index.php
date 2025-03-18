@@ -99,8 +99,8 @@ try {
 
                 <a href="index.php"
                     class="d-flex align-items-center col-auto col-md-2 col-lg-3 mb-2 mb-md-0 text-white text-decoration-none titre fw-bold">
-                    <img src="assets/images/logo.png" width="50px" style="border-radius: 5%;"
-                        alt="FHL Madagascar ">FHL Travel Madagascar
+                    <img src="assets/images/logo.png" width="50px" class="rounded-circle"
+                        alt="FHL Madagascar "> FHL Travel Madagascar
                 </a>
 
                 <ul class="nav col-auto col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
@@ -252,231 +252,235 @@ try {
         </div>
 
         <!----------------------------------------- best bookes tour --------------------------------------------->
-        <div class="text-center mb-4 mt-3 mx-5 ">
-            <h2 class="d-inline-block mt-4 fw-bold text-uppercase titre color rounded ligne ">
-                Best
-                selling tours
-            </h2>
-            <p>Highly
-                Booked Tours : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                    <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                    <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                    <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                    <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
-                    <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                </svg>
-            </p>
-
-        </div>
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <p class="mt-4 mx-4 mb-5 txt">Explore the beauty of Madagascar with our carefully designed tours. From lush rainforests to stunning beaches, unique wildlife, and rich culture, our adventures offer unforgettable experiences across the island. Whether you seek adventure, relaxation, or cultural discovery, we have the perfect tour for you!</p>
+        <div class="container">
+            <div class="text-center mb-4 mt-3 mx-5 ">
+                <h2 class="d-inline-block mt-4 fw-bold text-uppercase titre color rounded ligne ">
+                    Best
+                    selling tours
+                </h2>
+                <p>Highly
+                    Booked Tours : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                </p>
 
             </div>
 
-        </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="mt-4 mx-4 mb-5 txt">Explore the beauty of Madagascar with our carefully designed tours. From lush rainforests to stunning beaches, unique wildlife, and rich culture, our adventures offer unforgettable experiences across the island. Whether you seek adventure, relaxation, or cultural discovery, we have the perfect tour for you!</p>
 
-        <div class="row g-2 pb-2 mx-5 px-4 border-bottom  ">
-            <div class="col-lg-4  rounded-3 ">
-                <a href="content/tours/Day_One_Andasibe.html" class="btn rounded hover-card pt-3">
-
-                    <div class="bb">
-                        <img src="assets/images/andasibe.jpg" class=" sary  mb-2" alt="">
-                    </div>
-                    <h3 class="text-body-emphasis titre fw-bold">DAY ONE ANDASIBE</h3>
-                    <p class=" f">Visit directly Andasibe National Park (Analamazotra reserve) that you will
-                        discover the
-                        biggest lemur alive in the wild
-                        which is the Indri Indri ... <code><b>Read more</b></code>
-                    </p>
-                    <p class="f">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-stopwatch" viewBox="0 0 16 16">
-                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
-                            <path
-                                d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
-                        </svg> 1 Day - 0 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
-                            <path
-                                d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
-                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
-                        </svg>1-15 pers
-                    </p>
-
-
-                </a>
-            </div>
-            <div class="col-lg-4  rounded-3 ">
-                <a href="content/tours/nosybetour.html" class="btn rounded hover-card pt-3">
-
-                    <div class="bb">
-                        <img src="assets/images/nosybe.jpg.jpg" class="sary  mb-2" alt="">
-                    </div>
-
-                    <h3 class="text-body-emphasis titre color fw-bold">7 DAY NOSY BE TOUR</h3>
-                    <p class=" f">A 7-day Escapade to escape as a couple, with friends or family, between high-end
-                        hotel
-                        services and visit the natural
-                        sanctuaries of the Nosy Be ... <code><b>Read more</b></code></p>
-                    <p class="f">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-stopwatch" viewBox="0 0 16 16">
-                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
-                            <path
-                                d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
-                        </svg> 7 Day - 6 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
-                            <path
-                                d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
-                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
-                        </svg>1-15 pers
-                    </p>
-
-                </a>
-            </div>
-            <div class="col-lg-4 rounded-3">
-                <a href="content/tours/tsingyIfaty.html" class="btn rounded  hover-card pt-3">
-
-                    <div class="bb">
-                        <img src="assets/images/tsingy.webp" class="sary mb-2" alt="">
-                    </div>
-                    <h3 class="text-body-emphasis titre color fw-bold">15 DAY BAOBAB - TSINGY to IFATY</h3>
-                    <p class=" f">The coastal track, the environment becomes more African, semi-arid, made of
-                        baobabs, thorny
-                        and various plants all as
-                        strange as the others. The mysterious west … <code><b>Read more</b></code>
-                    </p>
-                    <p class="f">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-stopwatch" viewBox="0 0 16 16">
-                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
-                            <path
-                                d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
-                        </svg> 15 Day - 14 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
-                            <path
-                                d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
-                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
-                        </svg>1-15 pers
-                    </p>
-
-                </a>
-            </div>
-            <div class="col-lg-4  rounded-3">
-                <a href="content/tours/wonderSouth_Andasibe.html" class="btn  rounded  hover-card pt-3">
-
-                    <div class="bb">
-                        <img src="assets/images/city/aller1.jpg" class="sary mb-2" alt="">
-                    </div>
-
-                    <h3 class=" text-body-emphasis color titre fw-bold">AMAZING ISLAND OF THE SOUTH / ANDASIBE</h3>
-                    <p class=" f">The 12-day tour from Tananarive – Andasibe to Ifaty allows you to visit the
-                        paradisiacal sites
-                        of the Big Island. Along
-                        the way, you will have the opportunity to discover local crafts, visit several national
-                        parks and
-                        reserves. During this
-                        Andasibe National Park tour … <code><b>Read more</b></code>
-                    </p>
-                    <p class="f">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-stopwatch" viewBox="0 0 16 16">
-                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
-                            <path
-                                d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
-                        </svg> 12 Day - 11 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
-                            <path
-                                d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
-                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
-                        </svg>1-15 pers
-                    </p>
-
-                </a>
-            </div>
-            <div class="col-lg-4  rounded-3">
-                <a href="content/tours/wonderSouth.html" class="btn rounded  hover-card pt-3">
-
-                    <div class="bb">
-                        <img src="assets/images/city/toliara.jpg" class="sary mb-2" alt="">
-                    </div>
-
-                    <h3 class=" text-body-emphasis titre color fw-bold">9 DAYS WONDERS of the SOUTH</h3>
-                    <p class=" f">We take you on a journey along the Southern Route, starting from the Highlands and leading all the way to the southernmost tip of Madagascar, by the sea. Along the way, you will discover breathtaking and authentic landscapes full of color, welcoming … <code><b>Read more</b></code>
-                    </p>
-                    <p class="f">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-stopwatch" viewBox="0 0 16 16">
-                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
-                            <path
-                                d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
-                        </svg> 9 Day - 8 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
-                            <path
-                                d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
-                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
-                        </svg>1-15 pers
-                    </p>
-
-                </a>
-            </div>
-
-            <div class="col-lg-4  rounded-3">
-                <a href="content/tours/colorsofEast.html" class="btn rounded  hover-card pt-3">
-
-                    <div class="bb">
-                        <img src="assets/images/east.jpg" class="sary mb-2" alt="">
-                    </div>
-
-                    <h3 class=" text-body-emphasis titre color fw-bold">SCENTS and COLORS of The EAST </h3>
-                    <p class=" f">This tour offers an immersive experience filled with discoveries and local encounters. Beyond Madagascar’s rich biodiversity, the East Coast's lush landscapes and diverse transport modes like the cliffside train and motorboats create an off the beaten path adventure. </p>
-                    <p class="f">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-stopwatch" viewBox="0 0 16 16">
-                            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
-                            <path
-                                d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
-                        </svg> 12 Day - 11 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
-                            <path
-                                d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
-                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
-                        </svg>1-15 pers
-                    </p>
-
-                </a>
-            </div>
-
-            <div class="row p-3">
-                <div class="col-lg-5 mx-auto mb-4 text-center ">
-                    <a href="content/ourstours.html" class="btn whatsapp fw-bold btn-lg text-white text-decoration-none karla rounded-pill">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
-                            <path d="M7.5 1v7h1V1z" />
-                            <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
-                        </svg> Check all our
-                        Tours</a>
                 </div>
 
             </div>
+
+            <div class="row g-2 pb-2 mx-5 shadow-sm  ">
+                <div class="col-lg-4  rounded-3 ">
+                    <a href="content/tours/Day_One_Andasibe.html" class="btn rounded hover-card pt-3">
+
+                        <div class="bb">
+                            <img src="assets/images/andasibe.jpg" class=" sary  mb-2" alt="">
+                        </div>
+                        <h3 class="text-body-emphasis titre fw-bold">DAY ONE ANDASIBE</h3>
+                        <p class=" f">Visit directly Andasibe National Park (Analamazotra reserve) that you will
+                            discover the
+                            biggest lemur alive in the wild
+                            which is the Indri Indri ... <code><b>Read more</b></code>
+                        </p>
+                        <p class="f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
+                                <path
+                                    d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
+                            </svg> 1 Day - 0 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
+                                <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg>1-15 pers
+                        </p>
+
+
+                    </a>
+                </div>
+                <div class="col-lg-4  rounded-3 ">
+                    <a href="content/tours/NosyBe_Tour.html" class="btn rounded hover-card pt-3">
+
+                        <div class="bb">
+                            <img src="assets/images/nosybe.jpg.jpg" class="sary  mb-2" alt="">
+                        </div>
+
+                        <h3 class="text-body-emphasis titre color fw-bold">7 DAY NOSY BE TOUR</h3>
+                        <p class=" f">A 7-day Escapade to escape as a couple, with friends or family, between high-end
+                            hotel
+                            services and visit the natural
+                            sanctuaries of the Nosy Be ... <code><b>Read more</b></code></p>
+                        <p class="f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
+                                <path
+                                    d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
+                            </svg> 7 Day - 6 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
+                                <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg>1-15 pers
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-4 rounded-3">
+                    <a href="content/tours/Tsingy_Ifaty.html" class="btn rounded  hover-card pt-3">
+
+                        <div class="bb">
+                            <img src="assets/images/tsingy.webp" class="sary mb-2" alt="">
+                        </div>
+                        <h3 class="text-body-emphasis titre color fw-bold">15 DAY BAOBAB - TSINGY to IFATY</h3>
+                        <p class=" f">The coastal track, the environment becomes more African, semi-arid, made of
+                            baobabs, thorny
+                            and various plants all as
+                            strange as the others. The mysterious west … <code><b>Read more</b></code>
+                        </p>
+                        <p class="f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
+                                <path
+                                    d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
+                            </svg> 15 Day - 14 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
+                                <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg>1-15 pers
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-4  rounded-3">
+                    <a href="content/tours/wonderSouth_Andasibe.html" class="btn  rounded  hover-card pt-3">
+
+                        <div class="bb">
+                            <img src="assets/images/city/aller1.jpg" class="sary mb-2" alt="">
+                        </div>
+
+                        <h3 class=" text-body-emphasis color titre fw-bold">AMAZING ISLAND OF THE SOUTH / ANDASIBE</h3>
+                        <p class=" f">The 12-day tour from Tananarive – Andasibe to Ifaty allows you to visit the
+                            paradisiacal sites
+                            of the Big Island. Along
+                            the way, you will have the opportunity to discover local crafts, visit several national
+                            parks and
+                            reserves. During this
+                            Andasibe National Park tour … <code><b>Read more</b></code>
+                        </p>
+                        <p class="f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
+                                <path
+                                    d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
+                            </svg> 12 Day - 11 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
+                                <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg>1-15 pers
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-4  rounded-3">
+                    <a href="content/tours/wonderSouth.html" class="btn rounded  hover-card pt-3">
+
+                        <div class="bb">
+                            <img src="assets/images/city/toliara.jpg" class="sary mb-2" alt="">
+                        </div>
+
+                        <h3 class=" text-body-emphasis titre color fw-bold">9 DAYS WONDERS of the SOUTH</h3>
+                        <p class=" f">We take you on a journey along the Southern Route, starting from the Highlands and leading all the way to the southernmost tip of Madagascar, by the sea. Along the way, you will discover breathtaking and authentic landscapes full of color, welcoming … <code><b>Read more</b></code>
+                        </p>
+                        <p class="f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
+                                <path
+                                    d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
+                            </svg> 9 Day - 8 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
+                                <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg>1-15 pers
+                        </p>
+
+                    </a>
+                </div>
+
+                <div class="col-lg-4  rounded-3">
+                    <a href="content/tours/colorsofEast.html" class="btn rounded  hover-card pt-3">
+
+                        <div class="bb">
+                            <img src="assets/images/east.jpg" class="sary mb-2" alt="">
+                        </div>
+
+                        <h3 class=" text-body-emphasis titre color fw-bold">SCENTS and COLORS of The EAST </h3>
+                        <p class=" f">This tour offers an immersive experience filled with discoveries and local encounters. Beyond Madagascar’s rich biodiversity, the East Coast's lush landscapes and diverse transport modes like the cliffside train and motorboats create an off the beaten path adventure. </p>
+                        <p class="f">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-stopwatch" viewBox="0 0 16 16">
+                                <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
+                                <path
+                                    d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
+                            </svg> 12 Day - 11 Night <br> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
+                                <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg>1-15 pers
+                        </p>
+
+                    </a>
+                </div>
+
+                <div class="row p-3">
+                    <div class="col-lg-5 mx-auto mb-4 text-center ">
+                        <a href="content/ourstours.html" class="btn whatsapp fw-bold btn-lg text-white text-decoration-none karla rounded-pill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                                <path d="M7.5 1v7h1V1z" />
+                                <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
+                            </svg> Check all our
+                            Tours</a>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
 
         <div class="text-center border-bottom pt-4 mt-3 pb-3">
             <h2 class="d-inline-block mb-2 mt-3 fw-bold text-uppercase titre color ligne">
@@ -569,12 +573,8 @@ try {
 
         </div>
 
-
-
-
-
         <div class="text-center pt-5 pb-5 bg-light bg-g border-bottom px-4 ">
-            <h2 class="d-inline-block fw-bold titre1 text-uppercase color ligne ">
+            <h2 class="d-inline-block fw-bold corps1 text-uppercase color ligne ">
                 Let's build your trip together
             </h2>
 
@@ -635,7 +635,7 @@ try {
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-lg-2 mb-3  text-center ">
-                    <img src="assets/images/logo.png" class="rounded-3" width="100%" alt="">
+                    <img src="assets/images/logo.png" class="rounded-circle" width="100%" alt="">
                 </div>
                 <div class="col-6 col-lg-2 mb-3 text-center ">
                     <h4 class="corps ligne">FHL Travel</h4>

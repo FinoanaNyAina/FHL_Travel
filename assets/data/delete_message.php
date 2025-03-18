@@ -1,3 +1,39 @@
+<?php
+session_start();
+if (!isset($_SESSION["admin_logged_in"])) {
+    header("Location: login.php");
+    exit;
+}
+
+if (!isset($_GET["id"])) {
+    die("Aucun ID spécifié.");
+}
+
+$id = intval($_GET["id"]);
+
+try {
+    // Connexion à la base de données
+    $pdo = new PDO("mysql:host=localhost;dbname=fhltravel", "root", "");
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // Vérifier si l'enregistrement existe
+    $stmt = $pdo->prepare("SELECT * FROM contact WHERE id = :id");
+    $stmt->execute(["id" => $id]);
+    $booking = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if (!$booking) {
+        die("❌ Aucun enregistrement trouvé !");
+    }
+
+    // Supprimer définitivement l'enregistrement
+    $stmt = $pdo->prepare("DELETE FROM contact WHERE id = :id");
+    $stmt->execute(["id" => $id]);
+} catch (PDOException $e) {
+    die("❌ Erreur de suppression : " . $e->getMessage());
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,10 +47,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/globalcss.css">
-    <title> The western region of Madagascar</title>
-    <link rel="icon" href="../../assets/images/logo.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="../css/globalcss.css">
+    <title>FHLTravel</title>
+    <link rel="icon" href="../images/logo.jpeg" type="image/x-icon">
 
 </head>
 
@@ -33,7 +68,7 @@
                                         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                                 </svg> +261 32 95 720 20 |</a>
                         </li>
-                        <li><a href="../contact.html" class="nav-link px-2 text-white a"><svg
+                        <li><a href="../../content/contact.html" class="nav-link px-2 text-white a"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-envelope" viewBox="0 0 16 16">
                                     <path
@@ -79,7 +114,6 @@
                                 </svg> Admin</a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
@@ -102,24 +136,24 @@
                 <ul class="nav col-auto col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
                     <li><a href="../../index.php" class="nav-link px-2 text-white a ">Home</a>
                     </li>
-                    <li><a href="../madagascar.html"
-                            class="nav-link px-2 text-white navcolor  rounded-pill  ">Madagascar</a></li>
-                    <li><a href="../about.html" class="nav-link px-2 text-white a ">About
+                    <li><a href="../../content/madagascar.html"
+                            class="nav-link px-2 text-white   ">Madagascar</a></li>
+                    <li><a href="../../content/about.html" class="nav-link px-2 text-white a ">About
                             Us</a></li>
-                    <li><a href="../ourstours.html" class="nav-link px-2 text-white  a ">Our
+                    <li><a href="../../content/ourstours.html" class="nav-link px-2 text-white  a ">Our
                             Tours</a></li>
-                    <li><a href="../Rental_car.html" class="nav-link px-2 text-white a">Car Rental</a></li>
-                    <li><a href="../assets/data/new/Madagascar_tourism_new.php"
+                    <li><a href="../../content/Rental_car.html" class="nav-link px-2 text-white a">Car Rental</a></li>
+                    <li><a href="new/Madagascar_tourism_new.php"
                             class="nav-link px-2 text-white a">News</a>
                     </li>
-                    <li><a href="../contact.html" class="nav-link px-2 text-white   a">Contact
+                    <li><a href="../../content/contact.html" class="nav-link px-2 text-white   a">Contact
                             Us</a></li>
                 </ul>
 
                 <div class="col-auto col-md-2 col-lg-3 text-end pt-2">
                     <div class="row">
 
-                        <div class="col g-0"><a href="../personal_adventure.html"
+                        <div class="col g-0"><a href="../../content/personal_adventure.html"
                                 class="btn rounded-pill text-white f fw-bold g-0 " id="colorButton"
                                 style="font-size: smaller;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
                                     height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
@@ -135,222 +169,36 @@
         </div>
     </header>
 
-
-
-    <div class="position-sticky bg-white shadow-sm raccourci " style="top: 4rem;">
-        <div class=" row pb-2 pt-1 ">
-            <div class="col-2 col-lg-1 py-2 text-center bg-info bg-opacity-10 " style="border-radius: 5px 0 0 5px;">
-                <a href="../../index.php">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="text-primary bi bi-house-door-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
-                    </svg>
-                </a>
-            </div>
-            <div class="col-10  col-lg-11 py-2 bg-white  " style="border-radius: 0 10px 10px 0;">
-                <a href="../../index.php" style="text-decoration: none; color: blueviolet;">Madagascar</a> ::
-                <a href="east_of_madagascar.html" style="text-decoration: none;">East</a> |
-                <a href="south_of_madagascar.html" style="text-decoration: none;">South</a> |
-                <a href="center_of_Madagascar.html" style="text-decoration: none;">Central</a> |
-                <a href="north_of_madagascar.html" style="text-decoration: none;">North</a> |
-                <a href="southWest_of_Madgascar.html" style="text-decoration: none;">South west</a>| West
-
-
-            </div>
-        </div>
-    </div>
     <!-------------------home---------------->
 
-    <main class=" shadow-sm bg-white rounded p-3 shadow">
+    <main class=" shadow-sm bg-white shadow px-0">
+        <div style="height: 100vh; display: flex; justify-content: center; align-items: center;">
 
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../../assets/images/city/aller1.jpg" class=" w-100 h-100 car" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/images/fosa.jpg" class=" w-100 h-100 car" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../assets/images/tsingy.webp" class=" w-100 h-100 car" alt="...">
-                </div>
+            <div class="col col-md-8 col-lg-8 mx-auto  p-5 bg-light rounded-4 shadow-lg">
+                <div class="row">
+                    <div class="col "><img src="../images/logo.jpeg" alt="Logo" width="200" height="200"
+                            class="rounded-circle"></div>
+                    <div class="col">
+                        <h3>Deleted <span class="badge text-bg-light"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="50" height="50" fill="currentColor" class="bi bi-check-all text-success"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z" />
+                                </svg></span>
 
-                <div class="carousel-caption">
-                    <h1>The western region of Madagascar </h1>
-                    <p class="fw-bold">A Land of Baobabs, Tsingy, and Wild Landscapes</p>
-                </div>
-            </div>
+                        </h3>
+                        <p>
+                            thank you
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-
-
-        <div class="col-lg-7 mx-auto">
-            <div class="text-center py-3">
-
-                <p>The western region of Madagascar is a fascinating destination known for its breathtaking landscapes,
-                    unique wildlife,
-                    and cultural richness. It is home to some of the island’s most iconic natural wonders, making it a
-                    must-visit for
-                    adventurers and nature lovers.</p> <br>
-                <h4>Best Time to Visit</h4>
-                <p class="shadow-sm p-3 text-start bg-light ">
-                    The dry season <b>(April to November)</b> is the best time to explore the west of Madagascar, as the
-                    roads
-                    are more accessible,
-                    and the weather is pleasant. The rainy season (December to March) can make some areas difficult to
-                    reach due to
-                    flooding.
-                </p>
-                <h4>How to Get to Western Madagascar</h4>
-                <p class="text-start"><b>By Air</b>: The fastest way is to fly from Antananarivo to Morondava. <br>
-                    <b>By Road</b>: A 4x4 is required for long road trips due to rough terrain, especially during the
-                    rainy
-                    season. The drive
-                    from Antananarivo to Morondava takes about 12–14 hours. <br>
-                    <b>By Boat</b>: Some destinations, like Belo-sur-Mer, can be reached by boat from Morondava.
-                </p>
-
-            </div>
-            <div class="accordion " id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-warning bg-opacity-10 shadow-sm p-3" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                            aria-controls="flush-collapseOne">
-                            Top Attractions in Western Madagascar
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <p>
-                                <b>1. Tsingy de Bemaraha National Park</b> <br><br>
-
-                                A UNESCO World Heritage Site, the Tsingy de Bemaraha is famous for its dramatic
-                                limestone formations, also known as
-                                "Tsingy," which means "where one cannot walk barefoot" in Malagasy. The park is home to
-                                a rich ecosystem, including
-                                lemurs, rare birds, and unique flora. Adventurous travelers can explore the park through
-                                suspended bridges, caves, and
-                                hiking trails. <br><br>
-                                <img src="../../assets/images/tsingy.webp" alt="" width="100%"> <br><br>
-
-                                <b>2. Avenue of the Baobabs</b> <br><br>
-
-                                One of the most photographed locations in Madagascar, the Avenue of the Baobabs is a
-                                stunning natural boulevard lined
-                                with towering Grandidier’s baobabs. The best time to visit is during sunrise or sunset
-                                when the trees cast dramatic
-                                shadows on the ground, creating a magical atmosphere. <br><br>
-
-                                <img src="../../assets/images/city/aller1.jpg" alt="" width="100%"> <br><br>
-
-                                <b>3. Morondava</b> <br><br>
-
-                                A lively coastal town and the gateway to many western attractions, Morondava is known
-                                for its relaxing beaches, vibrant
-                                local markets, and fresh seafood. From here, travelers can organize trips to the Avenue
-                                of the Baobabs and Tsingy de
-                                Bemaraha. <br><br>
-
-
-                                <b>4. Kirindy Forest</b> <br><br>
-
-                                A dry deciduous forest located near Morondava, Kirindy Forest is home to the elusive
-                                fosa, Madagascar’s top predator,
-                                along with several species of lemurs, chameleons, and birds. A night walk in Kirindy
-                                offers a chance to see many
-                                nocturnal animals. <br><br>
-                                <img src="../../assets/images/city/fosa.jpeg" alt="" width="100%"> <br><br>
-
-                                <b>5. Belo-sur-Mer</b> <br><br>
-
-                                A charming fishing village south of Morondava, Belo-sur-Mer is known for its
-                                crystal-clear waters, white sandy beaches,
-                                and traditional boat-building craftsmanship. It is a great spot for relaxation and
-                                snorkeling. <br><br>
-
-                            </p>
-
-                        </div>
+                        </p>
+                        <a href="admin_fhltravel.php" class="btn btn-sm whatsapp rounded-pill"> Back to Admin </a>
                     </div>
+
                 </div>
 
             </div>
 
         </div>
-
-        <div class="text-center mt-5">
-            <h1 class="color">Choose another destination below. </h1>
-        </div>
-        <div class="container px-4" id="custom-cards">
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                <div class="col col-lg-4">
-                    <a href="north_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark  image-hover"
-                            style="background-image: url('../../assets/images/north.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5 fw-bold">NORTH</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col col-lg-4">
-                    <a href="south_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark image-hover"
-                            style="background-image: url('../../assets/images/city/toliara.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5 fw-bold">SOUTH</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col col-lg-4">
-                    <a href="east_of_madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark   image-hover"
-                            style="background-image: url('../../assets/images/andasibe.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">EAST</h3>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div class="col col-lg-4">
-                    <a href="southWest_of_Madgascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark  image-hover"
-                            style="background-image: url('../../assets/images/city/aller.jpg'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">SOUTH WEST</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col col-lg-4">
-                    <a href="center_of_Madagascar.html" class="text-decoration-none ">
-                        <div class="card card-cover h-100 text-bg-dark  image-hover"
-                            style="background-image: url('../../assets/images/antananarivo.webp'); background-size: cover; background-repeat: no-repeat;">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
-                                <h3 class="pt-5 pb-5 mt-4 mb-5 d  fw-bold">THE CENTRAL</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
 
 
     </main>
@@ -367,35 +215,35 @@
                 <div class="col-6 col-lg-2 mb-3 text-center ">
                     <h4 class="corps ligne">FHL Travel</h4>
                     <a href="../../index.php" class="nav-link p-0 text-body-white text-white a">Home</a>
-                    <a href="../madagascar.html" class="nav-link p-0 text-white a">Madagascar </a>
-                    <a href="../about.html" class="nav-link p-0 text-white a">About Us </a>
-                    <a href="../ourstours.html" class="nav-link p-0 text-white a">Our Tours</a>
-                    <a href="../Rental_car.html" class="nav-link p-0 text-white a">Car Rental</a>
+                    <a href="../../content/madagascar.html" class="nav-link p-0 text-white a">Madagascar </a>
+                    <a href="../../content/about.html" class="nav-link p-0 text-white a">About Us </a>
+                    <a href="../../content/ourstours.html" class="nav-link p-0 text-white a">Our Tours</a>
+                    <a href="../../content/Rental_car.html" class="nav-link p-0 text-white a">Car Rental</a>
                     <a href="../../assets/data/new/Madagascar_tourism_new.php"
                         class="nav-link p-0 text-white a">News</a>
-                    <a href="../contact.html" class="nav-link p-0 text-white a">Contact Us </a>
+                    <a href="../../content/contact.html" class="nav-link p-0 text-white a">Contact Us </a>
 
                 </div>
 
                 <div class="col-6 col-lg-2 mb-3 text-center">
                     <h4 class="corps ligne">Ours Tours</h4>
 
-                    <a href="../tours/wonderSouth.html" class="nav-link p-0 text-white a">- Wonders of the
+                    <a href="../../content/tours/wonderSouth.html" class="nav-link p-0 text-white a">- Wonders of the
                         South</a>
-                    <a href="../tours/Day_One_Andasibe.html" class="nav-link p-0 text-white a">- One Day
+                    <a href="../../content/tours/Day_One_Andasibe.html" class="nav-link p-0 text-white a">- One Day
                         Andasibe</a>
-                    <a href="../tours/Tsingy_Ifaty.html" class="nav-link p-0 text-white a">- Tsingy - Ifaty</a>
-                    <a href="../tours/NosyBe_Tour.html" class="nav-link p-0 text-white a">- Nosy Be Tour</a>
-                    <a href="../tours/wonderSouth_Andasibe.html" class="nav-link p-0 text-white a">- Amazing island
+                    <a href="../../content/tours/Tsingy_Ifaty.html" class="nav-link p-0 text-white a">- Tsingy - Ifaty</a>
+                    <a href="../../content/tours/NosyBe_Tour.html" class="nav-link p-0 text-white a">- Nosy Be Tour</a>
+                    <a href="../../content/tours/wonderSouth_Andasibe.html" class="nav-link p-0 text-white a">- Amazing island
                         of
                         thr South / Andasibe </a>
-                    <a href="../tours/exploration&adventure.html" class="nav-link p-0 text-white a">- Exploration
+                    <a href="../../content/tours/exploration&adventure.html" class="nav-link p-0 text-white a">- Exploration
                         and
                         adventure </a>
-                    <a href="../tours/colorsofEast.html" class="nav-link p-0 text-white a">- Scents and colors of
+                    <a href="../../content/tours/colorsofEast.html" class="nav-link p-0 text-white a">- Scents and colors of
                         the
                         East </a>
-                    <a href="../tours/Mystic_west_&_RN7_Discovery.html" class="nav-link p-0 text-white a">- Mystic
+                    <a href="../../content/tours/Mystic_west_&_RN7_Discovery.html" class="nav-link p-0 text-white a">- Mystic
                         West
                         and RN7 discovery</a>
 
@@ -428,7 +276,7 @@
                         Andranovory,
                         Antananarivo 101 <br> -18.91830951832678, 47.57559714124707</a> <br>
 
-                    <a href="../contact.html" class="a nav-link p-0 text-white"><svg xmlns="http://www.w3.org/2000/svg"
+                    <a href="../../content/contact.html" class="a nav-link p-0 text-white"><svg xmlns="http://www.w3.org/2000/svg"
                             width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                             <path
                                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />

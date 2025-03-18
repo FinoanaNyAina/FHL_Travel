@@ -381,6 +381,13 @@
     color: #fbbc05;
 }
 
+.corps1 {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #383429;
+}
+
 .titre {
     letter-spacing: -1px;
     word-spacing: 2px;
@@ -585,7 +592,7 @@
     flex-direction: column;
     justify-content: flex-end;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.438) 20%, rgba(0, 0, 0, 0) 80%);
-    padding: 20px;
+
 }
 
 .card {
