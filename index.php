@@ -103,7 +103,7 @@ try {
                         alt="FHL Madagascar "> FHL Travel Madagascar
                 </a>
 
-                <ul class="nav col-auto col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
+                <ul class="nav  col-sm-4 col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
                     <li><a href="index.php" class="nav-link px-2 text-white navcolor  rounded-pill ">Home</a>
                     </li>
                     <li><a href="content/madagascar.html" class="nav-link px-2 text-white a">Madagascar</a></li>
@@ -137,53 +137,45 @@ try {
     <!-------------------home---------------->
 
     <main class=" shadow-sm bg-white shadow p-0">
-        <div id="divbody" class=" mb-2 text-white ">
+        <div id="divbody" class="mb-2 text-white ima">
+            <!-- Div pour l'image de fond animée -->
+            <div id="background-image"></div>
+
             <div class="row text-center txt">
-                <div class=" col-12 col-lg-9 mx-auto  mainty p-5 ">
-
+                <div class="col-12 col-lg-9 mx-auto mainty p-5">
                     <h1 class="fs-4 mt-0 mb-0 pt-0 text-start">
-
-                        <p class="m-0 p-0 text-center  ">Tongasoa! 🇲🇬</p>
+                        <p class="m-0 p-0 text-center">Tongasoa! 🇲🇬</p>
                         <div class="row g-0">
                             <div class="col">
-                                <p class="m-0 p-0 text-start ">Bienvenue! 🇫🇷
+                                <p class="m-0 p-0 text-start">Bienvenue! 🇫🇷</p>
                             </div>
                             <div class="col">
-                                <p class="m-0 p-0 pt-2 text-center f border-top fw-bold" id="">A Unique Island in
-                                    the World</p>
+                                <p class="m-0 p-0 pt-2 text-center f border-top fw-bold">A Unique Island in the World</p>
                             </div>
                             <div class="col">
-                                <p class="m-0 p-0 text-end ">Welcome! 🇺🇸</p>
+                                <p class="m-0 p-0 text-end">Welcome! 🇺🇸</p>
                             </div>
                         </div>
-                        </p>
                     </h1>
-                    <p class="text-center fw-bold my-4 txt bd" id="">
-                        BE READY TO SNAP A PHOTO! </p>
-                    <p class=" text-center bg-opacity-50 py-2 px-3 mb-4 fw-bold f"> Discover the untamed beauty of Madagascar –
-                        where
-                        breathtaking
-                        landscapes, unique wildlife, and warm hospitality await.
-                        Your adventure starts here!</p>
-
-                    <a href="content/ourstours.html" class="btn fw-bold text-white mt-2 karla rounded-pill whatsapp"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                    <p class="text-center fw-bold my-4 txt bd">BE READY TO SNAP A PHOTO!</p>
+                    <p class="text-center bg-opacity-50 py-2 px-3 mb-4 fw-bold f">
+                        Discover the untamed beauty of Madagascar – where breathtaking landscapes, unique wildlife, and warm hospitality await. Your adventure starts here!
+                    </p>
+                    <a href="content/ourstours.html" class="btn fw-bold text-white mt-2 karla rounded-pill whatsapp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
                             <path d="M7.5 1v7h1V1z" />
                             <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
-                        </svg> Check all our
-                        Tours </a>
-                    <a href="content/personal_adventure.html" class="btn fw-bold text-white mt-2 karla rounded-pill colorbouton"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                            height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
-                            <path
-                                d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
-                        </svg> Create your personal Adventure</a>
-
-
-
-
+                        </svg> Check all our Tours
+                    </a>
+                    <a href="content/personal_adventure.html" class="btn fw-bold text-white mt-2 karla rounded-pill colorbouton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
+                            <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                        </svg> Create your personal Adventure
+                    </a>
                 </div>
             </div>
-
         </div>
+
 
         <div class="text-center mt-5 ">
             <h2 class="d-inline-block mb-2 fw-bold titre text-uppercase color ligne txt ">
@@ -221,12 +213,12 @@ try {
                 </div>
 
             </div>
-            <div class="px-5 m-3 shadow-sm rounded-3">
+            <div class="px-3 m-3 shadow-sm rounded-3">
 
-                <div class="row g-4 pb-4">
+                <div class="row g-3 pb-4">
 
                     <?php foreach ($new as $newsItem): ?>
-                        <div class="col-lg-6">
+                        <div class=" col-12 col-lg-6">
                             <a href="assets/data/new/news.php?id=<?= htmlspecialchars(intval($newsItem['id'])); ?>">
                                 <div class="card">
                                     <?php if (!empty($newsItem["image"])): ?>
@@ -573,12 +565,12 @@ try {
 
         </div>
 
-        <div class="text-center pt-5 pb-5 bg-light bg-g border-bottom px-4 ">
+        <div class="text-center pt-5 pb-5 px-5 bg-light bg-g border-bottom px-4 ">
             <h2 class="d-inline-block fw-bold corps1 text-uppercase color ligne ">
                 Let's build your trip together
             </h2>
 
-            <p class="mt-2">To better assist you, we invite you to contact us so we can discuss and build your travel
+            <p class="mt-2 ">To better assist you, we invite you to contact us so we can discuss and build your travel
                 project to
                 Madagascar with
                 you !!!<br>Feel free to write to us or call us from 9:30 AM to 7:00 PM GMT+3, Monday to Saturday, and

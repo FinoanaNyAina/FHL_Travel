@@ -117,7 +117,7 @@ try {
                     Travel Madagascar
                 </a>
 
-                <ul class="nav col-auto col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
+                <ul class="nav  col-sm-4 col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
                     <li><a href="../../../index.php" class="nav-link px-2 text-white a ">Home</a>
                     </li>
                     <li><a href="../../../content/madagascar.html"
@@ -166,11 +166,11 @@ try {
             </p>
         </div>
 
-        <div class="pt-4 px-5 mx-5  rounded-3">
+        <div class="pt-4 px-5 mx-auto  rounded-3">
 
-            <div class="row g-4 px-4 pb-4 rounded ">
+            <div class="row g-4 pb-4 rounded mx-auto ">
                 <?php foreach ($new as $newsItem): ?>
-                    <div class="col-lg-6">
+                    <div class="col-12 col-lg-6">
                         <a href="news.php?id=<?= htmlspecialchars(intval($newsItem['id'])); ?>">
                             <div class="card">
                                 <?php if (!empty($newsItem["image"])): ?>
@@ -183,7 +183,8 @@ try {
                                             <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
                                             <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
                                         </svg>
-                                        <?= htmlspecialchars($newsItem["date"]); ?> </p>
+                                        <?= htmlspecialchars($newsItem["date"]); ?>
+                                    </p>
                                     </p>
                                     <h5 class="card-title"><?= htmlspecialchars($newsItem["titre"]); ?></h5>
                                 </div>
@@ -194,10 +195,10 @@ try {
             </div>
 
             <hr class="m-4 border-1">
-            <div class="container">
+            <div class="">
                 <div class="row g-3">
                     <?php foreach ($posts as $post): ?>
-                        <div class="col-lg-4">
+                        <div class=" col-12 col-lg-4">
 
                             <a href="news.php?id=<?= htmlspecialchars(intval($post['id'])); ?>" class="" style="text-decoration: none;">
 
@@ -231,7 +232,7 @@ try {
 
         </div>
 
-        <div class="text-center pt-5 pb-5 bg-light bg-g border-bottom  ">
+        <div class="text-center pt-5 pb-5 px-5 bg-light bg-g border-bottom px-4 ">
             <h2 class="d-inline-block fw-bold titre1 text-uppercase color border-bottom ">
                 Let's build your trip together
 
@@ -254,7 +255,7 @@ try {
                         </svg> +261 32 95 720 20 </a>
                 </div>
                 <div class="col-lg-3">
-                    <a href="content/contact.html" class="btn  mail fw-bold rounded-pill"><svg xmlns="http://www.w3.org/2000/svg"
+                    <a href="../../../content/contact.html" class="btn  mail fw-bold rounded-pill"><svg xmlns="http://www.w3.org/2000/svg"
                             width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                             <path
                                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
@@ -262,7 +263,7 @@ try {
                 </div>
 
                 <div class="col-lg-4">
-                    <a href="content/personal_adventure.html" class="btn text-white fw-bold rounded-pill" id="colorButton"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
+                    <a href="../../../content/personal_adventure.html" class="btn text-white fw-bold rounded-pill" id="colorButton"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
                             <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
                         </svg> Create your personal Adventure</a>
                 </div>

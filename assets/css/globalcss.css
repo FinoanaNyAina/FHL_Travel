@@ -138,55 +138,48 @@
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    /* Pour éviter que le background dépasse */
 }
 
-/* Pseudo-élément ::before pour le background animé */
-#divbody::before {
-    content: "";
+/* Nouveau div pour l'image animée */
+#background-image {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: slide 40s infinite ease-in-out, zoomEffect 10s infinite ease-in-out;
+    background-image: url('../images/cameleon.jpg');
 
-    /* Le background reste derrière le contenu */
+    animation: slide 40s infinite ease-in-out, zoomEffect 10s infinite ease-in-out;
+    z-index: -1;
 }
 
-/* Animation du background */
+/* Animation du changement d'image */
 @keyframes slide {
     0% {
         background-image: url('../images/cameleon.jpg');
-        background-size: 110%;
     }
 
     30% {
         background-image: url('../images/city/aller.jpg');
-        background-size: 100%;
     }
 
     45% {
         background-image: url('../images/city/aller1.jpg');
-        background-size: 110%;
     }
 
     60% {
         background-image: url('../images/isalo.webp');
-        background-size: 100%;
     }
 
     80% {
         background-image: url('../images/rentcar.jpg');
-        background-size: 110%;
     }
 
     100% {
         background-image: url('../images/cameleon.jpg');
-        background-size: 100%;
     }
 }
 
@@ -209,29 +202,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* Prend 50% de la hauteur de l'écran */
     height: 50vh;
-    object-fit: cover;
-    animation: boom 20s infinite ease-in;
+    width: 100vw;
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
+    /* Empêche les bordures blanches sur mobile */
+    min-width: 100%;
+    min-height: 50vh;
+
+    /* Animation */
+    animation: boom 20s infinite ease-in-out;
 }
 
+/* Ajustement spécial pour mobile */
+@media (max-width: 768px) {
+    #madagascar {
+        height: 50vh;
+        /* Forcer 50% de hauteur */
+        width: 100vw;
+        /* Forcer la largeur */
+        background-size: cover !important;
+        /* S'assurer que l'image couvre bien */
+    }
+}
 
+/* Animation */
 @keyframes boom {
     0% {
         background-image: url('../images/antananarivo_stade.jpg');
         background-size: 110%;
     }
 
-
-
     100% {
         background-image: url('../images/baobab1.jpeg');
         background-size: 100%;
-
-
     }
 }
 
@@ -255,14 +264,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* Prend 50% de la hauteur de l'écran */
     height: 50vh;
-    object-fit: cover;
-    animation: par 20s infinite ease-in, zoomEffect 20s ease-in-out;
+    width: 100vw;
+
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Empêche les bordures blanches sur mobile */
+    min-width: 100%;
+    min-height: 50vh;
+
+    /* Animation */
+    animation: par 20s infinite ease-in-out;
 
 }
 
+@media (max-width: 768px) {
+    #park {
+        height: 50vh;
+        /* Forcer 50% de hauteur */
+        width: 100vw;
+        /* Forcer la largeur */
+        background-size: cover !important;
+        /* S'assurer que l'image couvre bien */
+    }
+}
 
 @keyframes par {
     0% {
@@ -284,14 +313,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* Prend 50% de la hauteur de l'écran */
     height: 50vh;
-    object-fit: cover;
-    animation: culture 20s infinite ease-in, zoomEffect 20s ease-in-out;
+    width: 100vw;
+
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Empêche les bordures blanches sur mobile */
+    min-width: 100%;
+    min-height: 50vh;
+
+    /* Animation */
+    animation: culture 20s infinite ease-in-out;
 
 }
 
+@media (max-width: 768px) {
+    #culture {
+        height: 50vh;
+        /* Forcer 50% de hauteur */
+        width: 100vw;
+        /* Forcer la largeur */
+        background-size: cover !important;
+        /* S'assurer que l'image couvre bien */
+    }
+}
 
 @keyframes culture {
     0% {

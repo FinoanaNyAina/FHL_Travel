@@ -149,7 +149,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     Travel Madagascar
                 </a>
 
-                <ul class="nav col-auto col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
+                <ul class="nav  col-sm-4 col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
                     <li><a href="../../index.php" class="nav-link px-2 text-white a ">Home</a>
                     </li>
                     <li><a href="../../content/madagascar.html"
