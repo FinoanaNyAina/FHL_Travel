@@ -158,7 +158,7 @@ $titre = $_POST['tour'];
 
         <div class="row py-4 px-5 ">
 
-            <div class="col-8 col-lg-6 mx-auto">
+            <div class="col-12 col-lg-6 mx-auto">
 
                 <div class="bg-success bg-opacity-10 p-3 rounded">
                     <p class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-shield-lock text-success" viewBox="0 0 16 16">

@@ -292,8 +292,8 @@
          </div>
 
 
-         <div class="row m-5 pb-5 ">
-             <div class="col-8 col-md-7 col-lg-6 mx-auto">
+         <div class="row my-5 pb-5 ">
+             <div class="col-12 col-md-7 col-lg-6 mx-auto">
                  <div class=" col-lg-8 mx-auto bg-warning bg-opacity-10 shadow-sm border-top border-bottom p-3  mb-4">
                      <h4 class="text-center fs-2 fw-bold titre">POST THE NEW </h4>
 
