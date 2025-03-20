@@ -609,15 +609,6 @@ try {
 
         <!----------------------Reviews------------------------------------>
 
-        <div class="text-center pt-5 mx-5 ">
-            <div class="" style="display: none;">
-                <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-                <script src="https://static.elfsight.com/platform/platform.js" async></script>
-                <div class="elfsight-app-49284ca0-e5ba-4b7f-8e21-f10e54e37fda" data-elfsight-app-lazy></div>
-            </div>
-
-        </div>
-
     </main>
 
 

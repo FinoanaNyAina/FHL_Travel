@@ -166,7 +166,7 @@ try {
             </p>
         </div>
 
-        <div class="pt-4 px-5 mx-auto  rounded-3">
+        <div class="pt-4 col-12 col-lg-10 mx-auto  rounded-3">
 
             <div class="row g-4 pb-4 rounded mx-auto ">
                 <?php foreach ($new as $newsItem): ?>
