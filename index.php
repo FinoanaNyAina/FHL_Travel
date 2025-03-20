@@ -30,7 +30,7 @@ try {
     <!----------------------- <meta property="og:title" content="FHL Madagascar Travel - Best Madagascar Tours & Car Rental">
     <meta property="og:description"
         content="Discover the beauty of Madagascar with our customized tours, private drivers, and car rentals.">
-    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:image" content="your-image-url.webp">
     <meta property="og:url" content="your-website-url">----------------------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -39,7 +39,7 @@ try {
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Special+Elite&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/globalcss.css">
     <title>FHLTravel</title>
-    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/logo.webp" type="image/x-icon">
 
 
 </head>
@@ -99,7 +99,7 @@ try {
 
                 <a href="index.php"
                     class="d-flex align-items-center col-auto col-md-2 col-lg-3 mb-2 mb-md-0 text-white text-decoration-none titre fw-bold">
-                    <img src="assets/images/logo.png" width="50px" class="rounded-circle"
+                    <img src="assets/images/logo.webp" width="50px" class="rounded-circle"
                         alt="FHL Madagascar "> FHL Travel Madagascar
                 </a>
 
@@ -293,7 +293,7 @@ try {
                     <a href="content/tours/Day_One_Andasibe.html" class="btn rounded hover-card pt-3">
 
                         <div class="bb">
-                            <img src="assets/images/andasibe.jpg" class=" sary  mb-2" alt="">
+                            <img src="assets/images/indriindri.webp" class=" sary  mb-2" alt="">
                         </div>
                         <h3 class="text-body-emphasis titre fw-bold">DAY ONE ANDASIBE</h3>
                         <p class=" f">Visit directly Andasibe National Park (Analamazotra reserve) that you will
@@ -322,7 +322,7 @@ try {
                     <a href="content/tours/NosyBe_Tour.html" class="btn rounded hover-card pt-3">
 
                         <div class="bb">
-                            <img src="assets/images/nosybe.jpg.jpg" class="sary  mb-2" alt="">
+                            <img src="assets/images/nosybe.webp" class="sary  mb-2" alt="">
                         </div>
 
                         <h3 class="text-body-emphasis titre color fw-bold">7 DAY NOSY BE TOUR</h3>
@@ -378,7 +378,7 @@ try {
                     <a href="content/tours/wonderSouth_Andasibe.html" class="btn  rounded  hover-card pt-3">
 
                         <div class="bb">
-                            <img src="assets/images/city/aller1.jpg" class="sary mb-2" alt="">
+                            <img src="assets/images/city/aller1.webp" class="sary mb-2" alt="">
                         </div>
 
                         <h3 class=" text-body-emphasis color titre fw-bold">AMAZING ISLAND OF THE SOUTH / ANDASIBE</h3>
@@ -410,7 +410,7 @@ try {
                     <a href="content/tours/wonderSouth.html" class="btn rounded  hover-card pt-3">
 
                         <div class="bb">
-                            <img src="assets/images/city/toliara.jpg" class="sary mb-2" alt="">
+                            <img src="assets/images/city/toliara.webp" class="sary mb-2" alt="">
                         </div>
 
                         <h3 class=" text-body-emphasis titre color fw-bold">9 DAYS WONDERS of the SOUTH</h3>
@@ -437,7 +437,7 @@ try {
                     <a href="content/tours/colorsofEast.html" class="btn rounded  hover-card pt-3">
 
                         <div class="bb">
-                            <img src="assets/images/east.jpg" class="sary mb-2" alt="">
+                            <img src="assets/images/east.webp" class="sary mb-2" alt="">
                         </div>
 
                         <h3 class=" text-body-emphasis titre color fw-bold">SCENTS and COLORS of The EAST </h3>
@@ -500,7 +500,7 @@ try {
                     <div class="col col-lg-4">
                         <a href="content/place/north_of_madagascar.html" class="text-decoration-none ">
                             <div class="card card-cover h-100 text-bg-dark  image-hover border-white"
-                                style="background-image: url('assets/images/north.jpg'); background-size: cover; background-repeat: no-repeat;">
+                                style="background-image: url('assets/images/north.webp'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
                                     <h3 class="pt-5 pb-5 mt-4 mb-5 fw-bold">NORTH</h3>
                                 </div>
@@ -511,7 +511,7 @@ try {
                     <div class="col col-lg-4 ">
                         <a href="content/place/south_of_madagascar.html" class="text-decoration-none  ">
                             <div class="card card-cover h-100 text-bg-dark image-hover border-white"
-                                style="background-image: url('assets/images/city/toliara.jpg'); background-size: cover; background-repeat: no-repeat;">
+                                style="background-image: url('assets/images/city/toliara.webp'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
                                     <h3 class="pt-5 pb-5 mt-4 mb-5 fw-bold">SOUTH</h3>
                                 </div>
@@ -522,7 +522,7 @@ try {
                     <div class="col col-lg-4">
                         <a href="content/place/east_of_madagascar.html" class="text-decoration-none ">
                             <div class="card card-cover h-100 text-bg-dark   image-hover border-white"
-                                style="background-image: url('assets/images/andasibe.jpg'); background-size: cover; background-repeat: no-repeat;">
+                                style="background-image: url('assets/images/indriindri.webp'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
                                     <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">EAST</h3>
                                 </div>
@@ -543,7 +543,7 @@ try {
                     <div class="col col-lg-4">
                         <a href="content/place/southWest_of_Madgascar.html" class="text-decoration-none ">
                             <div class="card card-cover h-100 text-bg-dark  image-hover border-white "
-                                style="background-image: url('assets/images/city/aller.jpg'); background-size: cover; background-repeat: no-repeat;">
+                                style="background-image: url('assets/images/city/aller.webp'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
                                     <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">SOUTH WEST</h3>
                                 </div>
@@ -627,7 +627,7 @@ try {
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-lg-2 mb-3  text-center ">
-                    <img src="assets/images/logo.png" class="rounded-circle" width="100%" alt="">
+                    <img src="assets/images/logo.webp" class="rounded-circle" width="100%" alt="">
                 </div>
                 <div class="col-6 col-lg-2 mb-3 text-center ">
                     <h4 class="corps ligne">FHL Travel</h4>

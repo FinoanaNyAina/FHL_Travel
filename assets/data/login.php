@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         rel="stylesheet">
     <link rel="stylesheet" href="../css/globalcss.css">
     <title>FHLTravel</title>
-    <link rel="icon" href="../images/logo.jpeg" type="image/x-icon">
+    <link rel="icon" href="../images/logo.webp" type="image/x-icon">
 
 
 
@@ -120,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <a href="../../index.php"
                     class="d-flex align-items-center col-auto col-md-2 col-lg-3 mb-2 mb-md-0 text-white text-decoration-none titre fw-bold">
-                    <img src="../../assets/images/logo.png" class="rounded-circle" width="50px"
+                    <img src="../../assets/images/logo.webp" class="rounded-circle" width="50px"
                         alt="FHL Madagascar ">FHL
                     Travel Madagascar
                 </a>
@@ -168,7 +168,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-8 col-lg-3 bg-light shadow m-5 p-3 mx-auto rounded-2">
                 <form action="" method="post">
                     <div class="text-center">
-                        <img class="mx-auto rounded-circle" src="../images/logo.jpeg" alt="" width="100" height="100">
+                        <img class="mx-auto rounded-circle" src="../images/logo.webp" alt="" width="100" height="100">
                         <h1 class="h3 mb-3 fw-normal " id="nav">Please sign in</h1>
                         <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
                     </div>
@@ -204,7 +204,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-lg-2 mb-3  text-center ">
-                    <img src="../../assets/images/logo.png" class="rounded-circle" width="100%" alt="">
+                    <img src="../../assets/images/logo.webp" class="rounded-circle" width="100%" alt="">
                 </div>
                 <div class="col-6 col-lg-2 mb-3 text-center ">
                     <h4 class="corps ligne">FHL Travel</h4>

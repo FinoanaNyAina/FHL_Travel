@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         rel="stylesheet">
     <link rel="stylesheet" href="../css/globalcss.css">
     <title>FHLTravel</title>
-    <link rel="icon" href="../images/logo.jpeg" type="image/x-icon">
+    <link rel="icon" href="../images/logo.webp" type="image/x-icon">
 
 </head>
 
@@ -144,7 +144,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <a href="../../index.php"
                     class="d-flex align-items-center col-auto col-md-2 col-lg-3 mb-2 mb-md-0 text-white text-decoration-none titre fw-bold">
-                    <img src="../../assets/images/logo.png" width="50px" class="rounded-circle"
+                    <img src="../../assets/images/logo.webp" width="50px" class="rounded-circle"
                         alt="FHL Madagascar ">FHL
                     Travel Madagascar
                 </a>
@@ -192,7 +192,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="col-12 col-md-8 col-lg-6 mx-auto g-0 p-5 bg-light rounded-4 shadow-lg">
                 <div class="row">
-                    <div class="  col-md-6 col-lg-6 text-center"><img src="../images/logo.jpeg" alt="Logo" width="200"
+                    <div class="  col-md-6 col-lg-6 text-center"><img src="../images/logo.webp" alt="Logo" width="200"
                             height="200" class="rounded-circle"></div>
                     <div class="  col-md-6 col-lg-6">
                         <h3>Message Sent <span class="badge text-bg-light"><svg xmlns="http://www.w3.org/2000/svg"
@@ -227,7 +227,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-lg-2 mb-3  text-center ">
-                    <img src="../../assets/images/logo.png" class="rounded-circle" width="100%" alt="">
+                    <img src="../../assets/images/logo.webp" class="rounded-circle" width="100%" alt="">
                 </div>
                 <div class="col-6 col-lg-2 mb-3 text-center ">
                     <h4 class="corps ligne">FHL Travel</h4>

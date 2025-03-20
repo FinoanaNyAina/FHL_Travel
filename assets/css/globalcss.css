@@ -15,7 +15,7 @@
 }
 
 .follow {
-    background-image: url('../../assets/images/antananarivo_stade.jpg');
+    background-image: url('../../assets/images/antananarivo_stade.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -150,24 +150,24 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../images/cameleon.jpg');
+    background-image: url('../images/cameleon.webp');
 
-    animation: slide 40s infinite ease-in-out, zoomEffect 10s infinite ease-in-out;
+    animation: slide 40s infinite ease-in-out, zoomEffect 5s infinite ease-in-out;
     z-index: -1;
 }
 
 /* Animation du changement d'image */
 @keyframes slide {
     0% {
-        background-image: url('../images/cameleon.jpg');
+        background-image: url('../images/cameleon.webp');
     }
 
     30% {
-        background-image: url('../images/city/aller.jpg');
+        background-image: url('../images/city/aller.webp');
     }
 
     45% {
-        background-image: url('../images/city/aller1.jpg');
+        background-image: url('../images/city/aller1.webp');
     }
 
     60% {
@@ -175,11 +175,11 @@
     }
 
     80% {
-        background-image: url('../images/rentcar.jpg');
+        background-image: url('../images/rentcar.webp');
     }
 
     100% {
-        background-image: url('../images/cameleon.jpg');
+        background-image: url('../images/cameleon.webp');
     }
 }
 
@@ -234,12 +234,12 @@
 /* Animation */
 @keyframes boom {
     0% {
-        background-image: url('../images/antananarivo_stade.jpg');
+        background-image: url('../images/antananarivo_stade.webp');
         background-size: 110%;
     }
 
     100% {
-        background-image: url('../images/baobab1.jpeg');
+        background-image: url('../images/baobab1.webp');
         background-size: 100%;
     }
 }
@@ -253,7 +253,7 @@
     object-fit: cover;
     background-position: center;
     background-size: cover;
-    background-image: url('../images/send.png');
+    background-image: url('../images/send.webp');
 
 
 }
@@ -302,7 +302,7 @@
 
 
     100% {
-        background-image: url('../images/baobab4.jpg');
+        background-image: url('../images/baobab4.webp');
         background-size: 110%;
 
 
@@ -344,7 +344,7 @@
 
 @keyframes culture {
     0% {
-        background-image: url('../images/famadihana.jpg');
+        background-image: url('../images/famadihana.webp');
         background-size: 110%;
 
     }
@@ -352,7 +352,7 @@
 
 
     50% {
-        background-image: url('../images/antananarivorova.jpg');
+        background-image: url('../images/antananarivorova.webp');
         background-size: 100%;
     }
 
@@ -381,20 +381,20 @@
 
 @keyframes city {
     0% {
-        background-image: url('../images/city/aller1.jpg');
+        background-image: url('../images/city/aller1.webp');
     }
 
 
     25% {
-        background-image: url('../images/city/aller.jpg');
+        background-image: url('../images/city/aller.webp');
     }
 
     50% {
-        background-image: url('../images/antananarivorova.jpg');
+        background-image: url('../images/antananarivorova.webp');
     }
 
     75% {
-        background-image: url('../images/antananarivorova.jpg');
+        background-image: url('../images/antananarivorova.webp');
     }
 
     100% {
@@ -552,7 +552,7 @@
 
 
 .alltours {
-    background-image: url('../images/exploration.jpeg');
+    background-image: url('../images/exploration.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -566,7 +566,7 @@
     align-items: center;
     height: 50vh;
     object-fit: cover;
-    background-image: url('../images/rentcar.jpg');
+    background-image: url('../images/rentcar.webp');
     background-position: center;
     background-size: cover;
 
@@ -574,7 +574,7 @@
 
 .teracan {
     /* Ajuste selon le besoin */
-    background-image: url('../images/teracan.jpeg');
+    background-image: url('../images/teracan.webp');
     /* Chemin de l'image */
     background-size: cover;
     /* Ajuste l'image pour couvrir tout l'espace */
