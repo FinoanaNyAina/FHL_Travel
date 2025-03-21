@@ -48,10 +48,10 @@ try {
 
     <!-----------------------------------------Navbar----------------------------------------- -->
 
-    <div class="container bg-black bg-opacity-25 rounded">
+    <div class="container bg-black bg-opacity-25 rounded" style="font-size: 10px; font-weight: bold;">
         <div class="pb-1" id=" ">
             <div class="row ">
-                <div class=" col col-lg-8">
+                <div class=" col-9 col-lg-8">
                     <ul class="nav">
                         <li><a href="https://wa.me/261329572020" class="nav-link px-2 text-white " target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                                     <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
@@ -75,7 +75,7 @@ try {
 
                     </ul>
                 </div>
-                <div class=" col col-lg-4  ">
+                <div class=" col-3 col-lg-4  ">
                     <ul class="nav justify-content-end">
                         <li class="justify-content-end">
                             <a href="assets/data/login.php" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
@@ -91,21 +91,24 @@ try {
 
     </div>
 
-    <header id="" class="header d-flex align-items-center sticky-top bg shadow ">
+    <header id="header" class="header d-flex align-items-center sticky-top bg shadow">
         <div class="container">
-            <header class="d-flex flex-wrap justify-content-center justify-content-md-between p-2">
+            <header class="d-flex flex-wrap justify-content-between align-items-center p-2">
 
-
-
-                <a href="index.php"
-                    class="d-flex align-items-center col-auto col-md-2 col-lg-3 mb-2 mb-md-0 text-white text-decoration-none titre fw-bold">
-                    <img src="assets/images/logo.webp" width="50px" class="rounded-circle"
-                        alt="FHL Madagascar "> FHL Travel Madagascar
+                <!-- Logo -->
+                <a href="index.php" class="d-flex align-items-center col-auto col-md-3 text-white text-decoration-none titre fw-bold">
+                    <img src="assets/images/logo.webp" width="50px" class="rounded-circle" alt="FHL Madagascar">
+                    <span class="ms-2">FHL Travel Madagascar</span>
                 </a>
 
-                <ul class="nav  col-sm-4 col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
-                    <li><a href="index.php" class="nav-link px-2 text-white navcolor  rounded-pill ">Home</a>
-                    </li>
+                <!-- Hamburger Menu Button -->
+                <button class="navbar-toggler d-md-none text-white fs-2" type="button" id="menu-toggle">
+                    ☰
+                </button>
+
+                <!-- Navigation Menu -->
+                <ul class="nav d-none d-md-flex col-md-6 justify-content-center mb-2 mb-md-0 mx-auto" id="nav">
+                    <li><a href="index.php" class="nav-link px-2 text-white navcolor rounded-pill">Home</a></li>
                     <li><a href="content/madagascar.html" class="nav-link px-2 text-white a">Madagascar</a></li>
                     <li><a href="content/about.html" class="nav-link px-2 text-white a">About Us</a></li>
                     <li><a href="content/ourstours.html" class="nav-link px-2 text-white a">Our Tours</a></li>
@@ -114,23 +117,58 @@ try {
                     <li><a href="content/contact.html" class="nav-link px-2 text-white a">Contact Us</a></li>
                 </ul>
 
-                <div class="col-auto col-md-2 col-lg-3 text-end pt-2">
-                    <div class="row">
-
-                        <div class="col g-0"><a href="content/personal_adventure.html" class="btn rounded-pill text-white f fw-bold g-0 " id="colorButton"
-                                style="font-size: smaller;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
-                                </svg> Create your personal
-                                Adventure</a>
-                        </div>
-                    </div>
+                <!-- Personal Adventure Button -->
+                <div class="col-auto col-md-3 d-none d-md-block text-end">
+                    <a href="content/personal_adventure.html" class="btn btn-sm rounded-pill text-white fw-bold colorbouton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-person-gear" viewBox="0 0 16 16">
+                            <path
+                                d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                        </svg>
+                        Create your personal Adventure
+                    </a>
                 </div>
+
+                <!-- Mobile Navigation Menu -->
+                <ul class="nav flex-column bg-dark position-absolute top-100 start-0 w-100 d-md-none p-3 d-none"
+                    id="mobile-menu">
+                    <li><a href="index.php" class="nav-link text-white  a" id="nav">Home</a></li>
+                    <li><a href="content/madagascar.html" class="nav-link text-white a" id="nav">Madagascar</a></li>
+                    <li><a href="content/about.html" class="nav-link text-white a" id="nav">About Us</a></li>
+                    <li><a href="content/ourstours.html" class="nav-link text-white a" id="nav">Our Tours</a></li>
+                    <li><a href="content/Rental_car.html" class="nav-link text-white a" id="nav">Car Rental</a></li>
+                    <li><a href="assets/data/new/Madagascar_tourism_new.php" class="nav-link text-white a" id="nav">News</a></li>
+                    <li><a href="content/contact.html" class="nav-link text-white a" id="nav">Contact Us</a></li>
+                </ul>
+
+
 
             </header>
         </div>
     </header>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.getElementById("menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            // Fonction pour ouvrir/fermer le menu
+            menuToggle.addEventListener("click", function(event) {
+                mobileMenu.classList.toggle("d-none");
+                menuToggle.classList.toggle("active");
+                event.stopPropagation(); // Empêche de fermer immédiatement après ouverture
+            });
+
+            // Fermer le menu en cliquant en dehors
+            document.addEventListener("click", function(event) {
+                if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                    mobileMenu.classList.add("d-none"); // Ferme le menu
+                    menuToggle.classList.remove("active"); // Réinitialise l'icône
+                }
+            });
+        });
+    </script>
 
 
 
@@ -245,7 +283,7 @@ try {
 
         <!----------------------------------------- best bookes tour --------------------------------------------->
         <div class="container">
-            <div class="text-center mb-4 mt-3 mx-5 ">
+            <div class="text-center mb-4 mt-3 ">
                 <h2 class="d-inline-block mt-4 fw-bold text-uppercase titre color rounded ligne ">
                     Best
                     selling tours
@@ -282,14 +320,13 @@ try {
 
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <p class="mt-4 mx-4 mb-5 txt">Explore the beauty of Madagascar with our carefully designed tours. From lush rainforests to stunning beaches, unique wildlife, and rich culture, our adventures offer unforgettable experiences across the island. Whether you seek adventure, relaxation, or cultural discovery, we have the perfect tour for you!</p>
-
+                    <p class="mt-4 mb-5 txt">Explore the beauty of Madagascar with our carefully designed tours. From lush rainforests to stunning beaches, unique wildlife, and rich culture, our adventures offer unforgettable experiences across the island. Whether you seek adventure, relaxation, or cultural discovery, we have the perfect tour for you!</p>
                 </div>
 
             </div>
 
-            <div class="row g-2 pb-2 mx-5 shadow-sm  ">
-                <div class="col-lg-4  rounded-3 ">
+            <div class="row g-5 pb-2 shadow-sm  ">
+                <div class=" col-lg-4  rounded-3 ">
                     <a href="content/tours/Day_One_Andasibe.html" class="btn rounded hover-card pt-3">
 
                         <div class="bb">
@@ -592,11 +629,11 @@ try {
                             width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                             <path
                                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                        </svg> Send email </a>
+                        </svg> Send E-mail </a>
                 </div>
 
                 <div class="col-lg-4">
-                    <a href="content/personal_adventure.html" class="btn text-white fw-bold rounded-pill" id="colorButton"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
+                    <a href="content/personal_adventure.html" class="btn text-white fw-bold rounded-pill colorbouton"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
                             <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
                         </svg> Create your personal Adventure</a>
                 </div>

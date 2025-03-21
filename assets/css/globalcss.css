@@ -32,17 +32,6 @@
 
 /* Background Image
 -------------------------------------------------- */
-#colorButton {
-    background-color: #4285f4;
-    color: white;
-    transition: background-color 0.5s ease-in-out;
-}
-
-#colorButton:hover {
-    background-color: #3367d6;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
-    /* Darker blue on hover */
-}
 
 .color {
     color: #383429;
@@ -65,7 +54,7 @@
 
 
 .whatsapp {
-    background-color: #34a853;
+    background-color: #28A745;
     color: white;
     transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
@@ -95,32 +84,22 @@
 
 
 .navcolor {
-    background-color: #fbbc05;
-}
-
-#colorButton1 {
-    background-color: #4285f4;
-    transition: background-color 0.5s ease-in-out;
-}
-
-#colorButton1:hover {
-    background-color: #3367d6;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.5s ease-in-out;
+    background-color: orange;
 
 }
+
 
 .colorbouton {
-    background-color: #4285f4;
+    background-color: #007BFF;
     transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
 }
 
 .colorbouton:hover {
-    background-color: #3367d6;
+    background-color: #006cdf;
     box-shadow: 10px rgba(0, 0, 0, 0.2);
-    color: white;
+    color: rgb(255, 255, 255);
     transform: scale(1.1);
 }
 

@@ -52,11 +52,10 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Special+Elite&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="../css/globalcss.css">
     <title>FHLTravel</title>
     <link rel="icon" href="../images/logo.webp" type="image/x-icon">
@@ -67,10 +66,10 @@ try {
 <body class="bg f">
 
     <!--Navbar -->
-    <div class="container bg-black bg-opacity-25 rounded">
+    <div class="container bg-black bg-opacity-25 rounded" style="font-size: 10px; font-weight: bold;">
         <div class="pb-1" id=" ">
             <div class="row ">
-                <div class=" col col-lg-8">
+                <div class=" col-9 col-lg-8">
                     <ul class="nav">
                         <li><a href="https://wa.me/261329572020" class="nav-link px-2 text-white " target="_blank"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -112,10 +111,10 @@ try {
 
                     </ul>
                 </div>
-                <div class=" col col-lg-4  ">
+                <div class=" col-3 col-lg-4  ">
                     <ul class="nav justify-content-end">
                         <li class="justify-content-end">
-                            <a href="../../assets/data/login.php" class="nav-link px-2 text-white"><svg
+                            <a href="" class="nav-link px-2 text-white"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-person-workspace" viewBox="0 0 16 16">
                                     <path
@@ -125,60 +124,102 @@ try {
                                 </svg> Admin</a>
                         </li>
                     </ul>
+
                 </div>
             </div>
         </div>
 
     </div>
 
-    <header id="" class="header d-flex align-items-center sticky-top bg shadow ">
+    <header id="header" class="header d-flex align-items-center sticky-top bg shadow">
         <div class="container">
-            <header class="d-flex flex-wrap justify-content-center justify-content-md-between p-2">
+            <header class="d-flex flex-wrap justify-content-between align-items-center p-2">
 
-
-
+                <!-- Logo -->
                 <a href="../../index.php"
-                    class="d-flex align-items-center col-auto col-md-2 col-lg-3 mb-2 mb-md-0 text-white text-decoration-none titre fw-bold">
-                    <img src="../../assets/images/logo.webp" width="50px" class="rounded-circle"
-                        alt="FHL Madagascar ">FHL
-                    Travel Madagascar
+                    class="d-flex align-items-center col-auto col-md-3 text-white text-decoration-none titre fw-bold">
+                    <img src="../images/logo.webp" width="50px" class="rounded-circle" alt="FHL Madagascar">
+                    <span class="ms-2">FHL Travel Madagascar</span>
                 </a>
 
-                <ul class="nav  col-sm-4 col-md-6 col-lg-6 mb-2 justify-content-center mb-md-0 mx-auto " id="nav">
-                    <li><a href="../../index.php" class="nav-link px-2 text-white a ">Home</a>
+                <!-- Hamburger Menu Button -->
+                <button class="navbar-toggler d-md-none text-white fs-2" type="button" id="menu-toggle">
+                    ☰
+                </button>
+
+                <!-- Navigation Menu -->
+                <ul class="nav d-none d-md-flex col-md-6 justify-content-center mb-2 mb-md-0 mx-auto" id="nav">
+                    <li><a href="../../index.php" class="nav-link px-2 text-white a ">Home</a></li>
+                    <li><a href="../../content/madagascar.html" class="nav-link px-2 text-white a ">Madagascar</a>
                     </li>
-                    <li><a href="../../content/madagascar.html"
-                            class="nav-link px-2 text-white   ">Madagascar</a></li>
-                    <li><a href="../../content/about.html" class="nav-link px-2 text-white a ">About
-                            Us</a></li>
-                    <li><a href="../../content/ourstours.html" class="nav-link px-2 text-white  a ">Our
-                            Tours</a></li>
-                    <li><a href="../../content/Rental_car.html" class="nav-link px-2 text-white a">Car Rental</a></li>
-                    <li><a href="new/Madagascar_tourism_new.php"
+                    <li><a href="../../content/about.html" class="nav-link px-2 text-white a">About Us</a></li>
+                    <li><a href="../../content/ourstours.html" class="nav-link px-2 text-white a">Our Tours</a>
+                    </li>
+                    <li><a href="../../content/Rental_car.html" class="nav-link px-2 text-white a ">Car Rental</a>
+                    </li>
+                    <li><a href="Madagascar_tourism_new.php"
                             class="nav-link px-2 text-white a">News</a>
                     </li>
-                    <li><a href="../../content/contact.html" class="nav-link px-2 text-white   a">Contact
-                            Us</a></li>
+                    <li><a href="../../content/contact.html" class="nav-link px-2 text-white a">Contact Us</a>
+                    </li>
                 </ul>
 
-                <div class="col-auto col-md-2 col-lg-3 text-end pt-2">
-                    <div class="row">
-
-                        <div class="col g-0"><a href="../../content/personal_adventure.html"
-                                class="btn rounded-pill text-white f fw-bold g-0 " id="colorButton"
-                                style="font-size: smaller;"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
-                                </svg> Create your personal
-                                Adventure</a>
-                        </div>
-                    </div>
+                <!-- Personal Adventure Button -->
+                <div class="col-auto col-md-3 d-none d-md-block text-end">
+                    <a href="../../content/personal_adventure.html" class="btn btn-sm rounded-pill text-white fw-bold colorbouton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-person-gear" viewBox="0 0 16 16">
+                            <path
+                                d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+                        </svg>
+                        Create your personal Adventure
+                    </a>
                 </div>
+
+                <!-- Mobile Navigation Menu -->
+                <ul class="nav flex-column bg-dark position-absolute top-100 start-0 w-100 d-md-none p-3 d-none"
+                    id="mobile-menu">
+                    <li><a href="../index.php" class="nav-link text-white  a" id="nav">Home</a></li>
+                    <li><a href="../../content/madagascar.html" class="nav-link text-white a" id="nav">Madagascar</a></li>
+                    <li><a href="../../content/about.html" class="nav-link text-white a" id="nav">About Us</a></li>
+                    <li><a href="../../content/ourstours.html" class="nav-link text-white a" id="nav">Our Tours</a></li>
+                    <li><a href="../../content/Rental_car.html" class="nav-link text-white a" id="nav">Car Rental</a></li>
+                    <li><a href="Madagascar_tourism_new.php" class="nav-link text-white a"
+                            id="nav">News</a>
+                    </li>
+                    <li><a href="../../content/contact.html" class="nav-link text-white a" id="nav">Contact Us</a></li>
+                </ul>
+
+
 
             </header>
         </div>
     </header>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.getElementById("menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            // Fonction pour ouvrir/fermer le menu
+            menuToggle.addEventListener("click", function(event) {
+                mobileMenu.classList.toggle("d-none");
+                menuToggle.classList.toggle("active");
+                event.stopPropagation(); // Empêche de fermer immédiatement après ouverture
+            });
+
+            // Fermer le menu en cliquant en dehors
+            document.addEventListener("click", function(event) {
+                if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                    mobileMenu.classList.add("d-none"); // Ferme le menu
+                    menuToggle.classList.remove("active"); // Réinitialise l'icône
+                }
+            });
+        });
+    </script>
+
+
     <!-------------------home---------------->
 
     <main class="  shadow bg-white rounded p-3">
