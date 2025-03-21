@@ -27,17 +27,16 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Explore Madagascar with FHL Madagascar Travel. We offer tailor-made tours, car rentals, and private drivers for unforgettable adventures in Madagascar.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!----------------------- <meta property="og:title" content="FHL Madagascar Travel - Best Madagascar Tours & Car Rental">
     <meta property="og:description"
         content="Discover the beauty of Madagascar with our customized tours, private drivers, and car rentals.">
     <meta property="og:image" content="your-image-url.webp">
     <meta property="og:url" content="your-website-url">----------------------------------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Special+Elite&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/globalcss.css">
+    <link rel="stylesheet" href="assets/css/globalcss.css" media="print" onload="this.media='all'">
     <title>FHLTravel</title>
     <link rel="icon" href="assets/images/logo.webp" type="image/x-icon">
 
@@ -763,11 +762,5 @@ try {
         </footer>
     </div>
 </body>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
 
 </html>
