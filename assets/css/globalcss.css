@@ -118,65 +118,43 @@
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    background-color: #572700;
+
 }
 
-/* Nouveau div pour l'image animée */
+/* ✅ Image de fond animée */
 #background-image {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../images/cameleon.webp');
-
-    animation: slide 40s infinite ease-in-out, zoomEffect 5s infinite ease-in-out;
+    inset: 0;
+    background: center / cover no-repeat;
+    animation: slide 25s infinite ease-in-out;
     z-index: -1;
 }
 
-/* Animation du changement d'image */
+/* ✅ Animation du changement d'image (Rapide et fluide) */
 @keyframes slide {
-    0% {
+
+    0%,
+    100% {
         background-image: url('../images/cameleon.webp');
     }
 
-    30% {
-        background-image: url('../images/city/aller.webp');
-    }
-
-    45% {
+    25% {
         background-image: url('../images/city/aller1.webp');
     }
 
-    60% {
-        background-image: url('../images/isalo.webp');
-    }
-
-    80% {
+    50% {
         background-image: url('../images/rentcar.webp');
     }
 
-    100% {
-        background-image: url('../images/cameleon.webp');
+    75% {
+        background-image: url('../images/isalo.webp');
     }
 }
 
-/* Effet de zoom progressif */
-@keyframes zoomEffect {
-    0% {
-        transform: scale(1);
-    }
+/* ✅ Effet de zoom rapide */
 
-    50% {
-        transform: scale(1.1);
-    }
 
-    100% {
-        transform: scale(1);
-    }
-}
 
 #madagascar {
     display: flex;
@@ -565,11 +543,11 @@
 }
 
 .raccourci {
-    z-index: 110;
+    z-index: 10;
 }
 
 .ima {
-    z-index: 50;
+    z-index: 9;
 
 }
 
@@ -645,14 +623,12 @@
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-weight: bold;
 }
 
 .card-title:hover {
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-weight: bold;
     color: orange;
 
 }
@@ -688,7 +664,6 @@
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-weight: bold;
     font-size: 50px;
 
 }
@@ -721,4 +696,42 @@
 
 .t {
     background-color: darkslategrey;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 11;
+}
+
+.scrolling-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 25s linear infinite;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* 📱 Sur mobile (écran < 768px), le texte défile plus vite */
+@media (max-width: 768px) {
+    .scrolling-text {
+        animation: scrollText 20s linear infinite;
+        /* Plus rapide sur mobile */
+    }
 }

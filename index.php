@@ -36,7 +36,7 @@ try {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Special+Elite&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/globalcss.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/globalcss.css">
     <title>FHLTravel</title>
     <link rel="icon" href="assets/images/logo.webp" type="image/x-icon">
 
@@ -211,6 +211,7 @@ try {
                     </a>
                 </div>
             </div>
+
         </div>
 
 
@@ -329,7 +330,11 @@ try {
                     <a href="content/tours/Day_One_Andasibe.html" class="btn rounded hover-card pt-3">
 
                         <div class="bb">
+
                             <img src="assets/images/indriindri.webp" class=" sary  mb-2" alt="">
+                        </div>
+                        <div class="text-end">
+                            <span class="badge bg-info rounded-pill fs-6 ">New</span>
                         </div>
                         <h3 class="text-body-emphasis titre fw-bold">DAY ONE ANDASIBE</h3>
                         <p class=" f">Visit directly Andasibe National Park (Analamazotra reserve) that you will
@@ -414,7 +419,7 @@ try {
                     <a href="content/tours/wonderSouth_Andasibe.html" class="btn  rounded  hover-card pt-3">
 
                         <div class="bb">
-                            <img src="assets/images/city/aller1.webp" class="sary mb-2" alt="">
+                            <img src="assets/images/city/toliara1.webp" class="sary mb-2" alt="">
                         </div>
 
                         <h3 class=" text-body-emphasis color titre fw-bold">AMAZING ISLAND OF THE SOUTH / ANDASIBE</h3>
@@ -639,6 +644,13 @@ try {
 
             </div>
 
+        </div>
+
+        <div class="fixed-footer">
+            <div class="scrolling-text">
+                🇲🇬 <img src="assets/images/logo.png" class="rounded-pill" alt="" width="25px"> Welcome to FHL Madagascar Travel ! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Discover our tours! &nbsp;&nbsp;&nbsp; / <b class="text-warning">PROMOTIONS : </b> Discounts for the <b class="text-warning"> low season -15%</b> on tours Feb-May &nbsp;&nbsp; <b>/</b> Reduced rates for families and friends <b class="text-warning">- 10% </b>&nbsp;&nbsp; <b>/</b> Duo travel deal <b class="text-warning">-10%</b> discount when traveling as a pair <img src="assets/images/logo.png" class="rounded-pill" alt="" width="25px">
+
+            </div>
         </div>
 
 
