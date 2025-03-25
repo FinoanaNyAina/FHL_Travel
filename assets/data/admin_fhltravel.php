@@ -145,7 +145,7 @@
                      </li>
                      <li><a href="../../content/Rental_car.html" class="nav-link px-2 text-white a ">Car Rental</a>
                      </li>
-                     <li><a href="Madagascar_tourism_new.php"
+                     <li><a href="../data/new/Madagascar_tourism_new.php"
                              class="nav-link px-2 text-white a">News</a>
                      </li>
                      <li><a href="../../content/contact.html" class="nav-link px-2 text-white a">Contact Us</a>
@@ -382,9 +382,544 @@
                  </form>
              </div>
          </div>
+
+         <div class="row my-5 pb-5 ">
+             <div class="col-12 col-md-7 col-lg-6 mx-auto">
+                 <div class=" col-lg-8 mx-auto bg-info bg-opacity-10 shadow-sm border-top border-bottom p-3  mb-4">
+                     <h4 class="text-center fs-2 fw-bold bd">CALCUL TOURS </h4>
+
+                 </div>
+
+                 <form class="f" action="calcul.php" method="POST" enctype="multipart/form-data">
+                     <div class="row g-3 pb-5">
+                         <div class="row my-4">
+                             <div class="col-lg-4">
+                                 <label for="day" class="form-label fw-bold">Nombre de jours </label>
+                                 <input type="number" class="form-control f" id="day" name="day" placeholder="jrs">
+                             </div>
+
+                             <div class="col-lg-2">
+                                 <label class="form-label fw-bold">Date </label>
+                                 <input type="number" class="form-control f" name="location" value="270000" placeholder="270000">
+                             </div>
+                             <div class="col-lg-4">
+                                 <label class="form-label fw-bold">Kilometrage (Gasoil) </label>
+                                 <input type="number" class="form-control f" name="km" value="" placeholder="km">
+                             </div>
+                         </div>
+                         <div class="row mt-4 mb-4">
+                             <div class="col-6 shadow-sm p-3 bg-warning bg-opacity-10">
+                                 <label class="form-label"><b>Hotel Medium.</b> <br>
+                                 </label>
+
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="500000" id="a">
+                                     <label class="form-check-label" for="a">
+                                         Antananarivo
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="425000" id="b">
+                                     <label class="form-check-label" for="b">
+                                         Andasibe
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value=" 370000 " id="c">
+                                     <label class="form-check-label" for="c">
+                                         Antsirabe
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="250000 "
+                                         id="d">
+                                     <label class="form-check-label" for="d">
+                                         Ambositra
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="300000" id="e">
+                                     <label class="form-check-label" for="e">
+                                         Ranomafana
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="370000" id="f">
+                                     <label class="form-check-label" for="f">
+                                         Fianarantsoa
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="470000" id="g">
+                                     <label class="form-check-label" for="g">
+                                         Ambalavao
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="370000" id="h">
+                                     <label class="form-check-label" for="h">
+                                         Ranohira
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="370000" id="i">
+                                     <label class="form-check-label" for="i">
+                                         Tulear
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="370000" id="j">
+                                     <label class="form-check-label" for="j">
+                                         Ifaty
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="450000" id="k">
+                                     <label class="form-check-label" for="k">
+                                         Salary
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="450000" id="l">
+                                     <label class="form-check-label" for="l">
+                                         Ambatomilo
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="500000" id="m">
+                                     <label class="form-check-label" for="m">
+                                         Belo sur mere
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="300000" id="n">
+                                     <label class="form-check-label" for="n">
+                                         Morondava
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="300000" id="o">
+                                     <label class="form-check-label" for="o">
+                                         Miandrivazo
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="450000" id="p">
+                                     <label class="form-check-label" for="p">
+                                         Bekopaka
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="mediumhotel[]" type="checkbox" value="450000" id="q">
+                                     <label class="form-check-label" for="q">
+                                         Kirindy Forest
+                                     </label>
+                                 </div>
+
+
+                             </div>
+
+                             <div class="col-6 shadow-sm p-3 bg-light">
+                                 <label class="form-label"><b>South and park Andasibe</b> <br> </label>
+
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="200000" id="aa">
+                                     <label class="form-check-label" for="aa">
+                                         Antananarivo
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="180000" id="bb">
+                                     <label class="form-check-label" for="bb">
+                                         Andasibe
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value=" 215000 " id="cc">
+                                     <label class="form-check-label" for="cc">
+                                         Antsirabe
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="0"
+                                         id="dd">
+                                     <label class="form-check-label" for="dd">
+                                         Ambositra
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="200000" id="ee">
+                                     <label class="form-check-label" for="ee">
+                                         Ranomafana
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="0" id="ff">
+                                     <label class="form-check-label" for="ff">
+                                         Fianarantsoa
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="40000" id="gg">
+                                     <label class="form-check-label" for="gg">
+                                         Ambalavao
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="235000" id="hh">
+                                     <label class="form-check-label" for="hh">
+                                         Ranohira
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="0" id="ii">
+                                     <label class="form-check-label" for="ii">
+                                         Tulear
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="0" id="jj">
+                                     <label class="form-check-label" for="jj">
+                                         Ifaty
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="250000" id="kk">
+                                     <label class="form-check-label" for="kk">
+                                         Salary
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="0" id="ll">
+                                     <label class="form-check-label" for="ll">
+                                         Ambatomilo
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="0" id="mm">
+                                     <label class="form-check-label" for="mm">
+                                         Belo sur mere
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="100000" id="nn">
+                                     <label class="form-check-label" for="nn">
+                                         Morondava
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="0" id="oo">
+                                     <label class="form-check-label" for="oo">
+                                         Miandrivazo
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="180000" id="pp">
+                                     <label class="form-check-label" for="pp">
+                                         Bekopaka
+                                     </label>
+                                 </div>
+                                 <div class="form-check image-hover">
+                                     <input class="form-check-input" name="park[]" type="checkbox" value="200000" id="qq">
+                                     <label class="form-check-label" for="qq">
+                                         Kirindy Forest
+                                     </label>
+                                 </div>
+
+
+                             </div>
+                         </div>
+                         <div class="row mt-4 mb-4">
+                             <div class="col-6">
+                                 <div class="accordion accordion-flush" id="accordionFlushExample">
+                                     <div class="accordion-item">
+                                         <h2 class="accordion-header ">
+                                             <button class="accordion-button collapsed bg-danger bg-opacity-10 f fw-bold shadow-sm p-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                 Hotel Bas de gamme
+                                             </button>
+                                         </h2>
+                                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                             <div class="col-6 shadow-sm p-3 bg-light">
+                                                 <label class="form-label"><b>bas de gamme</b> <br>
+                                                 </label>
+
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="1">
+                                                     <label class="form-check-label" for="1">
+                                                         Antananarivo
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="2">
+                                                     <label class="form-check-label" for="2">
+                                                         Andasibe
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value=" 200000 " id="3">
+                                                     <label class="form-check-label" for="3">
+                                                         Antsirabe
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000 "
+                                                         id="4">
+                                                     <label class="form-check-label" for="4">
+                                                         Ambositra
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="5">
+                                                     <label class="form-check-label" for="5">
+                                                         Ranomafana
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="6">
+                                                     <label class="form-check-label" for="6">
+                                                         Fianarantsoa
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="7">
+                                                     <label class="form-check-label" for="7">
+                                                         Ambalavao
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="8">
+                                                     <label class="form-check-label" for="8">
+                                                         Ranohira
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="9">
+                                                     <label class="form-check-label" for="9">
+                                                         Tulear
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="10">
+                                                     <label class="form-check-label" for="10">
+                                                         Ifaty
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="11">
+                                                     <label class="form-check-label" for="11">
+                                                         Salary
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="12">
+                                                     <label class="form-check-label" for="12">
+                                                         Ambatomilo
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="13">
+                                                     <label class="form-check-label" for="13">
+                                                         Belo sur mere
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="14">
+                                                     <label class="form-check-label" for="14">
+                                                         Morondava
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="15">
+                                                     <label class="form-check-label" for="15">
+                                                         Miandrivazo
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="16">
+                                                     <label class="form-check-label" for="16">
+                                                         Bekopaka
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="bas[]" type="checkbox" value="200000" id="17">
+                                                     <label class="form-check-label" for="17">
+                                                         Kirindy Forest
+                                                     </label>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-6">
+                                 <div class="accordion accordion-flush" id="accordionFlushExample">
+                                     <div class="accordion-item">
+                                         <h2 class="accordion-header ">
+                                             <button class="accordion-button collapsed bg-danger bg-opacity-10 f fw-bold shadow-sm p-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                 Hotel LUX
+                                             </button>
+                                         </h2>
+                                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                             <div class="col-6 shadow-sm p-3 bg-light">
+                                                 <label class="form-label"><b>LUX</b> <br>
+                                                 </label>
+
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="18">
+                                                     <label class="form-check-label" for="18">
+                                                         Antananarivo
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="19">
+                                                     <label class="form-check-label" for="19">
+                                                         Andasibe
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value=" 500000 " id="20">
+                                                     <label class="form-check-label" for="20">
+                                                         Antsirabe
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000 "
+                                                         id="21">
+                                                     <label class="form-check-label" for="21">
+                                                         Ambositra
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="22">
+                                                     <label class="form-check-label" for="22">
+                                                         Ranomafana
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="23">
+                                                     <label class="form-check-label" for="23">
+                                                         Fianarantsoa
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="24">
+                                                     <label class="form-check-label" for="24">
+                                                         Ambalavao
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="25">
+                                                     <label class="form-check-label" for="25">
+                                                         Ranohira
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="26">
+                                                     <label class="form-check-label" for="26">
+                                                         Tulear
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="27">
+                                                     <label class="form-check-label" for="27">
+                                                         Ifaty
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="28">
+                                                     <label class="form-check-label" for="28">
+                                                         Salary
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="29">
+                                                     <label class="form-check-label" for="29">
+                                                         Ambatomilo
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="30">
+                                                     <label class="form-check-label" for="30">
+                                                         Belo sur mere
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="31">
+                                                     <label class="form-check-label" for="31">
+                                                         Morondava
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="32">
+                                                     <label class="form-check-label" for="32">
+                                                         Miandrivazo
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="33">
+                                                     <label class="form-check-label" for="33">
+                                                         Bekopaka
+                                                     </label>
+                                                 </div>
+                                                 <div class="form-check image-hover">
+                                                     <input class="form-check-input" name="lux[]" type="checkbox" value="500000" id="34">
+                                                     <label class="form-check-label" for="34">
+                                                         Kirindy Forest
+                                                     </label>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-6 shadow-sm p-3 bg-light">
+                             <label class="form-label"><b>BAQUE et descente Tsiribihina</b> <br>
+                             </label>
+
+                             <div class="form-check image-hover">
+                                 <input class="form-check-input" name="baque[]" type="checkbox" value="100000" id="aaa">
+                                 <label class="form-check-label" for="aaa">
+                                     Belo sur tsiribihina
+                                 </label>
+                             </div>
+                             <div class="form-check image-hover">
+                                 <input class="form-check-input" name="baque[]" type="checkbox" value="100000" id="bbb">
+                                 <label class="form-check-label" for="bbb">
+                                     Bekopaka
+                                 </label>
+                             </div>
+                             <div class="form-check image-hover">
+                                 <input class="form-check-input" name="baque[]" type="checkbox" value=" 1870363 " id="ccc">
+                                 <label class="form-check-label" for="ccc">
+                                     descente tsiribihina
+                                 </label>
+                             </div>
+
+                         </div>
+
+
+                         <div class="col-3">
+                             <label class="form-label fw-bold">Extra </label>
+                             <input type="number" class="form-control f" name="extra" value="">
+                         </div>
+
+
+                     </div>
+
+                     <div class="text-center">
+                         <button class="btn text-white rounded-pill fw-bold f whatsapp " type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calculator-fill" viewBox="0 0 16 16">
+                                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5m0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5z" />
+                             </svg> Calcul </button>
+                     </div>
+
+                 </form>
+             </div>
+         </div>
          <hr>
          <div class="text-center  ">
-             <a href="logout.php" class="btn btn-lg mail rounded-pill "> logout</a>
+             <a href="logout.php" class="btn mail rounded-pill "> logout</a>
+
          </div>
 
 

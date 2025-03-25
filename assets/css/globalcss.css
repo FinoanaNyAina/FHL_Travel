@@ -715,7 +715,7 @@
 .scrolling-text {
     display: inline-block;
     padding-left: 100%;
-    animation: scrollText 25s linear infinite;
+    animation: scrollText 30s linear infinite;
 }
 
 @keyframes scrollText {
@@ -731,7 +731,7 @@
 /* 📱 Sur mobile (écran < 768px), le texte défile plus vite */
 @media (max-width: 768px) {
     .scrolling-text {
-        animation: scrollText 20s linear infinite;
+        animation: scrollText 25s linear infinite;
         /* Plus rapide sur mobile */
     }
 }

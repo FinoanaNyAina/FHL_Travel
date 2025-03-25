@@ -1,9 +1,3 @@
-<?php
-// Récupération des données envoyées par le formulaire
-$titre = $_POST['tour'];
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,9 +8,9 @@ $titre = $_POST['tour'];
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Special+Elite&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/globalcss.css">
     <title>FHLTravel</title>
     <link rel="icon" href="../images/logo.webp" type="image/x-icon">
@@ -38,7 +32,7 @@ $titre = $_POST['tour'];
                                         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                                 </svg> +261 32 95 720 20 |</a>
                         </li>
-                        <li><a href="../../content/contact.html" class="nav-link px-2 text-white a"><svg
+                        <li><a href="content/contact.html" class="nav-link px-2 text-white a"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-envelope" viewBox="0 0 16 16">
                                     <path
@@ -74,7 +68,7 @@ $titre = $_POST['tour'];
                 <div class=" col-3 col-lg-4  ">
                     <ul class="nav justify-content-end">
                         <li class="justify-content-end">
-                            <a href="" class="nav-link px-2 text-white"><svg
+                            <a href="assets/data/login.php" class="nav-link px-2 text-white"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-person-workspace" viewBox="0 0 16 16">
                                     <path
@@ -109,24 +103,20 @@ $titre = $_POST['tour'];
 
                 <!-- Navigation Menu -->
                 <ul class="nav d-none d-md-flex col-md-6 justify-content-center mb-2 mb-md-0 mx-auto" id="nav">
-                    <li><a href="../../index.php" class="nav-link px-2 text-white a ">Home</a></li>
-                    <li><a href="../../content/madagascar.html" class="nav-link px-2 text-white a ">Madagascar</a>
+                    <li><a href="index.php" class="nav-link px-2 text-white navcolor rounded-pill">Home</a></li>
+                    <li><a href="content/madagascar.html" class="nav-link px-2 text-white a">Madagascar</a></li>
+                    <li><a href="content/about.html" class="nav-link px-2 text-white a">About Us</a></li>
+                    <li><a href="content/ourstours.html" class="nav-link px-2 text-white a">Our Tours</a></li>
+                    <li><a href="content/Rental_car.html" class="nav-link px-2 text-white a">Car Rental</a></li>
+                    <li><a href="assets/data/new/Madagascar_tourism_new.php" class="nav-link px-2 text-white a">News</a>
                     </li>
-                    <li><a href="../../content/about.html" class="nav-link px-2 text-white a">About Us</a></li>
-                    <li><a href="../../content/ourstours.html" class="nav-link px-2 text-white a">Our Tours</a>
-                    </li>
-                    <li><a href="../../content/Rental_car.html" class="nav-link px-2 text-white a ">Car Rental</a>
-                    </li>
-                    <li><a href="new/Madagascar_tourism_new.php"
-                            class="nav-link px-2 text-white a">News</a>
-                    </li>
-                    <li><a href="../../content/contact.html" class="nav-link px-2 text-white a">Contact Us</a>
-                    </li>
+                    <li><a href="content/contact.html" class="nav-link px-2 text-white a">Contact Us</a></li>
                 </ul>
 
                 <!-- Personal Adventure Button -->
                 <div class="col-auto col-md-3 d-none d-md-block text-end">
-                    <a href="../../content/personal_adventure.html" class="btn btn-sm rounded-pill text-white fw-bold colorbouton">
+                    <a href="../../content/personal_adventure.html"
+                        class="btn btn-sm rounded-pill text-white fw-bold colorbouton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-person-gear" viewBox="0 0 16 16">
                             <path
@@ -139,13 +129,14 @@ $titre = $_POST['tour'];
                 <!-- Mobile Navigation Menu -->
                 <ul class="nav flex-column bg-dark position-absolute top-100 start-0 w-100 d-md-none p-3 d-none"
                     id="mobile-menu">
-                    <li><a href="../index.php" class="nav-link text-white  a" id="nav">Home</a></li>
-                    <li><a href="../../content/madagascar.html" class="nav-link text-white a" id="nav">Madagascar</a></li>
+                    <li><a href="../../index.php" class="nav-link text-white  a" id="nav">Home</a></li>
+                    <li><a href="../../content/madagascar.html" class="nav-link text-white a" id="nav">Madagascar</a>
+                    </li>
                     <li><a href="../../content/about.html" class="nav-link text-white a" id="nav">About Us</a></li>
                     <li><a href="../../content/ourstours.html" class="nav-link text-white a" id="nav">Our Tours</a></li>
-                    <li><a href="../../content/Rental_car.html" class="nav-link text-white a" id="nav">Car Rental</a></li>
-                    <li><a href="Madagascar_tourism_new.php" class="nav-link text-white a"
-                            id="nav">News</a>
+                    <li><a href="../../content/Rental_car.html" class="nav-link text-white a" id="nav">Car Rental</a>
+                    </li>
+                    <li><a href="new/Madagascar_tourism_new.php" class="nav-link text-white a" id="nav">News</a>
                     </li>
                     <li><a href="../../content/contact.html" class="nav-link text-white a" id="nav">Contact Us</a></li>
                 </ul>
@@ -158,19 +149,19 @@ $titre = $_POST['tour'];
 
     <!-- JavaScript for Mobile Menu -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const menuToggle = document.getElementById("menu-toggle");
             const mobileMenu = document.getElementById("mobile-menu");
 
             // Fonction pour ouvrir/fermer le menu
-            menuToggle.addEventListener("click", function(event) {
+            menuToggle.addEventListener("click", function (event) {
                 mobileMenu.classList.toggle("d-none");
                 menuToggle.classList.toggle("active");
                 event.stopPropagation(); // Empêche de fermer immédiatement après ouverture
             });
 
             // Fermer le menu en cliquant en dehors
-            document.addEventListener("click", function(event) {
+            document.addEventListener("click", function (event) {
                 if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
                     mobileMenu.classList.add("d-none"); // Ferme le menu
                     menuToggle.classList.remove("active"); // Réinitialise l'icône
@@ -178,178 +169,35 @@ $titre = $_POST['tour'];
             });
         });
     </script>
-
-
     <!-------------------home---------------->
+    <!-----------
+  echo "Le total des hôtels choisis est : " . number_format($totalHotelMedium) . " Ariary";
+    echo "Le total des Bas de gamme choisis est : " . number_format($totalBas) . " Ariary";
+    echo "Le total des Lux choisis est : " . number_format($totalLux) . " Ariary";
+    echo "Le total des Park choisis est : " . number_format($totalPark) . " Ariary";
+    echo "Le total des Baque choisis est : " . number_format($totalBaque) . " Ariary";
+    echo "Le valeur de location plus gasoil : " . (($jours * $location) + ((($km * 15) / 100) * 4900));
+    echo "le valeur de l'extra :" . $extra;
+
+
+---------------->
 
     <main class=" shadow-sm bg-white shadow px-0">
-        <div class="text-center bg shadow-sm py-3 ">
-            <h2 class="text-white">You are choosing</h2>
-            <p class="fw-bold fs-2 text-warning bd " id="send">
-                <?php echo $titre; ?>
-            </p>
-        </div>
 
-        <div class=" row ">
-            <div class="col-2 col-lg-1 py-2 text-center bg-info bg-opacity-10 shadow-sm" style="border-radius: 5px 0 0 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="text-primary bi bi-house-door-fill" viewBox="0 0 16 16">
-                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
-                </svg></div>
-            <div class="col-10  col-lg-11 py-2 bg-white shadow-sm " style="border-radius: 0 10px 10px 0;"><a href="../../index.php" style="text-decoration: none;">Home</a> | <?php echo $titre; ?> </div>
-        </div>
-
-        <div class="row py-4 px-5 ">
-
-            <div class="col-12 col-lg-6 mx-auto">
-
-                <div class="bg-success bg-opacity-10 p-3 rounded">
-                    <p class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-shield-lock text-success" viewBox="0 0 16 16">
-                            <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
-                            <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415" />
-                        </svg></p>
-                    <p> Your personal information is 100% secure with us. We use advanced encryption and data protection measures to ensure your privacy.
-                        Your details will only be used to plan your trip and will never be shared with third parties without your consent.</p>
-
-                    <p class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-currency-dollar text-success" viewBox="0 0 16 16">
-                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z" />
-                        </svg> </p>
-                    <p> <b class="text-success fs-5">Flexible Payment :</b> We will contact you by email after your booking to discuss the payment options that suit you best.</p>
-
-                </div>
-
-                <br>
-
-                <!------------------------------------------------  FORM   ------------------------------------------------------>
-
-                <form action="send_custome_tours.php" method="post">
-                    <div class="" style="display: none;">
-                        <input type="text" class="form-control f" id="tour" name="tour" value="" placeholder=" ... ">
-
-
-                    </div>
-                    <div class="row g-3 pb-3 mb-5  border shadow-sm px-3 rounded">
-
-                        <p> <b class="fs-3 color">Travel Dates</b> <br> Select your preferred travel dates. If you are not
-                            sure yet, an
-                            estimated date is fine. This
-                            helps us check availability
-                            and plan your itinerary accordingly.</p>
-                        <div class="col-12 shadow-sm p-3 bg-light">
-                            <label for="arrival" class="form-label"> <b>Arrival</b>. <br>Possible Arrival Date
-                                (your best guess is fine)
-                            </label>
-                            <input type="date" class="form-control f" id="arrival" name="arrival" placeholder=" ">
-
-                        </div>
-
-                        <div class="col-12 shadow-sm p-3 bg-light">
-                            <label for="departure" class="form-label"> <b>Departure</b>. <br>Possible Departure Date
-                                (your best guess is fine)
-                            </label>
-                            <input type="date" class="form-control f" id="departure" name="departure" placeholder=" ">
-
-                        </div>
-                    </div>
-
-
-                    <div class="row g-3 pb-3 mb-5 border shadow-sm px-3 rounded">
-
-                        <p> <b class="fs-3 color">Number of Travelers</b> <br> Let us know how many people will be traveling
-                            with you. This
-                            helps us arrange accommodations,
-                            transport, and activities.</p>
-                        <div class="col-12 shadow-sm p-3 bg-light">
-                            <label for="adults" class="form-label"> <b>Number of adults in your party</b>. <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
-                                    class="bi bi-asterisk text-danger" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
-                                </svg>
-                                <br>Please indicate number of adults in your party.
-                            </label>
-                            <input type="text" class="form-control f" id="adults" name="adults" placeholder=" ... "
-                                required>
-
-                        </div>
-
-                        <div class="col-12 shadow-sm p-3 bg-light">
-                            <label for="children" class="form-label"> <b>Number of Children in your party</b>. <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
-                                    class="bi bi-asterisk text-danger" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
-                                </svg>
-                                <br>Please indicate number of children, and please tell us their ages.
-                            </label>
-                            <input type="text" class="form-control f" id="children" name="children" placeholder=" ..."
-                                required>
-
-                        </div>
-                    </div>
-
-                    <div class="row g-3 pb-3 mb-5 border shadow-sm px-3 rounded" style="display: none;">
-
-                        <input type="text" name="message" value="BOOK NOW ">
-                    </div>
-
-                    <div class="row g-3 pb-3 mb-5 border shadow-sm px-3 rounded">
-
-                        <p> <b class="fs-3 color">Contact Information</b> <br> Please provide your contact details so we can
-                            send you the itinerary and discuss any modifications. WhatsApp is
-                            recommended for quick communication.</p>
-
-                        <div class="col-12 shadow-sm p-3 bg-light">
-                            <label for="name" class="form-label"> <b>Name of the principal contact. <svg
-                                        xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
-                                        class="bi bi-asterisk text-danger" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
-                                    </svg></b> <br>
-                                Please note that we prefer it if you would please give us both your FAMILY and First
-                                names, to help us save and search
-                                for your itinerary in our system. </label>
-                            <input type="text" class="form-control f" id="name" name="name" placeholder="Your name"
-                                required>
-
-                        </div>
-
-                        <div class="col-12 shadow-sm p-3 bg-light ">
-                            <label for="email" class="form-label"><b>Adresse e-mail</b> <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
-                                    class="bi bi-asterisk text-danger" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
-                                </svg></label>
-                            <input type="email" class="form-control f" id="email" name="email"
-                                placeholder="you@example.com" value="" required>
-                        </div>
-
-                        <div class="col-12 shadow-sm p-3 bg-light">
-                            <label for="phone" class="form-label"> <b>Phone number (WhatsApp, ...)</b>. <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
-                                    class="bi bi-asterisk text-danger" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
-                                </svg> <br>Please give us a verifiable
-                                number
-                            </label>
-                            <input type="tel" class="form-control f" id="phone" name="phone" placeholder="Phone number"
-                                required>
-
-                        </div>
-                    </div>
-
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" required>
-                        <label class="form-check-label" for="flexSwitchCheckDefault">I have reviewed my details and agree to the terms of service and privacy policy.</label>
-                    </div> <br>
-                    <div class="text-center">
-                        <button class="btn text-white btn-lg fw-bold f rounded-pill whatsapp" type="submit" onclick="envoyerContenu()">BOOK NOW
-                        </button>
-                    </div>
-
-
-                </form>
+        <div class="mx-auto col-lg-6 py-5 ">
+            <p>Hôtel medium : <b></b> </p>
+            <p>Hôtel Bas de gamme : <b></b> </p>
+            <p>Hôtel Lux : <b></b> </p>
+            <p>Prix Park : <b></b> </p>
+            <p>Baque : <b></b></p>
+            <p>Location et carburant : <b></b> </p>
+            <p>Les extras : <b></b> </p> <br><br>
+            <div class="bg-warning bg-opacity-10 p-5">
+                <p>TOTAL : <b></b> </p>
+                <p>Valeur en <b>euro</b> : <b></b> </p>
+                <p>Valeur en <b>Dollards</b> : <b></b></p>
             </div>
+
         </div>
 
 
@@ -362,7 +210,7 @@ $titre = $_POST['tour'];
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-lg-2 mb-3  text-center ">
-                    <img src="../../assets/images/logo.webp" class="rounded-circle" width="100%" alt="">
+                    <img src="../../assets/images/logo.png" class="rounded-circle" width="100%" alt="">
                 </div>
                 <div class="col-6 col-lg-2 mb-3 text-center ">
                     <h4 class="corps ligne">FHL Travel</h4>
@@ -384,18 +232,23 @@ $titre = $_POST['tour'];
                         South</a>
                     <a href="../../content/tours/Day_One_Andasibe.html" class="nav-link p-0 text-white a">- One Day
                         Andasibe</a>
-                    <a href="../../content/tours/Tsingy_Ifaty.html" class="nav-link p-0 text-white a">- Tsingy - Ifaty</a>
+                    <a href="../../content/tours/Tsingy_Ifaty.html" class="nav-link p-0 text-white a">- Tsingy -
+                        Ifaty</a>
                     <a href="../../content/tours/NosyBe_Tour.html" class="nav-link p-0 text-white a">- Nosy Be Tour</a>
-                    <a href="../../content/tours/wonderSouth_Andasibe.html" class="nav-link p-0 text-white a">- Amazing island
+                    <a href="../../content/tours/wonderSouth_Andasibe.html" class="nav-link p-0 text-white a">- Amazing
+                        island
                         of
                         thr South / Andasibe </a>
-                    <a href="../../content/tours/exploration&adventure.html" class="nav-link p-0 text-white a">- Exploration
+                    <a href="../../content/tours/exploration&adventure.html" class="nav-link p-0 text-white a">-
+                        Exploration
                         and
                         adventure </a>
-                    <a href="../../content/tours/colorsofEast.html" class="nav-link p-0 text-white a">- Scents and colors of
+                    <a href="../../content/tours/colorsofEast.html" class="nav-link p-0 text-white a">- Scents and
+                        colors of
                         the
                         East </a>
-                    <a href="../../content/tours/Mystic_west_&_RN7_Discovery.html" class="nav-link p-0 text-white a">- Mystic
+                    <a href="../../content/tours/Mystic_west_&_RN7_Discovery.html" class="nav-link p-0 text-white a">-
+                        Mystic
                         West
                         and RN7 discovery</a>
 
@@ -428,8 +281,9 @@ $titre = $_POST['tour'];
                         Andranovory,
                         Antananarivo 101 <br> -18.91830951832678, 47.57559714124707</a> <br>
 
-                    <a href="../../content/contact.html" class="a nav-link p-0 text-white"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <a href="../../content/contact.html" class="a nav-link p-0 text-white"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-envelope" viewBox="0 0 16 16">
                             <path
                                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                         </svg>
@@ -498,14 +352,7 @@ $titre = $_POST['tour'];
     </div>
 </body>
 
-<script>
-    function envoyerContenu() {
-        // Récupérer le texte du paragraphe
-        let contenu = document.getElementById("send").innerText;
-        // L'ajouter dans l'input caché
-        document.getElementById("tour").value = contenu;
-    }
-</script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
