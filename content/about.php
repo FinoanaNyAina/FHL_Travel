@@ -12,9 +12,10 @@
         href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Special+Elite&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="../assets/css/globalcss.css">
-    <title>Culture of Madagascar</title>
+    <link rel="stylesheet" href="../assets/css/globalcss.css?v=<?= filemtime('../assets/css/globalcss.css'); ?>">
+    <title>Fhl Madagascar Travel </title>
     <link rel="icon" href="../assets/images/logo.webp" type="image/x-icon">
+
 
 </head>
 
@@ -26,42 +27,24 @@
             <div class="row ">
                 <div class=" col-9 col-lg-8">
                     <ul class="nav">
-                        <li><a href="https://wa.me/261329572020" class="nav-link px-2 text-white " target="_blank"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                    <path
-                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        <li><a href="https://wa.me/261329572020" class="nav-link px-2 text-white " target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                                 </svg> +261 32 95 720 20 |</a>
                         </li>
-                        <li><a href="contact.html" class="nav-link px-2 text-white a"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-envelope" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        <li><a href="contact.php" class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                                 </svg></a></li>
-                        <li><a href="https://www.facebook.com/profile.php?id=100081146902072" target="_blank"
-                                class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                    height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                    <path
-                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        <li><a href="https://www.facebook.com/profile.php?id=100081146902072" target="_blank" class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                                 </svg></a></li>
-                        <li><a href="https://www.instagram.com/fhltours?igsh=amR1NnowZHV4c2di" target="_blank"
-                                class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                    height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        <li><a href="https://www.instagram.com/fhltours?igsh=amR1NnowZHV4c2di" target="_blank" class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                                 </svg></a></li>
-                        <li><a href="https://www.tiktok.com/@fhl.travel.madaga?_t=ZM-8ucli1tHKYo&_r=1" target="_blank"
-                                class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                    height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-                                    <path
-                                        d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                        <li><a href="https://www.tiktok.com/@fhl.travel.madaga?_t=ZM-8ucli1tHKYo&_r=1" target="_blank" class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
                                 </svg></a></li>
-                        <li><a href="https://g.co/kgs/zcTmM6A" target="_blank" class="nav-link px-2 text-white a"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-google" viewBox="0 0 16 16">
-                                    <path
-                                        d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+                        <li><a href="https://g.co/kgs/zcTmM6A" target="_blank" class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                    <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
                                 </svg></a></li>
 
                     </ul>
@@ -105,22 +88,23 @@
                 <!-- Navigation Menu -->
                 <ul class="nav d-none d-md-flex col-md-6 justify-content-center mb-2 mb-md-0 mx-auto" id="nav">
                     <li><a href="../index.php" class="nav-link px-2 text-white a ">Home</a></li>
-                    <li><a href="madagascar.html" class="nav-link px-2 text-white navcolor rounded-pill">Madagascar</a>
+                    <li><a href="madagascar.php" class="nav-link px-2 text-white a ">Madagascar</a>
                     </li>
-                    <li><a href="about.html" class="nav-link px-2 text-white a">About Us</a></li>
-                    <li><a href="ourstours.html" class="nav-link px-2 text-white a">Our Tours</a>
+                    <li><a href="about.php" class="nav-link px-2 text-white navcolor rounded-pill">About Us</a></li>
+                    <li><a href="ourstours.php" class="nav-link px-2 text-white a">Our Tours</a>
                     </li>
-                    <li><a href="Rental_car.html" class="nav-link px-2 text-white a ">Car Rental</a>
+                    <li><a href="Rental_car.php" class="nav-link px-2 text-white a ">Car Rental</a>
                     </li>
                     <li><a href="../assets/data/new/Madagascar_tourism_new.php"
                             class="nav-link px-2 text-white a">News</a>
                     </li>
-                    <li><a href="contact.html" class="nav-link px-2 text-white a">Contact Us</a></li>
+                    <li><a href="contact.php" class="nav-link px-2 text-white a">Contact Us</a>
+                    </li>
                 </ul>
 
                 <!-- Personal Adventure Button -->
                 <div class="col-auto col-md-3 d-none d-md-block text-end">
-                    <a href="personal_adventure.html" class="btn btn-sm rounded-pill text-white fw-bold colorbouton">
+                    <a href="personal_adventure.php" class="btn btn-sm rounded-pill text-white fw-bold colorbouton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-person-gear" viewBox="0 0 16 16">
                             <path
@@ -134,14 +118,14 @@
                 <ul class="nav flex-column bg-dark position-absolute top-100 start-0 w-100 d-md-none p-3 d-none"
                     id="mobile-menu">
                     <li><a href="../index.php" class="nav-link text-white  a" id="nav">Home</a></li>
-                    <li><a href="madagascar.html" class="nav-link text-white a" id="nav">Madagascar</a></li>
-                    <li><a href="about.html" class="nav-link text-white a" id="nav">About Us</a></li>
-                    <li><a href="ourstours.html" class="nav-link text-white a" id="nav">Our Tours</a></li>
-                    <li><a href="Rental_car.html" class="nav-link text-white a" id="nav">Car Rental</a></li>
+                    <li><a href="madagascar.php" class="nav-link text-white a" id="nav">Madagascar</a></li>
+                    <li><a href="about.php" class="nav-link text-white a" id="nav">About Us</a></li>
+                    <li><a href="ourstours.php" class="nav-link text-white a" id="nav">Our Tours</a></li>
+                    <li><a href="Rental_car.php" class="nav-link text-white a" id="nav">Car Rental</a></li>
                     <li><a href="../assets/data/new/Madagascar_tourism_new.php" class="nav-link text-white a"
                             id="nav">News</a>
                     </li>
-                    <li><a href="contact.html" class="nav-link text-white a" id="nav">Contact Us</a></li>
+                    <li><a href="contact.php" class="nav-link text-white a" id="nav">Contact Us</a></li>
                 </ul>
 
 
@@ -172,158 +156,160 @@
             });
         });
     </script>
+
+
     <!-------------------home---------------->
 
-    <main class=" shadow-sm bg-white shadow px-0">
+    <div class="text-center bg shadow-sm pt-2 pb-2">
+        <h2 class="text-white">FHL Madagascar Travel </h2>
+        <small class=" text-warning bd fs-6 ">
+            Faith - Hope - Love
+        </small>
+    </div>
 
+    <main class=" shadow bg-white rounded">
 
-        <div id="madagascar" class="p-5 mb-2 text-white ">
-            <div class="col-md-6 px-5 text-center txt mainty">
-                <h1 class=" fw-bold titre ">MADAGASCAR </h1>
-                <p class="" id="nav">A Unique Island in the World</p>
-                <p class="">Madagascar is the fourth largest island in the world, located in the
-                    Indian
-                    Ocean off the east coast of Africa.
-                    Nicknamed "the Red Island", it stands out for its exceptional biodiversity, with more
-                    than 90%
-                    of its wildlife and flora
-                    being endemic, meaning they are found nowhere else on Earth.</p>
-            </div>
-        </div>
+        <div class="row">
+            <div class="col-12 col-lg-9 mx-auto">
+                <div class="row g-5 my-2 mx-auto">
 
+                    <div class="col-lg-3 mx-auto">
+                        <div class="position-sticky text-center" style="top: 5rem;">
+                            <h1 class="titre"></h1>
+                            <img src="../assets/images/logo.webp" class="rounded-circle" width="100%" alt="">
 
-        <div class=" text-center mx-4">
-            <h2 class="d-inline-block mb-2 fw-bold text-uppercase titre color ligne txt">
-                Guide to Madagascar
-            </h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <p class="mt-4 mx-4 txt text-center">
-                        Madagascar is a land of <strong>rich culture and breathtaking nature</strong>, offering a unique
-                        experience to every
-                        traveler. From the rhythms of <strong>traditional Malagasy music</strong> to the vibrant local
-                        markets, the island’s
-                        culture is as diverse as its landscapes.
-
-                        Explore the <strong>stunning national parks</strong>, home to <strong>rare lemurs, majestic
-                            baobabs, and lush
-                            rainforests</strong>. Discover <strong>Andasibe-Mantadia</strong>, where the Indri lemur
-                        sings through the
-                        trees, or venture to <strong>Tsingy de Bemaraha</strong>, a UNESCO World Heritage site with
-                        dramatic limestone
-                        formations.
-
-                        Whether you’re drawn by the warmth of Malagasy traditions or the call of the wild, Madagascar
-                        promises an
-                        unforgettable adventure.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="text-center">
-                <div class="row">
-                    <div class="col-lg-9 mx-auto">
-                        <div class="row g-3 mt-2">
-
-                            <div class="col-lg-6 p-3 mievotra hover-card">
-                                <div class="card">
-                                    <img src="../assets/images/famadihana.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">MALAGASY CULTURE AND TRADITIONS</h5>
-                                        <p class="card-text">Madagascar and its eighteen ethnic groups living today in
-                                            harmony,
-                                            according to
-                                            the Malagasy Fihavanana.</p>
-                                        <a href="../content/culture/Culture_of_Madagascar.html"
-                                            class="btn rounded-pill whatsapp fw-bold text-white">Go To
-                                            see</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 p-3 mievotra hover-card">
-                                <div class="card">
-                                    <img src="../assets/images/baobab4.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">NATURAL PARKS and RESERVES in MADAGASCAR</h5>
-                                        <p class="card-text">In Madagascar, nature and endemic treasures are absolutely
-                                            exceptional.
-                                            As you explore the island's many natural parks
-                                            and reserves, key points of interest to visit on your next tour, plan your
-                                            stops
-                                            whether
-                                            short breaks of a few hours or
-                                            an ecotourism and adventure stay over several days.</p>
-                                        <a href="../content/park/park.html"
-                                            class="btn fw-bold rounded-pill colorbouton text-white">Go
-                                            To see</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
+
+
                     </div>
+                    <div class="col-lg-7 border-start border-end mx-auto">
+                        <h2 class="ligne corps1 fs-4 fw-bold">GENERALITY</h2>
+                        <p>- Founded on April 4, 2022, <strong>FHL Travel</strong> is a specialized tour operator and
+                            car
+                            rental service based in
+                            <strong>Antananarivo, Madagascar</strong>. We offer a diverse range of travel
+                            options—luxury, mid-range, and
+                            budget—ensuring that everyone can explore Madagascar while enjoying an authentic and
+                            memorable experience. <br>
+
+
+                            - At <strong>FHL Travel</strong>, we pride ourselves on delivering top-quality
+                            services
+                            with exceptional
+                            flexibility. Operating <strong>24/7</strong>, we are always available to
+                            assist, advise, and help you
+                            plan your perfect journey. Every trip is unique! With professionalism and expertise, we
+                            tailor each adventure to
+                            match your expectations and budget, transforming your dream getaway into reality while
+                            securing the best possible
+                            service for you. <br>
+
+                            - Our mission is to make your journey a success. Whether you're planning a <strong>family
+                                vacation, group tour, solo
+                                adventure, business trip, honeymoon, custom itinerary, car rental, trekking, or
+                                cruise</strong>, simply share
+                            your travel ideas with us. We dedicate our passion and expertise to creating an
+                            <strong>unforgettable
+                                experience</strong> just for you. Plus, we guarantee the <strong>best quality-to-price
+                                ratio</strong> with our
+                            exclusive offers!
+                        </p> <br><br>
+
+                        <h2 class=" corps1 ligne fs-4 fw-bold  color">WHY TO CHOOSE FHL ?</h2>
+                        <p>We specialize in organizing private trips and group tours in Madagascar. For greater
+                            transparency, FHL Travel ensures
+                            that you are fully aware of the reality of your journey, especially when it comes to
+                            pricing.
+
+                            You may sometimes wonder why you need to pay more for the same services. To provide you with
+                            numerous benefits and
+                            expert advice on each destination offered by FHL Travel, and to guarantee the best services
+                            for you, we promise to...
+                            (sentence incomplete—let me know if you want to continue it). 😊 </p> <br><br>
+                        <h2 class=" corps1 ligne fs-4 fw-bold color">THE BEST SERVICE & FLEXIBILITY</h2>
+                        <p>The remarkable reactivity of FHL Travel and the immediate reply to your request by
+                            <strong>email,
+                                Whatsapp
+                                and/or by
+                                telephone</strong>, managed by
+                            a highly experienced team, who assist you, advise you, and carry out your wishes. We are the
+                            only
+                            tour operator in
+                            Madagascar that operates <strong>24 hours a day and 7 days a week</strong> 24 hours a day
+                            and 7 days
+                            a week to provide the best services.
+                        </p> <br><br>
+                        <h2 class="corps1 ligne  fs-4 fw-bold color"> PERSONALIZE YOUR TRIP </h2>
+                        <p>Each trip is unique and tailored to your expectations (steps, interests, benefits, duration,
+                            budget,
+                            accommodation...).
+                            FHL Travel is pleased to offer the best services that contribute to the success of your
+                            trip.</p><br><br>
+                        <h2 class="corps1 ligne  fs-4 fw-bold color"> PROFESSIONALISM</h2>
+                        <P>We leverage our expertise and experience to provide practical advice for your trip, paying
+                            special
+                            attention to even the
+                            smallest desires and wishes of our clients. We strive to meet their needs by requesting the
+                            best for
+                            them and ensuring
+                            high-quality travel, in collaboration with reliable and skilled partners.</P><br><br>
+
+                        <h2 class="corps1 ligne  fs-4 fw-bold color">SUPPORT PROVIDED BEFORE, THROUGHOUT, AND AFTER YOUR
+                            TRIP
+                        </h2>
+                        <p>At <strong>FHL Travel</strong>, our goal is to offer you a truly authentic travel experience,
+                            supporting you from the
+                            planning to the
+                            organization of your trip. More than just fulfilling our duties, we focus on your safety
+                            throughout
+                            the entire journey,
+                            ensuring all services meet your expectations. Your feedback is invaluable to us, helping us
+                            continuously enhance the
+                            quality of our services.</p><br><br>
+                        <h2 class="corps1 ligne  fs-4 fw-bold color">REAL and COMPETITIVE PRICES</h2>
+                        <p><strong>FHLTravel</strong> guarantees an excellent value. The thing which differ us from
+                            other travel
+                            company is the
+                            price we offer,
+                            because our estimates are based on prices negotiated directly with the services providers
+                            for our
+                            clients. We try to
+                            establish full transparency between FHLTravel and the clients and always keep a long-term
+                            collaboration
+                            with trusted
+                            providers.</p>
+
+                        <h2 class=" color titre fs-4 fw-bold">Contact Us</h2>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                            </svg> <strong>Address</strong>: LOT VS 99 DAE/BE Antananarivo, Madagascar</p>
+
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                            </svg> <strong>Whatsapp</strong> : +261 32 95 720 20 (finoana ny aina)</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                            </svg> <strong>Email</strong>: fhlmadagascartravel.gmail.com</p>
+
+
+                    </div>
+
                 </div>
 
             </div>
-
-
         </div>
 
-        <div class="text-center mt-5">
-            <h2 class="d-inline-block mb-2 fw-bold text-uppercase  titre color ligne txt">
-                About of Madagascar
-            </h2>
-        </div>
-
-        <div class="container row pt-5 px-5 mx-auto shadow-sm ">
 
 
-            <div class=" col-12 col-lg-6 border-end align-self-center mx-auto ">
 
-                <h3 class="titre fw-bold ">1. Geography and Climate</h3>
-                <p>Madagascar covers approximately 587,000 km² and boasts a stunning variety of landscapes:</p>
-                <ul>
-                    <li><b>Tropical rainforests</b> in the east (sush as the Masoala forest)</li>
-                    <li><b>Arid plains and savannas</b> in the south</li>
-                    <li><b>Mountains and high plateaus</b> in the center</li>
-                    <li><b>Paradisiacal beaches and coral reefs</b> in the north and west</li>
-                </ul>
-                <p>The climate varies by region: tropical in the east, temperate in the highlands, and semi-arid in
-                    the south.</p>
-                <h3 class="titre fw-bold mt-5">2. Exceptional Wildlife and Flora</h3>
-                <p>Madagascar is a true natural sanctuary, home to:</p>
-                <ul>
-                    <li><b>Lemurs</b>, the island’s emblem (with over 100 species)</li>
-                    <li><b>The baobab tree</b>, a mythical tree that can live over 1,000 years</li>
-                    <li><b>The panther chameleon</b>, famous for its vivid colors</li>
-                    <li><b>The fossa</b>, Madagascar’s top predator</li>
-                </ul>
 
-            </div>
-            <div class="col-12 col-lg-6  align-self-center mx-auto">
-                <h3 class="titre fw-bold">3. Culture and Population</h3>
-                <p>With around 28 million inhabitants, the Malagasy population is a unique blend of African and
-                    Asian influences. The
-                    official language is Malagasy, but French is also widely spoken. Malagasy culture is marked by:
-                </p>
-                <ul>
-                    <li><b>The "Famadihana"</b>, the tradition of turning over the dead</li>
-                    <li><b>Traditional music</b>, such as salegy and hira gasy</li>
-                    <li><b>Handicrafts</b>, including embroidery and wood carving</li>
-                </ul>
-                <h3 class="titre fw-bold mt-5">4. Tourism and Must-See Sites</h3>
-                <p>Madagascar attracts travelers looking for nature and adventure. Some must-visit places include:
-                </p>
-                <ul>
-                    <li><b>The Avenue of the Baobabs</b> (west) </li>
-                    <li><b>Isalo National Park</b> (south) </li>
-                    <li><b>The Tsingy de Bemaraha</b> (a UNESCO World Heritage Site) </li>
-                    <li><b>Nosy Be and its paradise beaches</b> </li>
-                </ul>
-            </div>
-        </div>
 
         <div class="text-center pt-5 pb-5 px-5 bg-light bg-g border-bottom px-4 ">
             <h2 class="d-inline-block fw-bold corps1 text-uppercase color ligne ">
@@ -349,7 +335,7 @@
                         </svg> +261 32 95 720 20 </a>
                 </div>
                 <div class="col-lg-3">
-                    <a href="contact.html" class="btn  mail fw-bold rounded-pill"><svg
+                    <a href="contact.php" class="btn  mail fw-bold rounded-pill"><svg
                             xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-envelope" viewBox="0 0 16 16">
                             <path
@@ -358,7 +344,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <a href="content/personal_adventure.html"
+                    <a href="content/personal_adventure.php"
                         class="btn text-white fw-bold rounded-pill colorbouton"><svg xmlns="http://www.w3.org/2000/svg"
                             width="20" height="20" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
                             <path
@@ -370,22 +356,24 @@
 
         </div>
 
+      <div class="fixed-footer">
+            <div class="scrolling-text">
+                🇲🇬 <img src="../assets/images/logo.png" class="rounded-pill" alt="" width="25px"> Welcome to FHL
+                    Madagascar
+                    Travel ! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Discover our tours! &nbsp;&nbsp;&nbsp; / <b
+                        class="text-warning">PROMOTIONS : </b> Discounts for the <b class="text-warning"> low season
+                        -15%</b> on
+                    tours Feb-May &nbsp;&nbsp; <b>/</b> Reduced rates for families and friends <b class="text-warning">- 10%
+                    </b>&nbsp;&nbsp; <b>/</b> Duo travel deal <b class="text-warning">-10%</b> discount when traveling
+                    as a pair
+                    <img src="../assets/images/logo.png" class="rounded-pill" alt="" width="25px">
+                
+
+            </div>
+        </div>
+
     </main>
 
-    <div class="fixed-footer">
-        <div class="scrolling-text">
-            🇲🇬 <img src="../assets/images/logo.png" class="rounded-pill" alt="" width="25px"> Welcome to FHL
-            Madagascar
-            Travel ! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Discover our tours! &nbsp;&nbsp;&nbsp; / <b
-                class="text-warning">PROMOTIONS : </b> Discounts for the <b class="text-warning"> low season
-                -15%</b> on
-            tours Feb-May &nbsp;&nbsp; <b>/</b> Reduced rates for families and friends <b class="text-warning">- 10%
-            </b>&nbsp;&nbsp; <b>/</b> Duo travel deal <b class="text-warning">-10%</b> discount when traveling
-            as a pair
-            <img src="../assets/images/logo.png" class="rounded-pill" alt="" width="25px">
-
-        </div>
-    </div>
 
     <!------------------------- FOOTER --------------------------------------------------------->
     <div class="container bg text-white rounded">
@@ -398,34 +386,34 @@
                 <div class="col-6 col-lg-2 mb-3 text-center ">
                     <h4 class="corps ligne">FHL Travel</h4>
                     <a href="../index.php" class="nav-link p-0 text-body-white text-white a">Home</a>
-                    <a href="madagascar.html" class="nav-link p-0 text-white a">Madagascar </a>
-                    <a href="about.html" class="nav-link p-0 text-white a">About Us </a>
-                    <a href="ourstours.html" class="nav-link p-0 text-white a">Our Tours</a>
-                    <a href="Rental_car.html" class="nav-link p-0 text-white a">Car Rental</a>
+                    <a href="madagascar.php" class="nav-link p-0 text-white a">Madagascar </a>
+                    <a href="about.php" class="nav-link p-0 text-white a">About Us </a>
+                    <a href="ourstours.php" class="nav-link p-0 text-white a">Our Tours</a>
+                    <a href="Rental_car.php" class="nav-link p-0 text-white a">Car Rental</a>
                     <a href="../assets/data/new/Madagascar_tourism_new.php" class="nav-link p-0 text-white a">News</a>
-                    <a href="contact.html" class="nav-link p-0 text-white a">Contact Us </a>
+                    <a href="contact.php" class="nav-link p-0 text-white a">Contact Us </a>
 
                 </div>
 
                 <div class="col-6 col-lg-2 mb-3 text-center">
                     <h4 class="corps ligne">Ours Tours</h4>
 
-                    <a href="tours/wonderSouth.html" class="nav-link p-0 text-white a">- Wonders of the
+                    <a href="tours/wonderSouth.php" class="nav-link p-0 text-white a">- Wonders of the
                         South</a>
-                    <a href="tours/Day_One_Andasibe.html" class="nav-link p-0 text-white a">- One Day
+                    <a href="tours/Day_One_Andasibe.php" class="nav-link p-0 text-white a">- One Day
                         Andasibe</a>
-                    <a href="tours/Tsingy_Ifaty.html" class="nav-link p-0 text-white a">- Tsingy - Ifaty</a>
-                    <a href="tours/NosyBe_Tour.html" class="nav-link p-0 text-white a">- Nosy Be Tour</a>
-                    <a href="tours/wonderSouth_Andasibe.html" class="nav-link p-0 text-white a">- Amazing island
+                    <a href="tours/Tsingy_Ifaty.php" class="nav-link p-0 text-white a">- Tsingy - Ifaty</a>
+                    <a href="tours/NosyBe_Tour.php" class="nav-link p-0 text-white a">- Nosy Be Tour</a>
+                    <a href="tours/wonderSouth_Andasibe.php" class="nav-link p-0 text-white a">- Amazing island
                         of
                         thr South / Andasibe </a>
-                    <a href="tours/exploration&adventure.html" class="nav-link p-0 text-white a">- Exploration
+                    <a href="tours/exploration&adventure.php" class="nav-link p-0 text-white a">- Exploration
                         and
                         adventure </a>
-                    <a href="tours/colorsofEast.html" class="nav-link p-0 text-white a">- Scents and colors of
+                    <a href="tours/colorsofEast.php" class="nav-link p-0 text-white a">- Scents and colors of
                         the
                         East </a>
-                    <a href="tours/Mystic_west_&_RN7_Discovery.html" class="nav-link p-0 text-white a">- Mystic
+                    <a href="tours/Mystic_west_&_RN7_Discovery.php" class="nav-link p-0 text-white a">- Mystic
                         West
                         and RN7 discovery</a>
 
@@ -458,7 +446,7 @@
                         Andranovory,
                         Antananarivo 101 <br> -18.91830951832678, 47.57559714124707</a> <br>
 
-                    <a href="contact.html" class="a nav-link p-0 text-white"><svg xmlns="http://www.w3.org/2000/svg"
+                    <a href="contact.php" class="a nav-link p-0 text-white"><svg xmlns="http://www.w3.org/2000/svg"
                             width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                             <path
                                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />

@@ -12,8 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand+SC&family=Special+Elite&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="../../assets/css/globalcss.css">
-    <title>AMAZING ISLAND OF THE SOUTH / ANDASIBE</title>
+    <link rel="stylesheet" href="../../assets/css/globalcss.css?v=<?= filemtime('../../assets/css/globalcss.css'); ?>">
+    <title>Mystic west and Rn7 Discovery</title>
     <link rel="icon" href="../../assets/images/logo.webp" type="image/x-icon">
 
 
@@ -27,42 +27,24 @@
             <div class="row ">
                 <div class=" col-9 col-lg-8">
                     <ul class="nav">
-                        <li><a href="https://wa.me/261329572020" class="nav-link px-2 text-white " target="_blank"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                    <path
-                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        <li><a href="https://wa.me/261329572020" class="nav-link px-2 text-white " target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                                 </svg> +261 32 95 720 20 |</a>
                         </li>
-                        <li><a href="../contact.html" class="nav-link px-2 text-white a"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-envelope" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        <li><a href="../contact.php" class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                                 </svg></a></li>
-                        <li><a href="https://www.facebook.com/profile.php?id=100081146902072" target="_blank"
-                                class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                    height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                    <path
-                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        <li><a href="https://www.facebook.com/profile.php?id=100081146902072" target="_blank" class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                                 </svg></a></li>
-                        <li><a href="https://www.instagram.com/fhltours?igsh=amR1NnowZHV4c2di" target="_blank"
-                                class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                    height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        <li><a href="https://www.instagram.com/fhltours?igsh=amR1NnowZHV4c2di" target="_blank" class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                                 </svg></a></li>
-                        <li><a href="https://www.tiktok.com/@fhl.travel.madaga?_t=ZM-8ucli1tHKYo&_r=1" target="_blank"
-                                class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                    height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-                                    <path
-                                        d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                        <li><a href="https://www.tiktok.com/@fhl.travel.madaga?_t=ZM-8ucli1tHKYo&_r=1" target="_blank" class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
                                 </svg></a></li>
-                        <li><a href="https://g.co/kgs/zcTmM6A" target="_blank" class="nav-link px-2 text-white a"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-google" viewBox="0 0 16 16">
-                                    <path
-                                        d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+                        <li><a href="https://g.co/kgs/zcTmM6A" target="_blank" class="nav-link px-2 text-white a"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                    <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
                                 </svg></a></li>
 
                     </ul>
@@ -106,21 +88,21 @@
                 <!-- Navigation Menu -->
                 <ul class="nav d-none d-md-flex col-md-6 justify-content-center mb-2 mb-md-0 mx-auto" id="nav">
                     <li><a href="../../index.php" class="nav-link px-2 text-white a ">Home</a></li>
-                    <li><a href="../madagascar.html" class="nav-link px-2 text-white a">Madagascar</a></li>
-                    <li><a href="../about.html" class="nav-link px-2 text-white a">About Us</a></li>
-                    <li><a href="../ourstours.html" class="nav-link px-2 text-white navcolor rounded-pill">Our Tours</a>
+                    <li><a href="../madagascar.php" class="nav-link px-2 text-white a">Madagascar</a></li>
+                    <li><a href="../about.php" class="nav-link px-2 text-white a">About Us</a></li>
+                    <li><a href="../ourstours.php" class="nav-link px-2 text-white navcolor rounded-pill">Our Tours</a>
                     </li>
-                    <li><a href="../Rental_car.html" class="nav-link px-2 text-white a ">Car Rental</a>
+                    <li><a href="../Rental_car.php" class="nav-link px-2 text-white a ">Car Rental</a>
                     </li>
                     <li><a href="../../assets/data/new/Madagascar_tourism_new.php"
                             class="nav-link px-2 text-white a">News</a>
                     </li>
-                    <li><a href="../contact.html" class="nav-link px-2 text-white a">Contact Us</a></li>
+                    <li><a href="../contact.php" class="nav-link px-2 text-white a">Contact Us</a></li>
                 </ul>
 
                 <!-- Personal Adventure Button -->
                 <div class="col-auto col-md-3 d-none d-md-block text-end">
-                    <a href="../personal_adventure.html" class="btn btn-sm rounded-pill text-white fw-bold colorbouton">
+                    <a href="../personal_adventure.php" class="btn btn-sm rounded-pill text-white fw-bold colorbouton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-person-gear" viewBox="0 0 16 16">
                             <path
@@ -134,14 +116,14 @@
                 <ul class="nav flex-column bg-dark position-absolute top-100 start-0 w-100 d-md-none p-3 d-none"
                     id="mobile-menu">
                     <li><a href="../../index.php" class="nav-link text-white  a" id="nav">Home</a></li>
-                    <li><a href="../madagascar.html" class="nav-link text-white a" id="nav">Madagascar</a></li>
-                    <li><a href="../about.html" class="nav-link text-white a" id="nav">About Us</a></li>
-                    <li><a href="../ourstours.html" class="nav-link text-white a" id="nav">Our Tours</a></li>
-                    <li><a href="../Rental_car.html" class="nav-link text-white a" id="nav">Car Rental</a></li>
+                    <li><a href="../madagascar.php" class="nav-link text-white a" id="nav">Madagascar</a></li>
+                    <li><a href="../about.php" class="nav-link text-white a" id="nav">About Us</a></li>
+                    <li><a href="../ourstours.php" class="nav-link text-white a" id="nav">Our Tours</a></li>
+                    <li><a href="../Rental_car.php" class="nav-link text-white a" id="nav">Car Rental</a></li>
                     <li><a href="../../assets/data/new/Madagascar_tourism_new.php" class="nav-link text-white a"
                             id="nav">News</a>
                     </li>
-                    <li><a href="../contact.html" class="nav-link text-white a" id="nav">Contact Us</a></li>
+                    <li><a href="../contact.php" class="nav-link text-white a" id="nav">Contact Us</a></li>
                 </ul>
 
 
@@ -188,15 +170,15 @@
                     </a>
                 </div>
                 <div class="col-10  col-lg-11 py-2 bg-white  " style="border-radius: 0 10px 10px 0;">
-                    <a href="../ourstours.html" style="text-decoration: none; color: blueviolet;">Ours Tours</a> ::
-                    <a href="colorsofEast.html" style="text-decoration: none;">colorsofEast</a> |
-                    <a href="exploration&adventure.html" style="text-decoration: none;">exploration&adventure</a> |
-                    <a href="Mystic_west_&_RN7_Discovery.html"
-                        style="text-decoration: none;">Mystic_west_&_RN7_Discovery</a> |
-                    <a href="NosyBe_Tour.html" style="text-decoration: none;">NosyBe_Tour</a> |
-                    <a href="Tsingy_Ifaty.html" style="text-decoration: none;">Tsingy_Ifaty</a> |
-                    <a href="Day_One_Andasibe.html" style="text-decoration: none;">Day One Andasibe</a> |
-                    <a href="wonderSouth.html" style="text-decoration: none;">wonderSouth</a> | wonderSouth_Andasibe
+                    <a href="../ourstours.php" style="text-decoration: none; color: blueviolet;">Ours Tours</a> ::
+                    <a href="colorsofEast.php" style="text-decoration: none;">colorsofEast</a> |
+                    <a href="exploration&adventure.php" style="text-decoration: none;">exploration&adventure</a> |
+                    <a href="Day_One_Andasibe.php" style="text-decoration: none;">Day One Andasibe</a> |
+                    <a href="NosyBe_Tour.php" style="text-decoration: none;">NosyBe_Tour</a> |
+                    <a href="Tsingy_Ifaty.php" style="text-decoration: none;">Tsingy_Ifaty</a> |
+                    <a href="wonderSouth_Andasibe.php" style="text-decoration: none;">wonderSouth_Andasibe</a> |
+                    <a href="wonderSouth.php" style="text-decoration: none;">wonderSouth</a> |
+                    Mystic_west_&_RN7_Discovery
 
 
                 </div>
@@ -207,55 +189,50 @@
             <div class="col-md-12 p-3">
                 <div class="row">
                     <div class="col-lg-4">
-                        <img src="../../assets/images/city/toliara1.webp" class="" alt="" width="100%">
+                        <img src="../../assets/images/city/aller.webp " class="" alt="" width="100%">
 
                     </div>
-                    <div class="col-lg-5 txt">
+                    <div class="col-lg-5 ">
 
-                        <h1 class="fs-2 titre" id="titrehtml">AMAZING ISLAND OF THE SOUTH / ANDASIBE</h1> <br>
+                        <h1 class="fs-2 titre " id="titrehtml"> MYSTIC WEST AND RN7 DISCOVERY</h1> <br>
                         <figcaption class="blockquote-footer">
-                            It is also possible for groups.</cite>
+                            1-4 pers</cite>
                         </figcaption>
 
                         <div id="texthtml">
-                            <p>The 12-day tour from <strong>Tananarive – Andasibe to Ifaty</strong> allows you to visit
+                            <p>If you have a thirst for vast open spaces and an adventurous spirit, then
+                                this journey is made for
+                                you! An itinerary rich and diverse, allowing you to explore the
+                                West, then the
+                                Great South, before heading back towards the center of the island through
                                 the
-                                paradisiacal sites of
-                                the Big Island. Along the way, you will have the opportunity to discover local crafts,
-                                visit
-                                several national parks
-                                and reserves. During this Andasibe National Park tour, <strong>Madagascar is presented
-                                    differently</strong>. Explore
-                                <strong>Andasibe National Park</strong>, home to the <strong>Indri-Indri</strong> lemurs
-                                and
-                                the prestigious
-                                chameleons of <strong>Ranomafana Park</strong>, the <strong>Makis</strong> of
-                                <strong>Anjà
-                                    Park</strong>
-                                , and <strong>Isalo National Park</strong>.
-                                Then, let yourself be
-                                captivated by <strong>FHL Travel Madagascar</strong>.
+                                Highlands.
                             </p>
 
-                            <p>12 days of travel along the famous <strong>RN7 road</strong>, from lush greenery to arid
-                                landscapes. Discover
-                                unsuspected landscapes nestled in the heart of Madagascar: the National Parks of
-                                <strong>Ranomafana</strong>,
-                                <strong>Andringitra</strong>, <strong>Isalo</strong>, and <strong>Zombitse</strong>, not
-                                to
-                                mention relaxing along
-                                the beaches of <strong>Ifaty</strong>. This is roughly what awaits you during your
-                                <strong>South Madagascar
-                                    Tour</strong>.
+                            <p>The crossing of the wild Great West begins with a journey along the
+                                Tsiribihina River, followed by off-road 4x4 tracks leading to the
+                                Tsingy de Bemaraha. Our adventure continues with the discovery of the immense
+                                turquoise blue lagoon of the West, surrounded by vegetation marked by baobabs
+                                and octopus trees.
                             </p>
+
+                            <p>For the final part of the trip, we ascend to the Highlands to explore, both
+                                by road and through
+                                hikes, the Isalo Massif, the Tsaranoro Massif with its
+                                lemurs,
+                                and the breathtaking terraced rice fields.
+                            </p>
+
                         </div>
 
 
                         <div class="mt-3 mievotra">
                             <h4 class="fw-bold">Price Detail : From <b class="border-bottom border-2 border-success"
                                     id="pricehtml">$950/pax</b></h4><br>
-                            <p class=" bg-danger bg-opacity-10 p-3 shadow-sm">The final price of this SOUTH tour will
-                                vary
+                            <p class="border p-3 shadow-sm bg-danger bg-opacity-10">The final price of this MYSTIC WEST
+                                AND RN7
+                                DISCOVERY tour
+                                will vary
                                 <code>depending on the desired</code>
                                 customization. However, please let us
                                 know your budget and the plan you have in mind, and we will provide a final price that
@@ -268,7 +245,7 @@
                                 <div style="display: none;">
 
                                     <input type="text" class="form-control" name="url"
-                                        value="../images/city/toliara1.webp">
+                                        value="../images/city/aller.webp">
                                     <input type="text" class="form-control" name="div" id="htmlContent" value="">
 
                                     <input type="text" class="form-control" name="titre" id="titre">
@@ -286,7 +263,7 @@
                                         <path
                                             d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                                     </svg> <b>+261 32 95 720 20</b></a>
-                                <a href="../contact.html" class="btn btn-sm  mail rounded-pill"><svg
+                                <a href="../contact.php" class="btn btn-sm  mail rounded-pill"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-envelope-at" viewBox="0 0 16 16">
                                         <path
@@ -308,23 +285,22 @@
 
 
 
-
                     </div>
-                    <div class="col mx-3 mt-2 mievotra " id="ratinghtml">
-                        <div class="row rounded-3 shadow bg-warning bg-opacity-10 p-3">
+                    <div class="col mx-3 mt-2 " id="ratinghtml">
+                        <div class="row rounded-3 shadow bg-warning bg-opacity-10 p-3 mievotra">
                             <div class="col-12">
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-                                    </svg> Distance to travel : <strong> 1340 Km</strong><br>
+                                    </svg> Distance to travel : <strong> 2100 Km</strong><br>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-alarm" viewBox="0 0 16 16">
                                         <path
                                             d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9z" />
                                         <path
                                             d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1zm1.038 3.018a6 6 0 0 1 .924 0 6 6 0 1 1-.924 0M0 3.5c0 .753.333 1.429.86 1.887A8.04 8.04 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5M13.5 1c-.753 0-1.429.333-1.887.86a8.04 8.04 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1" />
-                                    </svg> Total duration : <strong>12 Day - 11 Night </strong>
+                                    </svg> Total duration : <strong>19 Day - 18 Night </strong>
 
                                     <br>
 
@@ -352,19 +328,19 @@
                                         <circle cx="8" cy="8" r="8" />
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-circle text-secondary" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                        class="bi bi-circle-fill text-secondary" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="8" />
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-circle text-secondary" viewBox="0 0 16 16">
-                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                        class="bi bi-circle-fill text-secondary" viewBox="0 0 16 16">
+                                        <circle cx="8" cy="8" r="8" />
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-circle text-secondary" viewBox="0 0 16 16">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                                     </svg>
 
-                                    <b>40%</b>
+                                    <b>80%</b>
 
                                     <br>
 
@@ -379,12 +355,12 @@
                                         <circle cx="8" cy="8" r="8" />
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-circle-fill text-secondary" viewBox="0 0 16 16">
-                                        <circle cx="8" cy="8" r="8" />
+                                        class="bi bi-circle text-secondary" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-circle-fill text-secondary" viewBox="0 0 16 16">
-                                        <circle cx="8" cy="8" r="8" />
+                                        class="bi bi-circle text-secondary" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-circle text-secondary" viewBox="0 0 16 16">
@@ -394,6 +370,7 @@
                                         class="bi bi-circle text-secondary" viewBox="0 0 16 16">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                                     </svg>
+                                    <b>20%</b>
 
                                     <br>
 
@@ -419,7 +396,7 @@
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                        class="bi bi-star-fill text-body-tertiary" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -429,9 +406,13 @@
 
                         </div>
                         <div class="col-12 mt-5 ">
-                            <h4 class="text-uppercase titre">Itinerary for this 12 days</h4>
-                            <p>Antananarivo - Andasibe - Antsirabe - Ambositra - Ranomafana - Fianarantsoa -
-                                Ranohira - Tulear - Ifaty - Antananarivo</p>
+                            <h4 class="text-uppercase titre">Itinerary for this 19 days</h4>
+                            <p>Antananarivo – Antsirabe – Miandrivazo – Belo sur
+                                tsiribihina
+                                - Bekopaka – Morondava – Belo sur mer – Manja –
+                                Moronmbe - Andavadaoka - Salary - Ifaty - Tulera - Ranohira -
+                                Andringitra - Anja - Ambalavao - Fianarantsoa - Ambositra -
+                                Antsirabe - Antananarivo</p>
                         </div>
 
                     </div>
@@ -442,10 +423,10 @@
                 <div class="text-center mb-5 border-bottom border-top bg-warning bg-opacity-10 shadow-sm">
                     <h2 class="titre mt-2">ITINERARY</h2>
                 </div>
-                <div class="row mx-3">
-                    <div class="col-lg-6 mb-3">
+                <div class="row mx-4">
+                    <div class="col-12 col-lg-6 mb-3 ">
                         <div class=" pb-3 image-hover">
-                            <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            <h4 class="titre "> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                     fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
                                     <path
                                         d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
@@ -458,22 +439,75 @@
                             </p>
                         </div>
                         <div class=" pb-3 image-hover">
-                            <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            <h4 class="titre "> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                     fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
                                     <path
                                         d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                </svg> DAY 2 : ANTANANARIVO - ANDASIBE </h4>
-                            <p>Breakfast at the hotel. Departure to <strong>Andasibe</strong>. On the road, enjoy a
-                                panoramic view of the eastern
-                                highlands of Madagascar. Stop in <strong>Marozevo</strong> to visit the private reserve
-                                of Peyreiras. During the
-                                visit, we can observe endemic island animals such as chameleons, frogs, and more. After
-                                a 1-hour visit, continue
-                                towards <strong>Moramanga</strong>. There is a possibility to visit the market and
-                                explore the city of Moramanga.
-                                Then, continue the road to <strong>Andasibe National Park</strong>. Arrival in the late
-                                afternoon. Accommodation at
-                                the hotel.</p>
+                                </svg> DAY 2 : ANTANANARIVO - MIANDRIVAZO </h4>
+                            <p>We take the road in the morning towards <strong>Antsirabe</strong>. A mosaic of
+                                <strong>typical Highland
+                                    landscapes</strong> unfolds before our eyes, with <strong>rice fields, small
+                                    waterfalls, and traditional
+                                    houses</strong> built of red earth. We make a few stops along the way, including a
+                                visit to an <strong>artisan
+                                    aluminum foundry</strong> in <strong>Ambatolampy</strong>, where pots and kitchen
+                                utensils are crafted. We
+                                arrive in <strong>Antsirabe</strong> by late morning and take the opportunity to visit
+                                the <strong>famous miniature
+                                    craftsmen</strong>, the <strong>zebu horn workshop</strong> for unique souvenirs,
+                                and the <strong>embroidery
+                                    workshop</strong> run by women. Finally, we leave the <strong>Highlands</strong>
+                                behind and cross the vast
+                                <strong>savanna-covered plains</strong>, reaching <strong>Miandrivazo</strong>, located
+                                on the banks of the
+                                <strong>Tsiribihina River</strong>. <strong>Dinner and overnight stay at the
+                                    hotel.</strong>
+                            </p>
+
+
+                        </div>
+                        <div class=" pb-3 image-hover">
+                            <h4 class="titre "> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg> DAY 3-4 : TSIRIBIHINA RIVER DESCENT (2 NIGHTS) </h4>
+                            <p>Once we arrive at the port, we board a motorboat and begin the descent of one of
+                                Madagascar's largest rivers. Along
+                                the way, we observe a variety of <strong>aquatic birds</strong> and other species
+                                inhabiting the riverbanks, such as
+                                <strong>chameleons perched on the reeds</strong>. <strong>Lunch on board.</strong>
+                                Culturally, this river holds
+                                great significance in various <strong>sacred ceremonies</strong>, such as the
+                                <strong>Fitampoho</strong>, the royal
+                                relic bathing ritual of the Sakalava kings of Menabe, believed to purify and bring
+                                renewal according to local
+                                beliefs. In the evening, we set up our <strong>bivouac on the riverbanks</strong>.
+                            </p>
+
+
+                        </div>
+                        <div class=" pb-3 image-hover">
+                            <h4 class="titre "> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg> DAY 5 : BELO sur TSIRIBIHINA - BEKOPAKA </h4>
+                            <p>In the morning, we navigate for a few hours to reach the port. After <strong>lunch on
+                                    board</strong>, we finally
+                                disembark, marking the end of our river descent. We continue for a few minutes on the
+                                trails of the <strong>Menabe
+                                    coastal plain</strong>, at the heart of the <strong>Sakalava region</strong>, to
+                                reach <strong>Belo sur
+                                    Tsiribihina</strong>, a charming fishing village. Our journey then continues on a
+                                <strong>rugged 4x4
+                                    track</strong> to <strong>Bekopaka</strong>. Along the way, we admire numerous
+                                <strong>baobab trees</strong> and
+                                beautiful forests. Upon arrival in the small village of <strong>Bekopaka</strong>, we
+                                catch a glimpse of the
+                                <strong>banks of the Manambolo River</strong> and possibly its stunning gorges.
+                            </p>
+
 
                         </div>
                         <div class=" pb-3 image-hover">
@@ -481,47 +515,19 @@
                                     fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
                                     <path
                                         d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                </svg> DAY 3 : ANDASIBE </h4>
-                            <p>Breakfast at the hotel. Departure to visit <strong>Analamazaotra National Park</strong>,
-                                the only national park where
-                                you can find the largest lemur in Madagascar, the <strong>Indri Indri</strong>. The park
-                                is located in a humid area,
-                                home to a variety of flora and fauna, many of which are endemic. We will have a 2-3 hour
-                                visit. In the afternoon,
-                                visit the <strong>Vakona Reserve</strong>, with the possibility of seeing other species
-                                of lemurs and various
-                                animals. Accommodation at the hotel.</p>
-
-                        </div>
-                        <div class=" pb-3 image-hover">
-                            <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                    fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
-                                    <path
-                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                </svg> DAY 4 : ANDASIBE - ANTSIRABE </h4>
-                            <p>Breakfast at the hotel. Departure to <strong>Antsirabe</strong>. On the way, enjoy a
-                                panoramic view of the rice
-                                fields and the tombs of the Highlands of Madagascar. Stop for a visit in
-                                <strong>Ambatolampy</strong> to see the
-                                manufacture of aluminum pots. In the afternoon, arrival in <strong>Antsirabe</strong>.
-                                Visit the City of Waters and
-                                some Malagasy craft workshops. Accommodation at the hotel.
-                            </p>
-
-                        </div>
-                        <div class=" pb-3 image-hover">
-                            <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                    fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
-                                    <path
-                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                </svg> DAY 5 : ANTSIRABE - RANOMAFANA </h4>
-                            <p>Breakfast at the hotel. Departure to <strong>Ambositra</strong>, the capital of Malagasy
-                                crafts and wood carving.
-                                Visit some craft shops in the city of Ambositra. Then continue to
-                                <strong>Ranomafana</strong>. Along the way, admire
-                                the landscapes of the <strong>Betsileo ethnic group</strong>, with its unique
-                                architecture and rice culture.
-                                Accommodation at the hotel.
+                                </svg> DAY 6 : BEKOPAKA </h4>
+                            <p>Departure by <strong>4x4</strong> towards the <strong>Grands Tsingy</strong>, located
+                                about twenty kilometers from
+                                the village of <strong>Bekopaka</strong>. This circuit offers an in-depth exploration of
+                                the <strong>Tsingy de
+                                    Bemaraha National Park</strong>: deep crevices, caves, canyons, and labyrinths,
+                                leading to a
+                                <strong>50-meter-long suspended bridge</strong>. Crossing it, we reach the top of the
+                                Tsingy, where a
+                                <strong>viewpoint</strong> provides a breathtaking <strong>360° panorama</strong> of
+                                this exceptional landscape.
+                                Return in the late afternoon. <strong>Dinner and overnight stay at the
+                                    campsite.</strong>
                             </p>
 
 
@@ -531,22 +537,19 @@
                                     fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
                                     <path
                                         d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                </svg> DAY 6 : RANOMAFANA - FIANARANTSOA (Park Ranomafana)</h4>
-                            <p>In the morning, we take a guided walking excursion with a local guide in
-                                <strong>Ranomafana National Park</strong>, a
-                                UNESCO World Heritage Site. This dense, humid forest, along with its bamboo forest and
-                                marshland, is home to a wide
-                                variety of plant and animal species. We trek through the primary rainforest, which
-                                shelters more than a hundred bird
-                                species, a dozen endemic lemurs, as well as various endangered amphibians, reptiles, and
-                                butterflies. The flora is
-                                just as diverse, with epiphytic orchids, some carnivorous plants, and medicinal herbs.
-                                In the afternoon, we arrive
-                                in <strong>Fianarantsoa</strong>, the capital of the Betsileo highlands, which stretches
-                                across three levels and is
-                                composed of traditional houses with verandas and numerous churches. It is a major
-                                crossroads in the heart of the
-                                southern region. After checking in, we spend the night at the hotel.
+                                </svg> DAY 7 : BEKOPAKA - MORONDAVA</h4>
+                            <p>In the morning, we take the <strong>4x4</strong> towards
+                                <strong>Belo-sur-Tsiribihina</strong>, crossing stunning
+                                <strong>savanna-like landscapes</strong>. After the <strong>folkloric ferry
+                                    crossing</strong> of the
+                                <strong>Tsiribihina River</strong>, we continue towards <strong>Morondava</strong> on a
+                                track passing through vast
+                                <strong>dry forests</strong>, typical of the region. Along the way, we stop at the
+                                famous <strong>Avenue of the
+                                    Baobabs</strong> to admire a <strong>magnificent sunset</strong>, one of the
+                                highlights of the area. We arrive
+                                in <strong>Morondava</strong> in the early evening. <strong>Check-in and overnight stay
+                                    at the hotel.</strong>
                             </p>
 
 
@@ -556,20 +559,20 @@
                                     fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
                                     <path
                                         d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                </svg> DAY 7 : FIANARANTSOA - AMBALAVAO - RANOHIRA </h4>
-                            <p>After breakfast, we take a short tour of <strong>Fianarantsoa</strong> to admire its
-                                historic monuments. We then
-                                continue our journey to <strong>Ambalavao</strong>, where we visit a small workshop that
-                                produces traditional
-                                <strong>Antaimoro paper</strong>. Lunch is at your leisure at <strong>Résidence
-                                    Betsileo</strong>, a beautiful site.
-                                We then resume our journey towards <strong>Ranohira</strong>, leaving behind the lush
-                                green landscapes of the
-                                highlands. As we pass through the gateway to the south, we enter <strong>Bara</strong>
-                                territory. We then cross the
-                                vast <strong>Horombe Plateau</strong>, the largest semi-arid plateau in Madagascar,
-                                before arriving in Ranohira in
-                                the late afternoon. We check into a charming hotel with an exceptional setting.
+                                </svg> DAY 8 : MORONDAVA - BELO sur MER </h4>
+                            <p>We take the track towards <strong>Belo sur Mer</strong>, a small <strong>Vezo fishing
+                                    village</strong> nestled in a
+                                beautiful bay, renowned for its traditional construction of <strong>dhows and
+                                    schooners</strong>. Along the way, we
+                                travel through a landscape dotted with <strong>baobab trees</strong> and cross the
+                                <strong>Kabatomena River</strong>
+                                at a 150-meter-long ford, leading to a stunning saltwater expanse. We arrive at the
+                                village by late morning and
+                                spend the afternoon relaxing on a <strong>pristine white sand beach</strong>, perfect
+                                for swimming, or exploring the
+                                surroundings: <strong>shipyard, fishing village, pirogue excursions</strong>, or even
+                                <strong>snorkeling</strong> to
+                                discover the coral reefs.
                             </p>
 
 
@@ -579,20 +582,44 @@
                                     fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
                                     <path
                                         d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                </svg> DAY 8 : RANOHIRA </h4>
-                            <p>We dedicate a full day to exploring <strong>Isalo National Park</strong>. We hike through
-                                this rugged sandstone
-                                massif, shaped by time since the Jurassic period, with its unique geomorphology, endemic
-                                vegetation, and a
-                                distinctive fauna, including rock-dwelling reptiles, most of which are endemic. The park
-                                offers breathtaking lunar
-                                landscapes, where deep canyons disappear into a savanna of tall grasses dotted with
-                                tapia forests. Accompanied by a
-                                local guide, we follow marked trails to discover natural pools, waterfalls, and lemurs.
-                                This journey takes us
-                                through a rich and mysterious culture shaped by geological ages, while we enjoy stunning
-                                panoramic views. We return
-                                to the village in the evening for an overnight stay.</p>
+                                </svg> DAY 9 : BELO su MER - MANJA </h4>
+                            <p>In the morning, we continue our journey through the heart of <strong>Sakalava
+                                    country</strong> towards the village of
+                                <strong>Manja</strong>. This route passes through a <strong>semi-arid landscape</strong>
+                                with a dense population of
+                                <strong>jujube trees</strong> and scattered savanna woodlands. Along the way, we observe
+                                beautifully
+                                <strong>decorated and colorful Sakalava tombs</strong>, reflecting the status of the
+                                deceased. This journey also
+                                offers opportunities to stop in <strong>lively small towns</strong> before arriving in
+                                <strong>Manja</strong> in the
+                                afternoon. There is an option to visit the village and its <strong>local market</strong>
+                                before spending the night
+                                in a <strong>bush hotel</strong>.
+                            </p>
+
+
+
+                        </div>
+                        <div class="border-bottom pb-3 image-hover">
+                            <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg> DAY 10 : MANJA - MOROMBE - ANDAVADAOKA </h4>
+                            <p>Early departure through <strong>Sakalava country</strong> to reach
+                                <strong>Bevoay</strong>, a small village on the
+                                riverbank. After crossing the <strong>Mangoky River</strong> by ferry, we head towards
+                                the coast, arriving in
+                                <strong>Morombe</strong> in the early afternoon. The track winds through
+                                <strong>mangroves</strong> and follows the
+                                <strong>mangrove forest</strong> before revealing the first <strong>bottle-shaped
+                                    baobabs</strong> and
+                                <strong>octopus trees</strong>. The final stretch of road to
+                                <strong>Andavadaoka</strong> offers stunning views of
+                                <strong>small sandy coves</strong> along the coast. <strong>Overnight stay at a seaside
+                                    hotel.</strong>
+                            </p>
 
 
                         </div>
@@ -601,24 +628,19 @@
                                     fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
                                     <path
                                         d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                </svg> DAY 9 : RANOHIRA - TULEAR - IFATY </h4>
-                            <p>We set off early on National Road 7 to reach <strong>Tuléar</strong>, 250 kilometers
-                                away. This route takes us
-                                through <strong>Ilakaka</strong>, a village that sprang up in just three months
-                                following the discovery of the
-                                world's largest sapphire deposit. You will be amazed by the vast savanna-like landscapes
-                                and the sight of the first
-                                baobab trees. By late morning, we arrive in <strong>Tuléar</strong>, also known as the
-                                "City of the Sun" due to its
-                                hot and arid climate, with 360 days of sunshine per year. We stop at <strong>Auberge de
-                                    la Table</strong>, where we
-                                take the opportunity to visit the <strong>Arboretum</strong>, home to a wide variety of
-                                endemic plants and shrubs.
-                                This region is a fascinating blend of ethnic groups and cultures that will surprise you
-                                before we continue our
-                                journey to <strong>Ifaty</strong>. We take a small sandy track, passing through coastal
-                                villages and mangroves. We
-                                arrive in the late afternoon, followed by dinner and an overnight stay at the hotel.</p>
+                                </svg> DAY 11 : ANDAVADAOKA - SALARY - IFATY </h4>
+                            <p>Our journey comes to an end with a <strong>free day in Ifaty</strong>. This is the
+                                perfect time to <strong>relax,
+                                    swim, and unwind</strong> on the <strong>white sandy beaches</strong> of the Ifaty
+                                lagoon. You can also embark
+                                on a picturesque <strong>pirogue excursion</strong>, a traditional boat widely used by
+                                the local population. For
+                                those who prefer exploration, visit the <strong>Vezo fishing villages</strong> along the
+                                coastline. Here, you will
+                                discover their <strong>daily way of life</strong>, particularly their fishing
+                                traditions, as the Vezo people
+                                maintain a strong connection to the sea and its sacred beliefs.</p>
+
 
                         </div>
                         <div class="border-bottom pb-3 image-hover">
@@ -626,49 +648,170 @@
                                     fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
                                     <path
                                         d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                </svg> DAY 10 : IFATY </h4>
-                            <p>Our journey comes to an end with a free day in <strong>Ifaty</strong>. This is the
-                                perfect time to relax, swim, and
-                                unwind on the white sandy beaches of Ifaty’s lagoon. You can also take a ride in a
-                                traditional pirogue, a
-                                picturesque boat typical of this region. For those who prefer to explore, visit the
-                                fishing villages of the
-                                <strong>Vezo</strong> people, who live along the coastline. Here, you will discover
-                                their daily way of life,
-                                especially their deep connection to the sea through fishing, as they remain a highly
-                                traditional community where the
-                                respect for sea deities is still very present.
+                                </svg> DAY 12 : IFATY - TULEAR - RANOHIRA </h4>
+                            <p>In the morning, we head to the city of <strong>Tuléar</strong>, where you will have the
+                                opportunity to take a short
+                                tour of the <strong>local market</strong>. In the afternoon, we continue our journey to
+                                the small village of
+                                <strong>Ranohira</strong>. Along the way, we cross stunning <strong>semi-desert
+                                    landscapes</strong> resembling
+                                savannas, adorned with <strong>Antandroy and Mahafaly tombs</strong>. The scenery then
+                                shifts as we pass through the
+                                <strong>Zombitse dry forest</strong> before reaching the majestic <strong>Isalo
+                                    Massif</strong> in the late
+                                afternoon.
+                            </p>
+
+
+                        </div>
+                        <div class="border-bottom pb-3 image-hover">
+                            <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg> DAY 13 : RANOHIRA </h4>
+                            <p>We dedicate a full day to exploring the <strong>Isalo National Park</strong>. Our hike
+                                takes us through this
+                                <strong>Jurassic-era sandstone massif</strong>, shaped by time, featuring a
+                                <strong>unique geomorphology</strong>,
+                                <strong>endemic vegetation</strong>, and a diverse <strong>fauna</strong>, including
+                                <strong>rock-dwelling
+                                    reptiles</strong>, most of which are found nowhere else. You will witness
+                                <strong>otherworldly
+                                    landscapes</strong>, where deep <strong>canyons</strong> vanish into the savanna,
+                                dotted with tall grasses and
+                                forests of <strong>tapia trees</strong>. Guided by a local expert, we follow well-marked
+                                trails to discover
+                                <strong>natural pools, waterfalls, and playful lemurs</strong>. This journey through
+                                time unveils a fascinating
+                                geological and cultural heritage while offering <strong>breathtaking panoramic
+                                    views</strong>. We return to the
+                                village by late afternoon for an overnight stay.
+                            </p>
+
+
+                        </div>
+                        <div class="border-bottom pb-3 image-hover">
+                            <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg> DAY 14 : RANOHIRA - ANDRINGITRA </h4>
+                            <p>We continue our journey across the <strong>semi-desert plateau of Horombe</strong> to
+                                reach the heart of <strong>Bara
+                                    country</strong>, an ethnic group known for <strong>zebu herding</strong>. Leaving
+                                the main road behind, we take
+                                an <strong>off-road track</strong> in a <strong>4x4 vehicle</strong> to reach
+                                <strong>Camp Catta</strong>, nestled
+                                at the foot of the <strong>Tsaranoro Massif</strong>, one of the most <strong>majestic
+                                    mountains of
+                                    Andringitra</strong>.
+                            </p>
+
+
+
+                        </div>
+                        <div class="border-bottom pb-3 image-hover">
+                            <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg> DAY 15 : ANDRINGITRA </h4>
+                            <p>Hiking in the <strong>Andringitra Massif</strong>, where a <strong>unique and pristine
+                                    fauna and flora</strong>
+                                thrive, including the iconic <strong>Ring-tailed Lemur (Lemur Catta)</strong>,
+                                recognizable by its black-and-white
+                                striped tail. We set off to explore this <strong>wild region</strong>, rich in
+                                <strong>legends and ancestral
+                                    beliefs</strong>.
+                            </p>
+                        </div>
+
+                        <div class="border-bottom pb-3 image-hover">
+                            <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg> DAY 16 : ANDRINGITRA - FIANARANTSOA </h4>
+                            <p>Transfer back to the <strong>main road</strong> to reach <strong>Ambalavao</strong>,
+                                where we will visit a
+                                traditional <strong>Antemoro paper workshop</strong>. We then continue our journey to
+                                <strong>Fianarantsoa</strong>.
+                                In the late afternoon, a <strong>short walking tour</strong> is a must to explore the
+                                city’s <strong>historic
+                                    charm</strong>: its <strong>religious buildings, century-old houses, lively alleys,
+                                    and stairways</strong>
+                                winding between homes. The walk culminates at the <strong>hilltop</strong>, offering a
+                                <strong>breathtaking
+                                    panoramic view</strong> of the city and its surroundings.
                             </p>
 
                         </div>
+
                         <div class="border-bottom pb-3 image-hover">
                             <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                     fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
                                     <path
                                         d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                </svg> DAY 11 : IFATY - TULEAR - ANTANANARIVO (domestic flight) </h4>
-                            <p>On the last day of our tour, we head to <strong>Tuléar</strong> airport to catch our
-                                flight to
-                                <strong>Antananarivo</strong>. From there, you can either connect to an international
-                                flight or continue your
-                                journey on another tour.
+                                </svg> DAY 17 : FIANARANTSOA - AMBOSITRA </h4>
+                            <p>Early departure to the village of <strong>Sahambavy</strong>, home to
+                                <strong>Madagascar’s only tea
+                                    plantation</strong>. During our visit, we will learn about the <strong>tea-making
+                                    process</strong>, from
+                                harvesting to packaging. The tour concludes with a <strong>tea tasting session</strong>
+                                and a short walk through the
+                                vast plantation, where we can observe tea pickers at work (in season). We then continue
+                                our journey towards
+                                <strong>Ambositra</strong>, crossing the scenic landscapes of the
+                                <strong>Highlands</strong>. Upon arrival, we visit
+                                the renowned <strong>Zafimaniry art workshops</strong>, known for their exquisite
+                                <strong>wood carving and
+                                    marquetry</strong>. <strong>Check-in, dinner, and overnight stay at the
+                                    hotel.</strong>
                             </p>
 
                         </div>
+
                         <div class="border-bottom pb-3 image-hover">
                             <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                     fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
                                     <path
                                         d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                                </svg> DAY 12 : ANTANANARIVO - FLIGHT BACK </h4>
-                            <p>Breakfast at the hotel. Visit of the city of <strong>Antananarivo</strong>. Visit of the
-                                craft market, the largest
-                                market in the capital. Transfer to <strong>Ivato airport</strong> to take the
-                                international flight. Boarding
-                                formalities.
+                                </svg> DAY 18 : AMBOSITRA - ANTSIRABE - ANTANANARIVO </h4>
+                            <p>Early departure towards <strong>Antananarivo</strong>, the capital of Madagascar,
+                                approximately <strong>260 km
+                                    away</strong>. We make a stop in <strong>Antsirabe</strong> to visit the famous
+                                <strong>miniature crafts
+                                    workshop</strong>, the <strong>zebu horn artisans</strong> for unique souvenirs, and
+                                the <strong>embroidery
+                                    workshop</strong> for women. Continuing along <strong>RN7</strong>, we take a second
+                                break in
+                                <strong>Ambatolampy</strong> to explore a <strong>traditional aluminum pot-making
+                                    workshop</strong>. These visits
+                                depend on the <strong>schedule of your return flight</strong>. The journey continues
+                                through <strong>rice fields and
+                                    traditional villages</strong> before reaching <strong>Antananarivo</strong>. If time
+                                allows, we take a short
+                                <strong>city tour</strong> before heading to the <strong>airport</strong> for
+                                international departure assistance or
+                                to the <strong>hotel for an overnight stay</strong>.
                             </p>
 
                         </div>
+
+                        <div class="border-bottom pb-3 image-hover">
+                            <h4 class="titre"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    fill="currentColor" class="bi bi-caret-right-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg> DAY 19 : ANTANANARIVO - FLIGHT BACK </h4>
+                            <p>Breakfast at the hotel. Visit of the city of Antananarivo. Last shopping at the craft
+                                market. At the scheduled time,
+                                departure to the Ivato airport for the international flight. Boarding formalities.
+                            </p>
+
+                        </div>
+
                         <div class="row mt-4 py-3 bg-warning bg-opacity-10 rounded shadow-sm">
                             <div class="col-lg-6 border-end">
                                 <div>
@@ -677,18 +820,29 @@
                                             <path
                                                 d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z" />
                                         </svg> Include</h3>
-                                    <p>- 4×4 car (2-4pax) with French or English speaking driver.<br>
-                                        – Minivan (4-6pax) – bus (from 7pax) with driver <br>
-                                        – All the fuel all along the circuit <br>
-                                        – Tourist taxes. <br>
-                                        – Airport – hotel – airport transfer. <br>
-                                        – Local guides in national parks and nature reserves. <br>
-                                        – Entry fees into national parks and nature reserves mentioned in the circuit.
-                                        <br>
-                                        – Rooms with breakfast. <br>
-                                        – English / Spanish speaking guide from 4 people <br>
-                                        – Half board from 7 pax <br>
+                                    <p><strong>- Vehicle rental</strong> for the entire journey from <strong>Tana to
+                                            Tana</strong> <br>
+                                        - <strong>Fuel</strong> for
+                                        the whole circuit <br>
+                                        - Service of a <strong>French-speaking driver-guide</strong>
+                                        for groups of 1 to 4 people <br>
+                                        - Service
+                                        of a <strong>French-speaking tour guide</strong> for groups of 5 or more -
+                                        <strong>Accommodation</strong> in single,
+                                        double, or triple rooms in hotels <br>
+                                        - <strong>Meals</strong> as specified in the
+                                        program <br>
+                                        - <strong>Entrance
+                                            fees</strong> and <strong>mandatory local guide fees</strong> in national
+                                        parks (Bemaraha, Isalo) <br>
+                                        -
+                                        <strong>Welcomes and land transfers</strong> as planned in the itinerary <br>
+                                        -
+                                        <strong>Visits and excursions</strong> as
+                                        detailed in the program <br>
+                                        - <strong>Tourist tax</strong> in hotels.
                                     </p>
+
                                 </div>
                             </div>
                             <div class="col-lg-6  ">
@@ -707,8 +861,11 @@
                                         - Personal spending. <br>
                                         - Drinks. <br>
                                         - Lunch <br>
-                                        - dinner
+                                        - dinner <br>
+                                        - travel insurance
                                     </p>
+
+
                                 </div>
                             </div>
 
@@ -748,7 +905,7 @@
                         </svg> +261 32 95 720 20 </a>
                 </div>
                 <div class="col-lg-3">
-                    <a href="../contact.html" class="btn  mail fw-bold rounded-pill"><svg
+                    <a href="../contact.php" class="btn  mail fw-bold rounded-pill"><svg
                             xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-envelope" viewBox="0 0 16 16">
                             <path
@@ -757,7 +914,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <a href="../personal_adventure.html" class="btn text-white fw-bold rounded-pill colorbouton"><svg
+                    <a href="../personal_adventure.php" class="btn text-white fw-bold rounded-pill colorbouton"><svg
                             xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-person-gear" viewBox="0 0 16 16">
                             <path
@@ -801,35 +958,35 @@
                 <div class="col-6 col-lg-2 mb-3 text-center ">
                     <h4 class="corps ligne">FHL Travel</h4>
                     <a href="../../index.php" class="nav-link p-0 text-body-white text-white a">Home</a>
-                    <a href="../madagascar.html" class="nav-link p-0 text-white a">Madagascar </a>
-                    <a href="../about.html" class="nav-link p-0 text-white a">About Us </a>
-                    <a href="../ourstours.html" class="nav-link p-0 text-white a">Our Tours</a>
-                    <a href="../Rental_car.html" class="nav-link p-0 text-white a">Car Rental</a>
+                    <a href="../madagascar.php" class="nav-link p-0 text-white a">Madagascar </a>
+                    <a href="../about.php" class="nav-link p-0 text-white a">About Us </a>
+                    <a href="../ourstours.php" class="nav-link p-0 text-white a">Our Tours</a>
+                    <a href="../Rental_car.php" class="nav-link p-0 text-white a">Car Rental</a>
                     <a href="../../assets/data/new/Madagascar_tourism_new.php"
                         class="nav-link p-0 text-white a">News</a>
-                    <a href="../contact.html" class="nav-link p-0 text-white a">Contact Us </a>
+                    <a href="../contact.php" class="nav-link p-0 text-white a">Contact Us </a>
 
                 </div>
 
                 <div class="col-6 col-lg-2 mb-3 text-center">
                     <h4 class="corps ligne">Ours Tours</h4>
 
-                    <a href="../tours/wonderSouth.html" class="nav-link p-0 text-white a">- Wonders of the
+                    <a href="../tours/wonderSouth.php" class="nav-link p-0 text-white a">- Wonders of the
                         South</a>
-                    <a href="../tours/Day_One_Andasibe.html" class="nav-link p-0 text-white a">- One Day
+                    <a href="../tours/Day_One_Andasibe.php" class="nav-link p-0 text-white a">- One Day
                         Andasibe</a>
-                    <a href="../tours/Tsingy_Ifaty.html" class="nav-link p-0 text-white a">- Tsingy - Ifaty</a>
-                    <a href="../tours/NosyBe_Tour.html" class="nav-link p-0 text-white a">- Nosy Be Tour</a>
-                    <a href="../tours/wonderSouth_Andasibe.html" class="nav-link p-0 text-white a">- Amazing island
+                    <a href="../tours/Tsingy_Ifaty.php" class="nav-link p-0 text-white a">- Tsingy - Ifaty</a>
+                    <a href="../tours/NosyBe_Tour.php" class="nav-link p-0 text-white a">- Nosy Be Tour</a>
+                    <a href="../tours/wonderSouth_Andasibe.php" class="nav-link p-0 text-white a">- Amazing island
                         of
                         thr South / Andasibe </a>
-                    <a href="../tours/exploration&adventure.html" class="nav-link p-0 text-white a">- Exploration
+                    <a href="../tours/exploration&adventure.php" class="nav-link p-0 text-white a">- Exploration
                         and
                         adventure </a>
-                    <a href="../tours/colorsofEast.html" class="nav-link p-0 text-white a">- Scents and colors of
+                    <a href="../tours/colorsofEast.php" class="nav-link p-0 text-white a">- Scents and colors of
                         the
                         East </a>
-                    <a href="../tours/Mystic_west_&_RN7_Discovery.html" class="nav-link p-0 text-white a">- Mystic
+                    <a href="../tours/Mystic_west_&_RN7_Discovery.php" class="nav-link p-0 text-white a">- Mystic
                         West
                         and RN7 discovery</a>
 
@@ -862,7 +1019,7 @@
                         Andranovory,
                         Antananarivo 101 <br> -18.91830951832678, 47.57559714124707</a> <br>
 
-                    <a href="../contact.html" class="a nav-link p-0 text-white"><svg xmlns="http://www.w3.org/2000/svg"
+                    <a href="../contact.php" class="a nav-link p-0 text-white"><svg xmlns="http://www.w3.org/2000/svg"
                             width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                             <path
                                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
@@ -932,6 +1089,7 @@
     </div>
 </body>
 
+
 <script>
     document.getElementById("htmlprice").value = btoa(unescape(encodeURIComponent(document.getElementById("pricehtml").innerHTML)));
     document.getElementById("htmlContent").value = btoa(unescape(encodeURIComponent(document.getElementById("ratinghtml").innerHTML)));
@@ -939,7 +1097,6 @@
     document.getElementById("titre").value = btoa(unescape(encodeURIComponent(document.getElementById("titrehtml").innerHTML)));
 
 </script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
