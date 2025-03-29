@@ -352,20 +352,12 @@
 
     </main>
 
-    <div class="fixed-footer">
-        <div class="scrolling-text">
-            🇲🇬 <img src="../assets/images/logo.png" class="rounded-pill" alt="" width="25px"> Welcome to FHL
-            Madagascar
-            Travel ! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Discover our tours! &nbsp;&nbsp;&nbsp; / <b
-                class="text-warning">PROMOTIONS : </b> Discounts for the <b class="text-warning"> low season
-                -15%</b> on
-            tours Feb-May &nbsp;&nbsp; <b>/</b> Reduced rates for families and friends <b class="text-warning">- 10%
-            </b>&nbsp;&nbsp; <b>/</b> Duo travel deal <b class="text-warning">-10%</b> discount when traveling
-            as a pair
-            <img src="../assets/images/logo.png" class="rounded-pill" alt="" width="25px">
+  <div class="fixed-footer">
+            <div class="scrolling-text">
+                🇲🇬 Tongasoa! &nbsp; <b class="text-warning">PROMOTIONS : </b> Discounts for the <b class="text-warning"> low season -15%</b> on tours Feb-May &nbsp;&nbsp; <b>/</b> Reduced rates for families, friends, Groups <b class="text-warning">- 15% </b> (4 people or more) &nbsp;&nbsp; <b>/</b> Duo travel deal <b class="text-warning">-10%</b> discount when traveling as a pair <img src="../assets/images/logo.png" class="rounded-pill" alt="" width="25px">
 
+            </div>
         </div>
-    </div>
 
     <!------------------------- FOOTER --------------------------------------------------------->
     <div class="container bg text-white rounded">
