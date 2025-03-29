@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    
     <link rel="stylesheet" href="../css/globalcss.css">
     <title>FHLTravel</title>
-    <link rel="icon" href="../images/logo.webp" type="image/x-icon">
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
 
 
 
@@ -99,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <!-- Logo -->
                 <a href="../../index.php"
                     class="d-flex align-items-center col-auto col-md-3 text-white text-decoration-none titre fw-bold">
-                    <img src="../images/logo.webp" width="50px" class="rounded-circle" alt="FHL Madagascar">
+                    <img src="../images/logo.png" width="50px" class="rounded-circle" alt="FHL Madagascar">
                     <span class="ms-2">FHL Travel Madagascar</span>
                 </a>
 
@@ -188,7 +188,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-8 col-lg-3 bg-light shadow m-5 p-3 mx-auto rounded-2">
                 <form action="" method="post">
                     <div class="text-center">
-                        <img class="mx-auto rounded-circle" src="../images/logo.webp" alt="" width="100" height="100">
+                        <img class="mx-auto rounded-circle" src="../images/logo.png" alt="" width="100" height="100">
                         <h1 class="h3 mb-3 fw-normal " id="nav">Please sign in</h1>
                         <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
                     </div>
@@ -224,7 +224,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-lg-2 mb-3  text-center ">
-                    <img src="../../assets/images/logo.webp" class="rounded-circle" width="100%" alt="">
+                    <img src="../../assets/images/logo.png" class="rounded-circle" width="100%" alt="">
                 </div>
                 <div class="col-6 col-lg-2 mb-3 text-center ">
                     <h4 class="corps ligne">FHL Travel</h4>
@@ -295,7 +295,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <path
                                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                         </svg>
-                        fhlmadagascartravel@gmail.com</a> <br>
+                        contact@fhltravel.com</a> <br>
 
                     <a href="https://wa.me/261329572020" target="_blank" class="a nav-link p-0 text-white"><svg
                             xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"

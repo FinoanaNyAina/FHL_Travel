@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="../assets/css/globalcss.css?v=<?= filemtime('../assets/css/globalcss.css'); ?>">
     <title>Design your personal Tours in Madagascar </title>
-    <link rel="icon" href="../assets/images/logo.webp" type="image/x-icon">
+    <link rel="icon" href="../assets/images/logo.png" type="image/x-icon">
 
 
 
@@ -75,7 +75,7 @@
                 <!-- Logo -->
                 <a href="../index.php"
                     class="d-flex align-items-center col-auto col-md-3 text-white text-decoration-none titre fw-bold">
-                    <img src="../assets/images/logo.webp" width="50px" class="rounded-circle" alt="FHL Madagascar">
+                    <img src="../assets/images/logo.png" width="50px" class="rounded-circle" alt="FHL Madagascar">
                     <span class="ms-2">FHL Travel Madagascar</span>
                 </a>
 
@@ -212,9 +212,8 @@
                         those you cannot
                         answer, and we will fill in the missing information. <br><br>
                         If you have any difficulties completing this form, please contact us directly by email at
-                        <samp class="text-primary">fhlmadagascartravel@gmail.com</samp>. or with Whatsapp <span
-                            class="text-primary">+261 34
-                            04 140 40 </span>
+                        <samp class="text-primary">contact@fhltravel.com</samp>. or with Whatsapp <span
+                            class="text-primary">+261 32 95 720 20 </span>
                     </p>
                     <p>- If you need inspiration, explore our pre-organized tours to find ideas and options tailored to
                         your preferences.
@@ -900,7 +899,7 @@
             </div>
 
         </div>
-       <div class="fixed-footer">
+        <div class="fixed-footer">
             <div class="scrolling-text">
                 🇲🇬 Tongasoa! &nbsp; <b class="text-warning">PROMOTIONS : </b> Discounts for the <b class="text-warning"> low season -15%</b> on tours Feb-May &nbsp;&nbsp; <b>/</b> Reduced rates for families, friends, Groups <b class="text-warning">- 15% </b> (4 people or more) &nbsp;&nbsp; <b>/</b> Duo travel deal <b class="text-warning">-10%</b> discount when traveling as a pair <img src="../assets/images/logo.png" class="rounded-pill" alt="" width="25px">
 
@@ -915,7 +914,7 @@
         <footer class="pt-5 ">
             <div class="row">
                 <div class="col-6 col-lg-2 mb-3  text-center ">
-                    <img src="../assets/images/logo.webp" class="rounded-circle" width="100%" alt="">
+                    <img src="../assets/images/logo.png" class="rounded-circle" width="100%" alt="">
                 </div>
                 <div class="col-6 col-lg-2 mb-3 text-center ">
                     <h4 class="corps ligne">FHL Travel</h4>
@@ -985,7 +984,7 @@
                             <path
                                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                         </svg>
-                        fhlmadagascartravel@gmail.com</a> <br>
+                        contact@fhltravel.com</a> <br>
 
                     <a href="https://wa.me/261329572020" target="_blank" class="a nav-link p-0 text-white"><svg
                             xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
