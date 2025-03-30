@@ -510,11 +510,11 @@
 
 
 .alltours {
-    background-image: url('../images/exploration.webp');
+    background-image: url('../images/isalo.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 20vh;
+    height: 30vh;
 }
 
 
