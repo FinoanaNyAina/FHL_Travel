@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="Madagascar culture, Malagasy traditions, Madagascar heritage, Malagasy people, Madagascar history, Traditional Malagasy music, Madagascar festivals, Malagasy cuisine, Madagascar tribal customs, Madagascar cultural experiences, Madagascar art, Malagasy crafts, Madagascar folklore, Madagascar customs and traditions, Madagascar cultural heritage sites, Malagasy way of life, Madagascar local traditions, Madagascar historical sites, Madagascar unique culture, Madagascar anthropology, Malagasy language, Madagascar ethnography, Madagascar ancient customs, Malagasy lifestyle, Madagascar historical artifacts, Malagasy dances, Madagascar religious beliefs, Madagascar ethnic groups, Malagasy royal history, Madagascar traditional clothing, Madagascar cultural exploration, Madagascar national identity, Madagascar tribal dances, Malagasy architecture, Madagascar traditional houses, Madagascar art and music, Madagascar colonial history, Madagascar native traditions, Madagascar storytelling, Madagascar cultural tourism, Madagascar ancient traditions, Madagascar cultural diversity, Madagascar oral traditions, Malagasy funeral customs, Madagascar heritage conservation, Madagascar historical tours, Malagasy royal family, Madagascar indigenous culture, Madagascar cultural travel, Madagascar ancestral traditions">
-
+    <meta name="description"
+        content="Culture of Madagascar, Malagasy culture and traditions, Madagascar and its eighteen ethnic groups living today in harmony, according to the Malagasy Fihavanana.  ">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1888,7 +1887,7 @@
                     <div class="border rounded p-3">
                         <p class="ligne">FOLLOW US ON SOCIAL MEDIA</p>
 
-                       <div class="row g-4 ">
+                        <div class="row g-4 ">
                             <div class="col"><a href="https://www.facebook.com/profile.php?id=100081146902072" target="_blank" class="text-white" aria-label="FHL Travel Madagascar"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                                         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                                     </svg></a></div>

@@ -27,7 +27,6 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Explore Madagascar with FHL Madagascar Travel. We offer tailor-made tours, car rentals, and private drivers for unforgettable adventures in Madagascar.">
-    <meta name="keywords" content="Car rental, Mitsubishi Pajero V96 rental, Adventure trips Madagascar, Off-road vehicle rental, Explore Madagascar landscapes, 4x4 SUV rental, Comfortable long-distance travel, FHL Madagascar Travel, Madagascar tour, SUV rental, Vehicle for rent Madagascar, Travel agency Madagascar, Explore with FHL Madagascar, Book your car rental, Location de voiture, Location Mitsubishi Pajero V96, Voyages d'aventure Madagascar, Véhicule tout-terrain à louer, Explorer les paysages de Madagascar, Location 4x4 SUV, Voyages longue distance confortables, FHL Madagascar Travel, Excursion Madagascar, Location de SUV, Véhicule à louer Madagascar, Agence de voyage Madagascar, Explorez avec FHL Madagascar, Réservez votre location de voiture">
     <meta name="author" content="Andriantsoa Finoana Ny Aina, FHL Madagascar Travel">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
