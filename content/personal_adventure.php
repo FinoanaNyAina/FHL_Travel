@@ -151,8 +151,10 @@
     <main class=" shadow-sm bg-white shadow px-0 f ">
         <div class="row ">
             <div class="col-lg-8">
+                <img src="../assets/images/ourtours.webp" width="100%" alt="Contact us for book tours">
+                <!--------------- Video
                 <video class="shadow-sm" src="../assets/video/travelmp4.mp4" autoplay loop muted playsinline
-                    width="100%"></video>
+                    width="100%"></video>--------------->
             </div>
             <div class="col-lg-4 mt-4">
                 <h4 class="text-center ligne">CREATE YOUR PERSONAL ADVENTURE</h4>

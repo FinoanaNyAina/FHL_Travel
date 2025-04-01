@@ -557,7 +557,7 @@ try {
                     <div class="col col-lg-4">
                         <a href="content/place/east_of_madagascar.php" class="text-decoration-none ">
                             <div class="card card-cover h-100 text-bg-dark   image-hover border-white"
-                                style="background-image: url('assets/images/indriindri.webp'); background-size: cover; background-repeat: no-repeat;">
+                                style="background-image: url('assets/images/eastmadagascar.webp'); background-size: cover; background-repeat: no-repeat;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 cardh">
                                     <h3 class="pt-5 pb-5 mt-4 mb-5  fw-bold">EAST</h3>
                                 </div>
